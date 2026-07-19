@@ -1,0 +1,1339 @@
+<title>Namíbia — Road Trip Solo · Dossier de Rota</title>
+<style>
+  :root{
+    --bg:#EAE8E1; --bg-2:#E1DFD6; --surface:#F4F2EC; --surface-2:#EEEBE3;
+    --ink:#23262A; --ink-soft:#585D62; --ink-faint:#8A8F93;
+    --line:#D2CFC5; --line-soft:#DEDBD1;
+    --accent:#A9541E; --accent-ink:#8A4416; --accent-2:#2C5F6E; --gold:#8C6B1F;
+    --shadow:0 1px 2px rgba(30,28,22,.06),0 8px 24px rgba(30,28,22,.06);
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,"New York",ui-serif,Georgia,"Times New Roman",serif;
+    --sans:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono","JetBrains Mono","Menlo",Consolas,monospace;
+    --maxw:1180px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#14171B; --bg-2:#171B20; --surface:#1C2126; --surface-2:#20262C;
+      --ink:#E7E4DB; --ink-soft:#A4AAB0; --ink-faint:#78808A;
+      --line:#2C333A; --line-soft:#242A30;
+      --accent:#DC8A4A; --accent-ink:#E7A063; --accent-2:#5AA0B2; --gold:#C7A24A;
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#EAE8E1; --bg-2:#E1DFD6; --surface:#F4F2EC; --surface-2:#EEEBE3;
+    --ink:#23262A; --ink-soft:#585D62; --ink-faint:#8A8F93;
+    --line:#D2CFC5; --line-soft:#DEDBD1;
+    --accent:#A9541E; --accent-ink:#8A4416; --accent-2:#2C5F6E; --gold:#8C6B1F;
+    --shadow:0 1px 2px rgba(30,28,22,.06),0 8px 24px rgba(30,28,22,.06);
+  }
+  :root[data-theme="dark"]{
+    --bg:#14171B; --bg-2:#171B20; --surface:#1C2126; --surface-2:#20262C;
+    --ink:#E7E4DB; --ink-soft:#A4AAB0; --ink-faint:#78808A;
+    --line:#2C333A; --line-soft:#242A30;
+    --accent:#DC8A4A; --accent-ink:#E7A063; --accent-2:#5AA0B2; --gold:#C7A24A;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:var(--sans);font-size:16px;line-height:1.62;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  }
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:600;text-wrap:balance;line-height:1.15;margin:0}
+  p{margin:0 0 .85em}
+  a{color:var(--accent-ink);text-decoration:none}
+  a:hover{text-decoration:underline}
+  ::selection{background:color-mix(in srgb,var(--accent) 30%,transparent)}
+
+  /* ---------- layout shell ---------- */
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+  .shell{display:grid;grid-template-columns:1fr;gap:0}
+  @media(min-width:1000px){
+    .shell{grid-template-columns:248px minmax(0,1fr);align-items:start;
+      max-width:var(--maxw);margin:0 auto;padding:0 clamp(16px,3vw,40px);gap:44px}
+  }
+
+  /* ---------- TOC ---------- */
+  nav.toc{display:none}
+  @media(min-width:1000px){
+    nav.toc{display:block;position:sticky;top:0;max-height:100vh;overflow-y:auto;
+      padding:28px 4px 40px;font-size:13px;scrollbar-width:thin}
+    nav.toc::-webkit-scrollbar{width:6px}
+    nav.toc::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
+  }
+  .toc .brand{font-family:var(--serif);font-size:19px;font-weight:600;margin-bottom:2px}
+  .toc .brand small{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--ink-faint);margin-top:6px}
+  .toc ol{list-style:none;margin:16px 0 0;padding:0;counter-reset:s}
+  .toc li{margin:0}
+  .toc a{display:flex;gap:9px;padding:4px 8px;border-radius:6px;color:var(--ink-soft);
+    line-height:1.35;align-items:baseline}
+  .toc a:hover{background:var(--surface);color:var(--ink);text-decoration:none}
+  .toc a .n{font-family:var(--mono);font-size:10.5px;color:var(--accent-ink);flex:0 0 20px;text-align:right}
+  .toc .grp{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-faint);margin:18px 0 5px;padding:0 8px}
+
+  /* ---------- hero ---------- */
+  header.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);
+    background:var(--bg-2)}
+  header.hero canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.5}
+  @media (prefers-color-scheme:dark){header.hero canvas{opacity:.42}}
+  :root[data-theme="dark"] header.hero canvas{opacity:.42}
+  :root[data-theme="light"] header.hero canvas{opacity:.5}
+  .hero-inner{position:relative;max-width:var(--maxw);margin:0 auto;
+    padding:clamp(52px,9vw,104px) clamp(16px,4vw,40px) clamp(40px,6vw,72px)}
+  .kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--accent-ink);margin-bottom:20px}
+  header.hero h1{font-size:clamp(38px,7vw,74px);letter-spacing:-.015em;max-width:14ch}
+  header.hero h1 em{font-style:italic;color:var(--accent-ink)}
+  .lede{font-size:clamp(16px,2.1vw,20px);color:var(--ink-soft);max-width:56ch;margin-top:22px}
+  .heroline{font-family:var(--mono);font-size:12px;color:var(--ink-faint);margin-top:26px;
+    display:flex;flex-wrap:wrap;gap:8px 22px}
+  .heroline b{color:var(--ink);font-weight:600}
+
+  .statbar{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);
+    border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:34px}
+  @media(min-width:640px){.statbar{grid-template-columns:repeat(4,1fr)}}
+  .statbar>div{background:var(--bg-2);padding:16px 18px}
+  .statbar .v{font-family:var(--serif);font-size:clamp(22px,3.4vw,30px);font-weight:600;
+    font-variant-numeric:tabular-nums;color:var(--accent-ink)}
+  .statbar .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ink-faint);margin-top:3px}
+
+  /* ---------- content ---------- */
+  main{padding:8px 0 90px}
+  section{padding:44px 0 8px;scroll-margin-top:14px;border-top:1px solid var(--line-soft)}
+  section:first-of-type{border-top:0}
+  .sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:20px}
+  .sec-head .num{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--accent-ink);
+    letter-spacing:.06em;flex:0 0 auto;padding-top:6px}
+  .sec-head h2{font-size:clamp(24px,3.6vw,33px);letter-spacing:-.01em}
+  .sec-head .sub{font-size:14px;color:var(--ink-soft);margin-top:4px;max-width:64ch}
+  .prose{max-width:68ch}
+  .prose p{color:var(--ink-soft)}
+  .prose strong{color:var(--ink);font-weight:650}
+
+  /* cards + grids */
+  .grid{display:grid;gap:14px;margin:6px 0 4px}
+  .g2{grid-template-columns:1fr}
+  .g3{grid-template-columns:1fr}
+  @media(min-width:680px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr}}
+  @media(min-width:980px){.g3{grid-template-columns:1fr 1fr 1fr}}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;
+    padding:17px 18px;box-shadow:var(--shadow)}
+  .card h3,.card h4{font-size:17px;margin-bottom:5px}
+  .card h4{font-size:15.5px}
+  .card p{font-size:14px;color:var(--ink-soft);margin:0 0 .5em}
+  .card p:last-child{margin-bottom:0}
+  .card .meta{font-family:var(--mono);font-size:11px;color:var(--ink-faint);
+    letter-spacing:.03em;margin-bottom:8px;display:flex;flex-wrap:wrap;gap:4px 12px}
+  .card .meta b{color:var(--accent-ink);font-weight:600}
+
+  .tag{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;
+    text-transform:uppercase;padding:2px 8px;border-radius:20px;border:1px solid var(--line);
+    color:var(--ink-soft);background:var(--surface-2)}
+  .tag.a{color:var(--accent-ink);border-color:color-mix(in srgb,var(--accent) 40%,var(--line))}
+  .tag.t{color:var(--accent-2);border-color:color-mix(in srgb,var(--accent-2) 40%,var(--line))}
+  .tag.g{color:var(--gold);border-color:color-mix(in srgb,var(--gold) 45%,var(--line))}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+
+  /* stars */
+  .stars{font-family:var(--mono);letter-spacing:1px;color:var(--accent);font-size:12px}
+  .stars .off{color:var(--line)}
+
+  /* tables */
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);margin:6px 0}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:520px;background:var(--surface)}
+  th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line-soft);vertical-align:top}
+  thead th{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--ink-faint);background:var(--surface-2);position:sticky;top:0}
+  tbody tr:last-child td{border-bottom:0}
+  td.num,th.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+  td.tot{font-weight:700;color:var(--ink)}
+  tfoot td{font-family:var(--mono);font-weight:700;background:var(--surface-2);border-top:2px solid var(--line)}
+
+  /* itinerary timeline */
+  .route{display:flex;flex-direction:column;gap:0;margin-top:8px}
+  .day{position:relative;padding:0 0 8px 30px;border-left:2px solid var(--line);margin-left:8px}
+  .day:last-child{border-left-color:transparent}
+  .day::before{content:"";position:absolute;left:-8px;top:4px;width:14px;height:14px;border-radius:50%;
+    background:var(--accent);box-shadow:0 0 0 4px var(--bg)}
+  .day-card{background:var(--surface);border:1px solid var(--line);border-radius:12px;
+    padding:16px 18px;box-shadow:var(--shadow);margin-bottom:22px}
+  .day-num{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)}
+  .day-card h3{font-size:19px;margin:3px 0 8px}
+  .leg{font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);
+    display:flex;flex-wrap:wrap;gap:4px 16px;margin:2px 0 12px;
+    padding:8px 10px;background:var(--surface-2);border-radius:8px}
+  .leg b{color:var(--accent-2);font-weight:600}
+  .day-card p{font-size:14px;color:var(--ink-soft)}
+  .sleep{margin-top:11px;padding-top:11px;border-top:1px dashed var(--line);font-size:13.5px}
+  .sleep .lbl{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--gold);display:block;margin-bottom:2px}
+  .sleep b{color:var(--ink)}
+
+  /* callouts */
+  .note{border-left:3px solid var(--accent);background:var(--surface-2);
+    padding:12px 16px;border-radius:0 10px 10px 0;margin:14px 0;font-size:14px;color:var(--ink-soft)}
+  .note.warn{border-left-color:#B54A3A}
+  .note.warn b{color:#B54A3A}
+  @media (prefers-color-scheme:dark){.note.warn{border-left-color:#E27A66}.note.warn b{color:#E27A66}}
+  :root[data-theme="dark"] .note.warn{border-left-color:#E27A66}
+  :root[data-theme="dark"] .note.warn b{color:#E27A66}
+  .note b{color:var(--ink)}
+  .note .lbl{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--accent-ink);display:block;margin-bottom:4px}
+
+  ul.clean{list-style:none;margin:8px 0;padding:0}
+  ul.clean li{position:relative;padding:5px 0 5px 22px;font-size:14px;color:var(--ink-soft);
+    border-bottom:1px solid var(--line-soft)}
+  ul.clean li:last-child{border-bottom:0}
+  ul.clean li::before{content:"›";position:absolute;left:4px;color:var(--accent);font-weight:700}
+  ul.clean li b{color:var(--ink)}
+
+  /* checklist */
+  .check{columns:2;column-gap:34px}
+  @media(max-width:640px){.check{columns:1}}
+  .check .h{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--accent-ink);margin:14px 0 6px;break-after:avoid}
+  .check label{display:flex;gap:9px;align-items:flex-start;font-size:13.5px;color:var(--ink-soft);
+    padding:3px 0;break-inside:avoid}
+  .check input{margin-top:3px;accent-color:var(--accent)}
+
+  .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 6px}
+
+  footer{border-top:1px solid var(--line);margin-top:40px;padding:26px 0;
+    font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);text-align:center}
+  footer a{color:var(--ink-soft)}
+
+  .updated{font-family:var(--mono);font-size:11px;color:var(--ink-faint);margin-top:6px}
+
+  a.top{display:inline-block;font-family:var(--mono);font-size:11px;color:var(--ink-faint);
+    margin-top:4px;letter-spacing:.06em}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+  /* ---------- section marker icons ---------- */
+  .sec-head{align-items:flex-start}
+  .sec-mark{display:flex;flex-direction:column;align-items:center;gap:5px;flex:0 0 auto;padding-top:2px}
+  .sec-mark .num{padding-top:0}
+  .sec-ic{width:24px;height:24px;color:var(--accent);fill:none;stroke:currentColor;
+    stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;display:block}
+  @media(max-width:520px){.sec-ic{width:20px;height:20px}}
+
+  /* ---------- hero ridge silhouette ---------- */
+  header.hero .hero-inner{position:relative;z-index:2}
+  .hero-ridge{position:absolute;left:0;right:0;bottom:0;width:100%;height:clamp(90px,16vw,160px);
+    z-index:0;pointer-events:none}
+  .hero-ridge .r-far{fill:var(--accent);opacity:.09}
+  .hero-ridge .r-near{fill:var(--ink);opacity:.07}
+  .hero-ridge .r-line{fill:none;stroke:var(--ink);stroke-width:1.4;opacity:.22}
+  .hero-ridge .r-acc{fill:none;stroke:var(--accent);stroke-width:1.4;opacity:.5}
+
+  /* ---------- route map ---------- */
+  .mapfig{margin:4px 0 20px;background:var(--surface);border:1px solid var(--line);
+    border-radius:14px;padding:16px clamp(8px,3vw,22px) 12px;box-shadow:var(--shadow)}
+  .rmap{max-width:430px;width:100%;height:auto;display:block;margin:0 auto}
+  .rmap .land{fill:var(--surface-2);stroke:var(--line);stroke-width:1.4}
+  .rmap .route{fill:none;stroke:var(--accent);stroke-width:2.6;stroke-linejoin:round;stroke-linecap:round}
+  .rmap .route.ext{stroke-dasharray:5 6;opacity:.7}
+  .rmap .node{fill:var(--surface);stroke:var(--accent);stroke-width:2}
+  .rmap .node.ext{stroke-dasharray:3 3}
+  .rmap .hub{fill:var(--accent);stroke:var(--surface);stroke-width:2.5}
+  .rmap .kv{fill:var(--surface);stroke:var(--accent-2);stroke-width:2}
+  .rmap .nnum{fill:var(--accent-ink);font-family:var(--mono);font-size:11px;font-weight:700;
+    text-anchor:middle;dominant-baseline:central}
+  .rmap .nlab{fill:var(--ink);font-family:var(--sans);font-size:10.5px;font-weight:600;dominant-baseline:central}
+  .rmap .nlab.end{text-anchor:end}
+  .rmap .region{fill:var(--ink-faint);font-family:var(--mono);font-size:8.5px;letter-spacing:.14em;opacity:.55}
+  .rmap .hublab{fill:var(--accent-ink);font-family:var(--mono);font-size:9.5px;font-weight:700;
+    letter-spacing:.1em;text-anchor:middle}
+  .maplegend{display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:center;margin-top:12px;
+    font-family:var(--mono);font-size:11px;color:var(--ink-soft)}
+  .maplegend span{display:inline-flex;align-items:center;gap:7px}
+  .maplegend i{width:20px;border-top:2.6px solid var(--accent);display:inline-block}
+  .maplegend i.ext{border-top-style:dashed;opacity:.7}
+  .maplegend .cap{color:var(--ink-faint)}
+
+  /* ---------- google maps links ---------- */
+  .gmap{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:10.5px;
+    color:var(--accent-2);border:1px solid color-mix(in srgb,var(--accent-2) 34%,var(--line));
+    padding:1px 8px;border-radius:20px;white-space:nowrap;text-decoration:none;background:var(--surface)}
+  .gmap:hover{background:var(--surface-2);text-decoration:none;
+    border-color:color-mix(in srgb,var(--accent-2) 60%,var(--line))}
+  .gmap::after{content:"↗";font-size:9px;opacity:.65}
+  td .gmap{margin-top:5px}
+  ul.clean li .gmap{margin-left:2px}
+
+  /* ---------- photos ---------- */
+  img{max-width:100%}
+  .cover-wrap{position:relative;max-width:var(--maxw);margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+  .cover{display:block;width:100%;height:clamp(220px,42vw,460px);object-fit:cover;
+    border:1px solid var(--line);border-top:0;border-radius:0 0 16px 16px;background:var(--bg-2)}
+  .cover-cap{position:absolute;right:calc(clamp(16px,4vw,40px) + 12px);bottom:12px;
+    font-family:var(--mono);font-size:10px;color:#fff;background:rgba(20,18,14,.5);
+    padding:3px 9px;border-radius:20px}
+  .gallery-grid{display:grid;grid-template-columns:1fr;gap:14px}
+  @media(min-width:560px){.gallery-grid{grid-template-columns:1fr 1fr}}
+  @media(min-width:900px){.gallery-grid{grid-template-columns:1fr 1fr 1fr}}
+  .shot{margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;
+    background:var(--surface);box-shadow:var(--shadow)}
+  .shot img{width:100%;height:190px;object-fit:cover;display:block;background:var(--bg-2);
+    transition:transform .4s ease}
+  .shot:hover img{transform:scale(1.04)}
+  @media (prefers-reduced-motion:reduce){.shot:hover img{transform:none}}
+  .shot figcaption{padding:10px 13px;font-size:13.5px;color:var(--ink);line-height:1.35}
+  .shot .cr{display:block;font-family:var(--mono);font-size:9.5px;color:var(--ink-faint);margin-top:4px}
+  .credits{margin-top:16px;text-align:left;max-width:var(--maxw);margin-left:auto;margin-right:auto;
+    padding:14px clamp(16px,4vw,40px) 0;border-top:1px solid var(--line-soft)}
+  .credits .h{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--accent-ink);margin-bottom:6px}
+  .credits ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:3px 16px}
+  .credits li{font-family:var(--mono);font-size:10.5px;color:var(--ink-faint)}
+  .credits a{color:var(--ink-soft)}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="ic-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2.2 5-5 2.2 2.2-5z"/></symbol>
+  <symbol id="ic-route" viewBox="0 0 24 24"><circle cx="6" cy="6.5" r="2.2"/><circle cx="18" cy="17.5" r="2.2"/><path d="M6 9v3.5a4 4 0 0 0 4 4h5" stroke-dasharray="2.2 2.4"/></symbol>
+  <symbol id="ic-road" viewBox="0 0 24 24"><path d="M8.5 21L10.5 3M15.5 21L13.5 3"/><path d="M12 6v2.4M12 11v2.4M12 16v2.4"/></symbol>
+  <symbol id="ic-tent" viewBox="0 0 24 24"><path d="M3 20L12 5l9 15z"/><path d="M12 5v15"/><path d="M8.2 20l3.8-6.6 3.8 6.6"/></symbol>
+  <symbol id="ic-mountain" viewBox="0 0 24 24"><path d="M2 20l6.5-12 4.2 7"/><path d="M11.5 20l4.3-8L22 20z"/><path d="M14.5 13.5l1.3-1.5 1.3 1.5"/></symbol>
+  <symbol id="ic-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.3"/><path d="M12 2.5v2.3M12 19.2v2.3M2.5 12h2.3M19.2 12h2.3M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></symbol>
+  <symbol id="ic-star" viewBox="0 0 24 24"><path d="M12 3l2.5 5.6 6 .6-4.5 4 1.4 5.9L12 21l-5.4 3.1 1.4-5.9-4.5-4 6-.6z"/></symbol>
+  <symbol id="ic-camera" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2.4"/><circle cx="12" cy="13.3" r="3.6"/><path d="M8.2 7l1.6-2.6h4.4L15.8 7"/></symbol>
+  <symbol id="ic-ruin" viewBox="0 0 24 24"><path d="M4 21V6l4-1.6v16.6"/><path d="M12 21V4.4L16 6v15"/><path d="M4 9.5h4M12 11.5h4M20 12v9"/></symbol>
+  <symbol id="ic-lake" viewBox="0 0 24 24"><path d="M3 9c2 2 4 2 6 0s4-2 6 0 4 2 6 0"/><path d="M3 14c2 2 4 2 6 0s4-2 6 0 4 2 6 0"/><path d="M3 19c2 2 4 2 6 0s4-2 6 0 4 2 6 0"/></symbol>
+  <symbol id="ic-fall" viewBox="0 0 24 24"><path d="M8 3v9M12 3v9M16 3v9"/><path d="M4 17c2 2 4.5 2 6.5 0s4.5-2 6.5 0"/><path d="M4 21c2 2 4.5 2 6.5 0s4.5-2 6.5 0"/></symbol>
+  <symbol id="ic-coin" viewBox="0 0 24 24"><circle cx="9" cy="12" r="6.2"/><path d="M14.5 6.3a6.2 6.2 0 0 1 0 11.4"/></symbol>
+  <symbol id="ic-food" viewBox="0 0 24 24"><path d="M7 3v7.5a2 2 0 0 0 2 2V21M7 3v4.5M9 3v4.5"/><path d="M16.8 3c-1.8 0-2.8 2-2.8 4.8s1 4.2 2.8 4.2V21"/></symbol>
+  <symbol id="ic-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5.5c0 5-3 7.5-7 9.5-4-2-7-4.5-7-9.5V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></symbol>
+  <symbol id="ic-phone" viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2.4"/><path d="M11 18h2"/></symbol>
+</defs></svg>
+
+<header class="hero">
+  <canvas id="topo" aria-hidden="true"></canvas>
+  <svg class="hero-ridge" viewBox="0 0 1200 160" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <path class="r-far" d="M0 160 L0 100 Q150 40 300 88 Q420 124 540 70 Q660 24 780 78 Q900 122 1020 66 Q1120 42 1200 74 L1200 160 Z"/>
+    <path class="r-acc" d="M0 100 Q150 40 300 88 Q420 124 540 70 Q660 24 780 78 Q900 122 1020 66 Q1120 42 1200 74"/>
+    <path class="r-near" d="M0 160 L0 132 Q200 96 400 126 Q560 148 720 112 Q880 82 1040 122 Q1130 142 1200 124 L1200 160 Z"/>
+    <path class="r-line" d="M0 132 Q200 96 400 126 Q560 148 720 112 Q880 82 1040 122 Q1130 142 1200 124"/>
+    <g class="r-line">
+      <path d="M655 26 a5 5 0 1 1 0.1 0"/>
+      <path d="M642 46 h26 M648 38 h14"/>
+      <path d="M240 96 l10 -14 l10 14 M250 82 v-8"/>
+    </g>
+  </svg>
+  <div class="hero-inner">
+    <div class="kicker">Dossier de Rota · Viajante Solo</div>
+    <h1>Namíbia, <em>gravel</em> e horizonte</h1>
+    <p class="lede">Um circuito de 12 dias em anel a partir de Windhoek: dunas vermelhas do Kalahari, o segundo maior canyon do mundo, uma cidade fantasma engolida pela areia, as dunas de Sossusvlei, a costa das baleias e das focas, granito de Spitzkoppe, gravuras de 6 000 anos e os waterholes de Etosha. Dezembro: época baixa, deserto a ficar verde, céus da lua nova.</p>
+    <div class="heroline">
+      <span><b>Base</b> Windhoek (Hosea Kutako · WDH)</span>
+      <span><b>Época</b> 1–13 de dezembro (antes do pico do Natal)</span>
+      <span><b>Carro</b> 4x4 com tenda de tejadilho</span>
+      <span><b>Dormir</b> campsites · 1–2 noites de cama</span>
+    </div>
+    <div class="statbar">
+      <div><div class="v">12</div><div class="k">Dias</div></div>
+      <div><div class="v">~2 700</div><div class="k">km ao volante</div></div>
+      <div><div class="v">~€2 400</div><div class="k">Orçamento solo</div></div>
+      <div><div class="v">9</div><div class="k">Noites sob as estrelas</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="cover-wrap">
+  <img class="cover" src="img/hero.jpg" alt="Árvores mortas de Deadvlei contra a duna Big Daddy, Sossusvlei" width="1400" height="700" loading="eager">
+  <span class="cover-cap">Deadvlei · Diego Delso · CC BY-SA 4.0</span>
+</div>
+
+<div class="shell">
+  <nav class="toc" aria-label="Índice">
+    <div class="brand">Namíbia<small>Guia de campo</small></div>
+    <div class="grp">Visão geral</div>
+    <ol>
+      <li><a href="#s1"><span class="n">01</span>Resumo da viagem</a></li>
+      <li><a href="#sgal"><span class="n">◎</span>Galeria de fotos</a></li>
+      <li><a href="#s31"><span class="n">31</span>Mapa lógico — porquê esta rota</a></li>
+      <li><a href="#s2"><span class="n">02</span>Itinerário dia a dia</a></li>
+      <li><a href="#s3"><span class="n">03</span>Onde dormir cada noite</a></li>
+      <li><a href="#s4"><span class="n">04</span>Km e tempo de condução</a></li>
+      <li><a href="#smap"><span class="n">↗</span>Pontos no Google Maps</a></li>
+    </ol>
+    <div class="grp">Natureza & trilhos</div>
+    <ol>
+      <li><a href="#s5"><span class="n">05</span>Trail guide — caminhadas</a></li>
+      <li><a href="#s14"><span class="n">14</span>Dunas & desertos</a></li>
+      <li><a href="#s15"><span class="n">15</span>Costa atlântica</a></li>
+      <li><a href="#s16"><span class="n">16</span>Canyons</a></li>
+      <li><a href="#s10"><span class="n">10</span>Estradas panorâmicas</a></li>
+      <li><a href="#s8"><span class="n">08</span>Top 20 imperdíveis</a></li>
+      <li><a href="#s7"><span class="n">07</span>Observação de fauna</a></li>
+    </ol>
+    <div class="grp">Fotografia & contemplação</div>
+    <ol>
+      <li><a href="#s6"><span class="n">06</span>Nascer / pôr do sol</a></li>
+      <li><a href="#s11"><span class="n">11</span>Locais de fotografia</a></li>
+      <li><a href="#s18"><span class="n">18</span>Dark sky · estrelas</a></li>
+      <li><a href="#s17"><span class="n">17</span>Contemplar durante horas</a></li>
+      <li><a href="#s13"><span class="n">13</span>Urbex · cidades fantasma</a></li>
+      <li><a href="#s12"><span class="n">12</span>Locais de locais</a></li>
+      <li><a href="#s9"><span class="n">09</span>Sobrevalorizados a ignorar</a></li>
+    </ol>
+    <div class="grp">Logística</div>
+    <ol>
+      <li><a href="#s19"><span class="n">19</span>Custos estimados</a></li>
+      <li><a href="#s20"><span class="n">20</span>Equipamento</a></li>
+      <li><a href="#s21"><span class="n">21</span>Meteorologia & roupa</a></li>
+      <li><a href="#s22"><span class="n">22</span>Segurança & gravel</a></li>
+      <li><a href="#s23"><span class="n">23</span>Apps úteis</a></li>
+      <li><a href="#s25"><span class="n">25</span>Estratégia de combustível</a></li>
+    </ol>
+    <div class="grp">Comer & ritmo</div>
+    <ol>
+      <li><a href="#s24"><span class="n">24</span>Comida barata</a></li>
+      <li><a href="#s27"><span class="n">27</span>Restaurantes baratos</a></li>
+      <li><a href="#s28"><span class="n">28</span>Padarias & cafés de estrada</a></li>
+      <li><a href="#s26"><span class="n">26</span>Paragens rápidas 5–15 min</a></li>
+      <li><a href="#s29"><span class="n">29</span>Cronograma diário</a></li>
+      <li><a href="#s30"><span class="n">30</span>Plano para calor & trovoadas</a></li>
+    </ol>
+    <div class="grp">Anexos</div>
+    <ol>
+      <li><a href="#ax1"><span class="n">A</span>Orçamento EUR / NAD</a></li>
+      <li><a href="#ax2"><span class="n">B</span>Checklist de preparação</a></li>
+      <li><a href="#ax3"><span class="n">C</span>Checklist de mala</a></li>
+      <li><a href="#ax4"><span class="n">D</span>Plano de emergência</a></li>
+      <li><a href="#ax5"><span class="n">E</span>Top 15 experiências</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <!-- 1 RESUMO -->
+    <section id="s1">
+      <div class="sec-head"><span class="num">01</span><div><h2>Resumo da viagem</h2>
+        <div class="sub">A ideia em duas frases, mais a matriz de decisões que molda tudo o resto.</div></div></div>
+      <div class="prose">
+        <p>Um <strong>loop anti-horário</strong> a partir de Windhoek que desce ao sul profundo (Kalahari, Fish River Canyon, Kolmanskop), sobe a costa dos ventos (Lüderitz → Sossusvlei → Swakopmund → Cape Cross), entra no granito e na pré-história (Spitzkoppe, Twyfelfontein) e fecha em grande com dois dias de fauna em <strong>Etosha</strong>. Desenhado para <strong>fotógrafo solo</strong> que quer luz dourada, silêncio absoluto, gravel infinito e céu escuro — com uma cidade fantasma de diamantes como clímax urbex.</p>
+        <p>A filosofia de custo é a mesma da Arménia, adaptada ao deserto: <strong>o carro é o grande gasto; tudo o resto é barato</strong>. O 4x4 com tenda de tejadilho é casa e transporte ao mesmo tempo — os campsites custam €8–20, o supermercado é sul-africano e barato, e quase todas as paisagens são grátis ou custam uma entrada de parque de ~€10. Dezembro é época baixa: menos gente, preços de aluguer mais baixos, deserto com flushes de verde — a troco de calor a sério e possíveis trovoadas no norte.</p>
+      </div>
+      <div class="grid g3" style="margin-top:16px">
+        <div class="card"><div class="meta"><b>PERFIL</b></div><h4>Para quem é</h4><p>Solo, ritmo moderado, experiente, confortável com gravel e distâncias longas. Zero interesse em vida noturna, compras ou resorts. Auto-suficiente: cozinha própria, água própria.</p></div>
+        <div class="card"><div class="meta"><b>FOCO</b></div><h4>O que procura</h4><p>Deserto, dunas, canyons, fauna grande, urbex de cidades fantasma, dark sky, estradas vazias e geologia dramática. Tranquilidade acima de tudo.</p></div>
+        <div class="card"><div class="meta"><b>REGRA DE OURO</b></div><h4>Como decidir</h4><p>Entre duas opções, escolhe a mais remota e mais barata — desde que o depósito esteja acima de metade, leves 5 L de água por dia e chegues ao destino antes do pôr do sol. <b>Nunca conduzas de noite.</b></p></div>
+      </div>
+      <div class="note"><span class="lbl">Variantes</span><b>10 dias:</b> corta o Kalahari (dia 1 directo a Keetmanshoop) e reduz Etosha a 1 dia. &nbsp;·&nbsp; <b>14 dias:</b> acrescenta Waterberg no regresso (rinocerontes a pé) ou um dia extra em Damaraland (elefantes do deserto) — ver Dia 12B no itinerário.</div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="sgal">
+      <div class="sec-head"><span class="num">◎</span><div><h2>Galeria</h2>
+        <div class="sub">Fotografias de licença livre (Wikimedia Commons) dos principais locais da rota. Créditos completos no rodapé.</div></div></div>
+      <div class="gallery-grid">
+        <figure class="shot"><img src="img/kalahari.jpg" alt="Trovoada sobre as dunas do Kalahari" loading="lazy" width="1400" height="933">
+          <figcaption>Trovoada de verão sobre o Kalahari<span class="cr">Foto: Henning Sidow · CC BY-SA 4.0</span></figcaption></figure>
+        <figure class="shot"><img src="img/quiver.jpg" alt="Floresta de kokerbooms perto de Keetmanshoop" loading="lazy" width="1400" height="933">
+          <figcaption>Quiver Tree Forest · Keetmanshoop<span class="cr">Foto: Le Grand Portage · CC BY 2.0</span></figcaption></figure>
+        <figure class="shot"><img src="img/fishriver.jpg" alt="Meandro do Fish River Canyon" loading="lazy" width="1400" height="933">
+          <figcaption>Fish River Canyon<span class="cr">Foto: Thomas Schoch · CC BY-SA 3.0</span></figcaption></figure>
+        <figure class="shot"><img src="img/horses.jpg" alt="Cavalos selvagens do deserto perto de Aus" loading="lazy" width="1400" height="933">
+          <figcaption>Cavalos do deserto · Garub, Aus<span class="cr">Foto: Raymond June · CC BY 2.0</span></figcaption></figure>
+        <figure class="shot"><img src="img/kolmanskop.jpg" alt="Casa invadida pela areia em Kolmanskop" loading="lazy" width="1400" height="933">
+          <figcaption>Kolmanskop · a cidade engolida<span class="cr">Foto: Xenia Ivanoff-Erb · CC BY-SA 3.0</span></figcaption></figure>
+        <figure class="shot"><img src="img/luderitz.jpg" alt="Vista aérea de Lüderitz" loading="lazy" width="1400" height="933">
+          <figcaption>Lüderitz · Art déco no fim do mundo<span class="cr">Foto: Hp.Baumeler · CC BY-SA 4.0</span></figcaption></figure>
+        <figure class="shot"><img src="img/d707.jpg" alt="Estrada de gravel nas montanhas Tiras" loading="lazy" width="1400" height="933">
+          <figcaption>D707 · montanhas Tiras<span class="cr">Foto: Sonse · CC BY 2.0</span></figcaption></figure>
+        <figure class="shot"><img src="img/dune45.jpg" alt="Duna 45 ao nascer do sol" loading="lazy" width="1400" height="933">
+          <figcaption>Dune 45 ao nascer do sol<span class="cr">Foto: Giles Laurent · CC BY-SA 4.0</span></figcaption></figure>
+        <figure class="shot"><img src="img/sesriem.jpg" alt="Interior do canyon de Sesriem" loading="lazy" width="1400" height="933">
+          <figcaption>Canyon de Sesriem<span class="cr">Foto: Diego Delso · CC BY-SA 4.0</span></figcaption></figure>
+        <figure class="shot"><img src="img/solitaire.jpg" alt="Carro antigo abandonado em Solitaire" loading="lazy" width="1400" height="933">
+          <figcaption>Solitaire · relíquias no deserto<span class="cr">Foto: Choinowski · CC BY-SA 4.0</span></figcaption></figure>
+        <figure class="shot"><img src="img/walvis.jpg" alt="Flamingos em voo na lagoa de Walvis Bay" loading="lazy" width="1400" height="933">
+          <figcaption>Flamingos · lagoa de Walvis Bay<span class="cr">Foto: Yathin S Krishnappa · CC BY-SA 3.0</span></figcaption></figure>
+        <figure class="shot"><img src="img/zeila.jpg" alt="Navio Zeila encalhado na Skeleton Coast" loading="lazy" width="1400" height="933">
+          <figcaption>Zeila · Skeleton Coast<span class="cr">Foto: Domenico Convertini · CC BY-SA 2.0</span></figcaption></figure>
+        <figure class="shot"><img src="img/capecross.jpg" alt="Confronto na colónia de focas de Cape Cross" loading="lazy" width="1400" height="933">
+          <figcaption>Cape Cross · 100 000 focas<span class="cr">Foto: Jean &amp; Nathalie · CC BY 2.0</span></figcaption></figure>
+        <figure class="shot"><img src="img/spitzkoppe.jpg" alt="Arco de granito de Spitzkoppe" loading="lazy" width="1400" height="933">
+          <figcaption>O arco de Spitzkoppe<span class="cr">Foto: Daniel Kraft · CC BY-SA 3.0</span></figcaption></figure>
+        <figure class="shot"><img src="img/twyfelfontein.jpg" alt="Gravuras rupestres de Twyfelfontein" loading="lazy" width="1400" height="933">
+          <figcaption>Twyfelfontein · gravuras UNESCO<span class="cr">Foto: Jean &amp; Nathalie · CC BY 2.0</span></figcaption></figure>
+        <figure class="shot"><img src="img/etosha.jpg" alt="Elefantes a correr para um waterhole em Etosha" loading="lazy" width="1400" height="933">
+          <figcaption>Elefantes a caminho da água · Etosha<span class="cr">Foto: Yathin S Krishnappa · CC BY-SA 3.0</span></figcaption></figure>
+        <figure class="shot"><img src="img/etosha2.jpg" alt="Zebra na pan de Etosha ao pôr do sol" loading="lazy" width="1400" height="933">
+          <figcaption>Etosha Pan ao entardecer<span class="cr">Foto: Sonse · CC BY 2.0</span></figcaption></figure>
+      </div>
+    </section>
+
+    <!-- 31 MAPA LÓGICO -->
+    <section id="s31">
+      <div class="sec-head"><span class="num">31</span><div><h2>Mapa lógico — porquê esta ordem e rota</h2>
+        <div class="sub">A Namíbia é uma faixa de deserto entre um escarpado interior e o Atlântico. A rota desce primeiro, sobe a costa depois — sempre com o sol nas costas.</div></div></div>
+
+      <figure class="mapfig">
+        <svg class="rmap" viewBox="0 0 420 560" role="img" aria-label="Mapa esquemático da rota em anel pela Namíbia, de Windhoek e regresso">
+          <path class="land" d="M62 68 L255 58 L262 82 L405 74 L407 96 L272 104 L296 120 L296 398 L322 428 L318 536 L158 544 L118 320 L92 190 Z"/>
+          <text class="region" x="150" y="95">KUNENE</text>
+          <text class="region" x="230" y="140">ETOSHA</text>
+          <text class="region" x="240" y="265">KHOMAS</text>
+          <text class="region" x="238" y="345">KALAHARI</text>
+          <text class="region" x="230" y="480">KAROO ­· ǁKARAS</text>
+          <text class="region" x="112" y="285" transform="rotate(-72 112 285)">COSTA DOS ESQUELETOS</text>
+          <!-- spur Lüderitz -->
+          <path class="route ext" d="M163 442 L130 437"/>
+          <!-- main loop -->
+          <path class="route" d="M203 252 L220 322 L216 402 L196 470 L163 442 L157 392 L162 302 L130 242 L126 224 L152 206 L138 156 L188 112 L203 252"/>
+          <!-- nodes -->
+          <circle class="node" cx="220" cy="322" r="13"/><text class="nnum" x="220" y="322">1</text><text class="nlab" x="238" y="322">Kalahari</text>
+          <circle class="node" cx="216" cy="402" r="13"/><text class="nnum" x="216" y="402">2</text><text class="nlab" x="234" y="402">Quiver Trees</text>
+          <circle class="node" cx="196" cy="470" r="13"/><text class="nnum" x="196" y="470">3</text><text class="nlab" x="214" y="470">Fish River</text>
+          <circle class="node" cx="163" cy="442" r="13"/><text class="nnum" x="163" y="442">4</text><text class="nlab" x="180" y="428">Aus</text>
+          <circle class="node ext" cx="130" cy="437" r="10"/><text class="nlab end" x="118" y="437">Kolmanskop</text>
+          <circle class="node" cx="157" cy="392" r="13"/><text class="nnum" x="157" y="392">5</text><text class="nlab end" x="141" y="392">D707</text>
+          <circle class="node" cx="162" cy="302" r="13"/><text class="nnum" x="162" y="302">6</text><text class="nlab" x="180" y="302">Sossusvlei</text>
+          <circle class="node" cx="130" cy="242" r="13"/><text class="nnum" x="130" y="242">7</text><text class="nlab" x="148" y="248">Walvis Bay</text>
+          <circle class="node" cx="126" cy="224" r="13"/><text class="nnum" x="126" y="224">8</text><text class="nlab end" x="112" y="218">Swakopmund</text>
+          <circle class="node" cx="152" cy="206" r="13"/><text class="nnum" x="152" y="206">9</text><text class="nlab" x="170" y="206">Spitzkoppe</text>
+          <circle class="node" cx="138" cy="156" r="13"/><text class="nnum" x="138" y="156">10</text><text class="nlab" x="156" y="156">Twyfelfontein</text>
+          <circle class="node" cx="188" cy="112" r="13"/><text class="nnum" x="188" y="112">11</text><text class="nlab" x="206" y="112">Etosha</text>
+          <!-- Windhoek hub -->
+          <circle class="hub" cx="203" cy="252" r="8.5"/><text class="hublab" x="212" y="234">WINDHOEK · WDH</text>
+        </svg>
+        <div class="maplegend">
+          <span><i></i> Rota principal (12 dias)</span>
+          <span><i class="ext"></i> Ida e volta a Kolmanskop / Lüderitz</span>
+          <span class="cap">Esquemático · não à escala · números = ordem das etapas</span>
+        </div>
+      </figure>
+
+      <div class="prose">
+        <p>Windhoek está no planalto central; o que interessa forma um <strong>anel gigante</strong> à volta: o sul árido (canyon + diamantes), a muralha de dunas a oeste, a costa fria, o granito do centro-norte e a savana de Etosha. Fazer o anel <strong>anti-horário</strong> tem quatro vantagens concretas:</p>
+      </div>
+      <ul class="clean">
+        <li><b>O calor decide a ordem</b> — o sul (Fish River, Kolmanskop) está no limite do suportável em dezembro; fazê-lo nos primeiros dias, com energia fresca e disciplina de madrugada, é mais seguro do que no fim.</li>
+        <li><b>A costa é o alívio térmico a meio</b> — Swakopmund a 20–25 °C com a corrente de Benguela é a pausa perfeita entre dois blocos de deserto: duche, marisco, civilização.</li>
+        <li><b>Etosha no fim = melhor recompensa</b> — a fauna é o clímax emocional; e as chuvas de dezembro no norte, se vierem, são trovoadas de tarde que não estragam manhãs de game drive.</li>
+        <li><b>Nunca refazes estrada</b> — só a ida-e-volta Aus↔Lüderitz repete 125 km, e esses valem-no (é a estrada dos cavalos selvagens e da areia a atravessar o asfalto).</li>
+      </ul>
+      <div class="note"><span class="lbl">Sequência resumida</span>Windhoek → Kalahari → Quiver Trees/Keetmanshoop → Fish River Canyon → Aus → Kolmanskop/Lüderitz → D707 → Sossusvlei/Sesriem → Solitaire → Walvis Bay → Swakopmund → Cape Cross → Spitzkoppe → Twyfelfontein → Etosha (2 dias) → Windhoek.</div>
+    </section>
+
+    <!-- 2 ITINERÁRIO -->
+    <section id="s2">
+      <div class="sec-head"><span class="num">02</span><div><h2>Itinerário dia a dia</h2>
+        <div class="sub">Cada dia traz a etapa de condução (km/tempo), o programa e onde dormir com justificação. Horas assumem luz de dezembro: nascer ~06:10, pôr ~19:30. Regra inegociável: parado antes do pôr do sol.</div></div></div>
+      <div class="route">
+
+        <div class="day"><div class="day-card">
+          <div class="day-num">Dia 01 · Chegada & Kalahari</div>
+          <h3>Hosea Kutako → Windhoek → dunas do Kalahari</h3>
+          <div class="leg"><span>🚗 <b>~320 km</b></span><span>⏱ <b>3h30–4h</b></span><span>B6 + B1, tudo asfalto</span></div>
+          <p>Aterras ~09:25. Levanta o 4x4 (briefing de 1h — presta atenção ao macaco, compressor e segunda roda suplente), passa num <b>Superspar/Checkers de Windhoek</b> para o grande abastecimento (comida para 4–5 dias, 25 L de água, gelo para a arca) e foge para sul pela B1. Primeira noite numa quinta do <b>Kalahari</b> (zona Mariental): dunas vermelhas com erva, oryx e a primeira lição de tenda de tejadilho ainda com luz.</p>
+          <div class="sleep"><span class="lbl">Dormir · Kalahari (Mariental)</span><b>Campsite de quinta</b> (Bagatelle, Kalahari Anib ou similar, ~N$250–350). Porquê: sunset drive opcional nas dunas, primeira noite de estrelas sem esforço, e amanhã a etapa já é curta.</div>
+        </div></div>
+
+        <div class="day"><div class="day-card">
+          <div class="day-num">Dia 02 · Kokerbooms</div>
+          <h3>Kalahari → Keetmanshoop → Quiver Tree Forest</h3>
+          <div class="leg"><span>🚗 <b>~250 km</b></span><span>⏱ <b>2h45</b></span><span>B1 asfalto, tarde livre</span></div>
+          <p>Etapa curta de propósito: o calor do sul pede ritmo lento. Chega a <b>Keetmanshoop</b>, abastece (combustível + água) e instala-te junto à <b>Quiver Tree Forest</b> — floresta de aloés-árvore de 200–300 anos — com o <b>Giant's Playground</b> (caos de dolerito empilhado) ao lado. O programa a sério começa às 17h: luz dourada nos kokerbooms, jantar, e <b>Via Láctea por cima das árvores</b> — um dos melhores primeiros planos de astrofoto do país.</p>
+          <div class="sleep"><span class="lbl">Dormir · Quiver Tree Forest</span><b>Campsite da quinta dos kokerbooms</b> (~N$250). Porquê: dormes literalmente dentro do cenário de astrofotografia; a 10 min de Keetmanshoop para reabastecer de manhã.</div>
+        </div></div>
+
+        <div class="day"><div class="day-card">
+          <div class="day-num">Dia 03 · O grande canyon</div>
+          <h3>Keetmanshoop → Fish River Canyon (Hobas)</h3>
+          <div class="leg"><span>🚗 <b>~160 km</b></span><span>⏱ <b>2h</b></span><span>B4 + C12/gravel fácil</span></div>
+          <p>Manhã tranquila (sai cedo na mesma — o gravel aquece). Entra no parque em <b>Hobas</b> e guarda o canyon para a luz certa: <b>fim de tarde nos miradouros</b> — Main Viewpoint e <b>Hell's Bend</b> — quando o sol baixo esculpe os 550 m de profundidade. O trilho dentro do canyon está <b>fechado</b> (só abre mai–set), portanto o jogo é caminhar ao longo da borda entre miradouros e ficar até ao pôr do sol.</p>
+          <div class="note warn" style="margin:12px 0 0"><span class="lbl">Calor</span><b>Dezembro no sul = 35–40 °C.</b> Nada de esforço físico entre as 11h e as 16h30. Chapéu, 3 L de água contigo mesmo para passeios curtos.</div>
+          <div class="sleep"><span class="lbl">Dormir · Hobas</span><b>Hobas Campground</b> (NWR, ~N$300–400, piscina!). Porquê: é o único alojamento à borda do canyon — nascer do sol no miradouro a 10 min, e a piscina às 14h não é luxo, é sobrevivência.</div>
+        </div></div>
+
+        <div class="day"><div class="day-card">
+          <div class="day-num">Dia 04 · Cavalos do deserto</div>
+          <h3>Fish River → Aus (via Canyon Roadhouse)</h3>
+          <div class="leg"><span>🚗 <b>~220 km</b></span><span>⏱ <b>3h</b></span><span>C12/C13/B4, gravel + asfalto</span></div>
+          <p><b>Nascer do sol no canyon</b> (o melhor momento do dia 3 ou 4 — repete se a luz do dia anterior falhou). Café no <b>Canyon Roadhouse</b> (museu vivo de carros enferrujados). Segue para <b>Aus</b> pela B4 e ao fim da tarde vai ao <b>waterhole de Garub</b>: os <b>cavalos selvagens do Namib</b> — descendentes ferais de cavalaria alemã de 1915 — contra planícies infinitas.</p>
+          <div class="sleep"><span class="lbl">Dormir · Aus</span><b>Klein-Aus Vista campsite</b> (~N$250–300). Porquê: base perfeita para atacar Kolmanskop de manhã cedo (40 min), e Aus a 1 400 m é <b>fresco</b> — a melhor noite de sono do bloco sul.</div>
+        </div></div>
+
+        <div class="day"><div class="day-card">
+          <div class="day-num">Dia 05 · ⭐ A cidade engolida</div>
+          <h3>Kolmanskop · Lüderitz · regresso a Aus</h3>
+          <div class="leg"><span>🚗 <b>~250 km</b> (i/v)</span><span>⏱ <b>3h</b> total</span><span>B4 asfalto; areia a invadir a estrada</span></div>
+          <p>O dia urbex. Com o <b>photo permit</b> entras em <b>Kolmanskop</b> ao nascer do sol, <b>horas antes das visitas guiadas</b>: casas art nouveau de 1910 com quartos cheios de dunas, luz rasante pelas janelas partidas, silêncio total. É o Kadykchan que a Arménia não te deu, com areia em vez de neve. Ao meio-dia, <b>Lüderitz</b>: península de <b>Diaz Point</b>, casas alemãs no meio do nada, lagosta ao almoço. Volta a Aus com o vento de cauda.</p>
+          <div class="note" style="margin:12px 0 0"><span class="lbl">Reservar já</span><b>Photo permit de Kolmanskop</b> (~N$370): compra antecipada online/telefone — dá acesso sunrise-to-sunset fora dos horários das tours. A visita normal (~N$130) só às 9h30/11h, com multidão.</div>
+          <div class="sleep"><span class="lbl">Dormir · Aus</span><b>Repetir Klein-Aus Vista</b>. Porquê: evitas montar/desmontar acampamento por uma noite, e arrancas cedo para a D707.</div>
+        </div></div>
+
+        <div class="day"><div class="day-card">
+          <div class="day-num">Dia 06 · A estrada-rainha</div>
+          <h3>Aus → D707 → Sesriem</h3>
+          <div class="leg"><span>🚗 <b>~380 km</b></span><span>⏱ <b>5h30–6h</b></span><span>C13 + D707 + C27 — gravel o dia todo</span></div>
+          <p>O grande dia de condução, e de propósito: a <b>D707</b> é candidata a estrada mais bonita da África Austral — dunas cor de ferrugem do Namib de um lado, montanhas Tiras de granito do outro, e provavelmente <b>zero carros</b> em dezembro. Parte às 7h, pára vezes sem conta, almoça à sombra de um camel thorn. Chegada a <b>Sesriem</b> a meio da tarde; põe-te na fila do gate interior e espia o <b>Elim Dune</b> ao pôr do sol.</p>
+          <div class="sleep"><span class="lbl">Dormir · Sesriem (dentro do portão)</span><b>Sesriem Campsite NWR</b> (~N$500–600 — o mais caro da viagem, e vale cada dólar). Porquê: hóspedes do campsite interior entram no parque <b>1h antes do nascer do sol</b> — é a diferença entre ter Deadvlei sozinho ou com autocarros.</div>
+        </div></div>
+
+        <div class="day"><div class="day-card">
+          <div class="day-num">Dia 07 · ⭐ Deadvlei</div>
+          <h3>Sossusvlei · Deadvlei · Big Daddy · Sesriem Canyon</h3>
+          <div class="leg"><span>🚗 <b>~130 km</b> (i/v no parque)</span><span>⏱ <b>1h30</b> + caminhadas</span><span>asfalto até 2x4; últimos 5 km areia mole (4x4)</span></div>
+          <p>Portão às ~05:10. <b>Dune 45</b> ao nascer do sol (ou directo a Big Daddy — escolhe um, as multidões escolhem o outro). Sobe <b>Big Daddy (~325 m)</b> pela crista enquanto está fresco e desce a correr a face de areia até <b>Deadvlei</b>: acácias mortas de 900 anos sobre argila branca rachada, contra dunas laranja — a imagem da viagem. Fora do vlei às 10h30, piscina, sesta. Fim de tarde: <b>Sesriem Canyon</b> (fresco, lá em baixo) e Elim Dune outra vez se a luz merecer.</p>
+          <div class="sleep"><span class="lbl">Dormir · Sesriem</span><b>Repetir Sesriem Campsite</b>. Porquê: ninguém faz Sossusvlei bem num dia só de passagem; e a segunda madrugada é o teu seguro fotográfico contra vento/nuvens.</div>
+        </div></div>
+
+        <div class="day"><div class="day-card">
+          <div class="day-num">Dia 08 · Trópico & costa</div>
+          <h3>Sesriem → Solitaire → Walvis Bay → Swakopmund</h3>
+          <div class="leg"><span>🚗 <b>~350 km</b></span><span>⏱ <b>4h30–5h</b></span><span>C19/C14 gravel, passos de Gaub & Kuiseb</span></div>
+          <p>Manhã: café e <b>apple pie em Solitaire</b> (ritual nacional) entre carcaças de carros dos anos 50. Cruza o <b>Tropic of Capricorn</b> (placa obrigatória) e os passos do <b>Kuiseb Canyon</b>. À chegada à costa, a temperatura <b>cai 15 °C</b> — bem-vindo à Benguela. Fim de tarde na <b>lagoa de Walvis Bay</b>: milhares de flamingos a 30 min do deserto absoluto. Noite em <b>Swakopmund</b>, a cidade alemã entre dunas e Atlântico.</p>
+          <div class="sleep"><span class="lbl">Dormir · Swakopmund</span><b>Guesthouse/pensão simples</b> (~N$600–800) — a noite de cama a meio da viagem. Porquê: duche a sério, roupa lavada, marisco no jantar, e a humidade da costa torna a tenda desagradável aqui.</div>
+        </div></div>
+
+        <div class="day"><div class="day-card">
+          <div class="day-num">Dia 09 · Esqueletos & granito</div>
+          <h3>Swakopmund → Zeila → Cape Cross → Spitzkoppe</h3>
+          <div class="leg"><span>🚗 <b>~290 km</b></span><span>⏱ <b>4h</b></span><span>C34 sal/asfalto + D1918/D3716 gravel</span></div>
+          <p>Sobe a <b>costa dos esqueletos "lite"</b> pela C34: o navio <b>Zeila</b> enferrujado na rebentação (2008, fotogénico ao raiar da névoa) e a <b>colónia de Cape Cross</b> — dezenas de milhares de focas, com crias em dezembro (e o cheiro correspondente; leva buff). Depois corta para o interior até <b>Spitzkoppe</b>, o "Matterhorn da Namíbia": campsites espalhados entre domos de granito de 700 milhões de anos, sem eletricidade, sem vedações. O <b>arco de pedra</b> ao pôr do sol e depois o céu inteiro só para ti.</p>
+          <div class="sleep"><span class="lbl">Dormir · Spitzkoppe</span><b>Spitzkoppe Community Campsite</b> (~N$250). Porquê: possivelmente a melhor noite da viagem — granito laranja, silêncio geológico e dark sky de topo com a lua nova de ~9 dez a ajudar.</div>
+        </div></div>
+
+        <div class="day"><div class="day-card">
+          <div class="day-num">Dia 10 · Pré-história</div>
+          <h3>Spitzkoppe → Twyfelfontein → Damaraland</h3>
+          <div class="leg"><span>🚗 <b>~280 km</b></span><span>⏱ <b>4h</b></span><span>C35/C39 gravel; piso pior após chuva</span></div>
+          <p>Manhã nos penedos de Spitzkoppe (pinturas em Bushman's Paradise, escalada leve nos domos). Segue para <b>Damaraland</b>: <b>Twyfelfontein</b> (UNESCO) — mais de 2 500 gravuras rupestres de 2 000–6 000 anos, incluindo o famoso "Lion Man" — mais <b>Organ Pipes</b> (colunas de dolerito) e <b>Burnt Mountain</b> ao lado. Vai atento ao leito dos rios secos: em dezembro os <b>elefantes do deserto</b> descem os rios Aba-Huab e Huab.</p>
+          <div class="sleep"><span class="lbl">Dormir · vale do Aba-Huab</span><b>Aba-Huab ou Madisa Camp</b> (~N$250–350). Porquê: posição para Etosha amanhã, e é território real de elefante — os camps têm plataformas e regras próprias (comida sempre fechada no carro).</div>
+        </div></div>
+
+        <div class="day"><div class="day-card">
+          <div class="day-num">Dia 11 · ⭐ Etosha, lado oeste</div>
+          <h3>Damaraland → Galton Gate / Anderson Gate → Okaukuejo</h3>
+          <div class="leg"><span>🚗 <b>~300 km</b></span><span>⏱ <b>4h30</b> até ao gate</span><span>C39/C40 gravel → asfalto no parque</span></div>
+          <p>Entra em <b>Etosha</b> ao início da tarde e faz o primeiro game drive até <b>Okaukuejo</b>. Dezembro é época verde: os grandes rebanhos dispersam, mas há <b>crias por todo o lado</b>, aves migratórias, e trovoadas monumentais no horizonte da pan. A noite é o espetáculo: o <b>waterhole iluminado de Okaukuejo</b> é dos melhores locais de África para ver <b>rinoceronte-negro</b> — senta-te às 21h e espera em silêncio.</p>
+          <div class="sleep"><span class="lbl">Dormir · Okaukuejo</span><b>Okaukuejo Campsite NWR</b> (~N$400–500 — reservar antecipado). Porquê: o waterhole nocturno é a razão; dormir fora do parque mata-o.</div>
+        </div></div>
+
+        <div class="day"><div class="day-card">
+          <div class="day-num">Dia 12 · Etosha inteiro & regresso</div>
+          <h3>Okaukuejo → Halali → Namutoni → Windhoek</h3>
+          <div class="leg"><span>🚗 <b>~130 km no parque + 530 km B1</b></span><span>⏱ <b>2h30 parque + 5h asfalto</b></span><span>sair do parque até 12h30</span></div>
+          <p>Madrugada no waterhole e depois a travessia clássica da pan: <b>Okaukuejo → Halali → Namutoni</b>, parando nos waterholes que o guarda do gate te indicar como activos (pergunta sempre — em época verde é ouro). Almoço em Namutoni (forte alemão). À tarde, B1 asfaltada até Windhoek — monótona mas rápida. Devolve o carro ou dorme e devolve de manhã.</p>
+          <div class="sleep"><span class="lbl">Dormir · Windhoek</span><b>Guesthouse perto do centro</b> (~N$600) ou perto do aeroporto se o voo for cedo. Porquê: margem para a devolução do 4x4 sem stress e último jantar civilizado (Joe's Beerhouse).</div>
+        </div></div>
+
+        <div class="day"><div class="day-card" style="border-style:dashed">
+          <div class="day-num">Dia 12B–14 · Extensão (opcional)</div>
+          <h3>Waterberg ou mais Damaraland</h3>
+          <div class="leg"><span>🚗 <b>+250–400 km</b></span><span>⏱ <b>flexível</b></span><span>desvio no regresso ou antes de Etosha</span></div>
+          <p>Com 14 dias: <b>opção A</b> — <b>Waterberg Plateau</b> no regresso (montanha-ilha vermelha, trilhos marcados no topo, rinocerontes; encaixa entre Etosha e Windhoek). <b>Opção B</b> — mais um dia em <b>Damaraland</b> à procura dos elefantes do deserto no rio Huab com guia local (~N$800, vale a pena — sozinho não vais aos sítios certos). <b>Opção C</b> — dia extra em Etosha, lado leste (Namutoni), mais tranquilo.</p>
+          <div class="sleep"><span class="lbl">Dormir · Waterberg / Damaraland</span><b>Waterberg Campsite NWR ou camp comunitário</b> (~N$300). Porquê: quebra os 530 km finais em dois dias suaves.</div>
+        </div></div>
+
+      </div>
+    </section>
+
+    <!-- 3 ONDE DORMIR -->
+    <section id="s3">
+      <div class="sec-head"><span class="num">03</span><div><h2>Onde dormir cada noite — e porquê</h2>
+        <div class="sub">Resumo rápido por noite, com a lógica de cada escolha. Preços por pessoa+viatura, referência início de dezembro (época baixa, excepto NWR).</div></div></div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th class="num">Noite</th><th>Zona</th><th>Tipo</th><th class="num">Custo/noite</th><th>Porquê</th></tr></thead>
+          <tbody>
+            <tr><td class="num">1</td><td>Kalahari (Mariental)</td><td>Campsite de quinta</td><td class="num">N$250–350</td><td>Dunas vermelhas, primeira noite fácil</td></tr>
+            <tr><td class="num">2</td><td>Quiver Tree Forest</td><td>Campsite</td><td class="num">~N$250</td><td>Astrofoto com kokerbooms à porta da tenda</td></tr>
+            <tr><td class="num">3</td><td>Hobas · Fish River</td><td>Campsite NWR</td><td class="num">N$300–400</td><td>Único alojamento à borda do canyon; piscina</td></tr>
+            <tr><td class="num">4</td><td>Aus</td><td>Campsite</td><td class="num">N$250–300</td><td>Fresco (1 400 m); rampa para Kolmanskop</td></tr>
+            <tr><td class="num">5</td><td>Aus</td><td>Campsite (repete)</td><td class="num">N$250–300</td><td>Sem mudança de camp; saída cedo p/ D707</td></tr>
+            <tr><td class="num">6</td><td>Sesriem</td><td>Campsite NWR interior</td><td class="num">N$500–600</td><td>Portão interior = 1h de avanço p/ Deadvlei</td></tr>
+            <tr><td class="num">7</td><td>Sesriem</td><td>Campsite (repete)</td><td class="num">N$500–600</td><td>Segunda madrugada = seguro fotográfico</td></tr>
+            <tr><td class="num">8</td><td>Swakopmund</td><td><b>Guesthouse (cama!)</b></td><td class="num">N$600–800</td><td>Reset a meio: duche, lavandaria, marisco</td></tr>
+            <tr><td class="num">9</td><td>Spitzkoppe</td><td>Campsite comunitário</td><td class="num">~N$250</td><td>Granito + dark sky; a melhor noite da viagem</td></tr>
+            <tr><td class="num">10</td><td>Aba-Huab · Damaraland</td><td>Campsite comunitário</td><td class="num">N$250–350</td><td>Território de elefantes; rampa p/ Etosha</td></tr>
+            <tr><td class="num">11</td><td>Okaukuejo · Etosha</td><td>Campsite NWR</td><td class="num">N$400–500</td><td>Waterhole nocturno com rinocerontes</td></tr>
+            <tr><td class="num">12</td><td>Windhoek</td><td>Guesthouse</td><td class="num">~N$600</td><td>Devolução do carro sem stress</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note"><span class="lbl">Reservas</span>Em dezembro (época baixa) quase tudo se resolve à chegada, <b>excepto NWR</b>: <b>Sesriem e Okaukuejo esgotam mesmo em low season</b> — reserva estas 4 noites já (nwr.com.na ou email). O resto pode ficar flexível, que é como tu gostas.</div>
+    </section>
+
+    <!-- 4 KM E TEMPO -->
+    <section id="s4">
+      <div class="sec-head"><span class="num">04</span><div><h2>Km e tempo de condução entre etapas</h2>
+        <div class="sub">Tempos realistas com paragens fotográficas mínimas. Em gravel namibiano conta 60–70 km/h de média honesta — mais do que isso é como se parte um chassis (ou pior).</div></div></div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Etapa</th><th class="num">Km</th><th class="num">Tempo</th><th>Piso</th></tr></thead>
+          <tbody>
+            <tr><td>Aeroporto WDH → Windhoek → Kalahari</td><td class="num">320</td><td class="num">3h30–4h</td><td>Asfalto (B6/B1)</td></tr>
+            <tr><td>Kalahari → Keetmanshoop → Quiver Trees</td><td class="num">250</td><td class="num">2h45</td><td>Asfalto (B1)</td></tr>
+            <tr><td>Keetmanshoop → Hobas (Fish River)</td><td class="num">160</td><td class="num">2h</td><td>Asfalto + gravel fácil (C12)</td></tr>
+            <tr><td>Hobas → Canyon Roadhouse → Aus</td><td class="num">220</td><td class="num">3h</td><td>Gravel (C12/C13) + asfalto (B4)</td></tr>
+            <tr><td>Aus → Kolmanskop → Lüderitz → Aus</td><td class="num">250</td><td class="num">3h</td><td>Asfalto (B4); areia móvel na berma</td></tr>
+            <tr><td>Aus → D707 → Sesriem</td><td class="num">380</td><td class="num">5h30–6h</td><td>Gravel todo o dia (C13/D707/C27)</td></tr>
+            <tr><td>Sesriem → Sossusvlei (i/v)</td><td class="num">130</td><td class="num">1h30</td><td>Asfalto no parque; 5 km finais areia 4x4</td></tr>
+            <tr><td>Sesriem → Solitaire → Walvis → Swakopmund</td><td class="num">350</td><td class="num">4h30–5h</td><td>Gravel (C19/C14) + asfalto final</td></tr>
+            <tr><td>Swakopmund → Cape Cross → Spitzkoppe</td><td class="num">290</td><td class="num">4h</td><td>Salt road (C34) + gravel (D1918)</td></tr>
+            <tr><td>Spitzkoppe → Twyfelfontein</td><td class="num">280</td><td class="num">4h</td><td>Gravel (C35/C39)</td></tr>
+            <tr><td>Twyfelfontein → Okaukuejo (Etosha)</td><td class="num">300</td><td class="num">4h30</td><td>Gravel (C39/C40) + asfalto no parque</td></tr>
+            <tr><td>Etosha (Okaukuejo → Namutoni, com drives)</td><td class="num">130</td><td class="num">2h30+</td><td>Gravel de parque, 60 km/h máx.</td></tr>
+            <tr><td>Namutoni → Windhoek</td><td class="num">530</td><td class="num">5h</td><td>Asfalto (B1)</td></tr>
+            <tr><td class="tot">Total do circuito</td><td class="num tot">~2 700</td><td class="num tot">~45h ao volante</td><td>≈ 55% gravel</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- GOOGLE MAPS -->
+    <section id="smap">
+      <div class="sec-head"><span class="num">↗</span><div><h2>Pontos-chave no Google Maps</h2>
+        <div class="sub">Abre cada um e guarda numa lista "Namíbia" no teu Google Maps antes de partir. Depois descarrega os mapas offline (ou melhor: usa Tracks4Africa, secção 23).</div></div></div>
+      <div class="pill-row">
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Bagatelle+Kalahari+Game+Ranch" target="_blank" rel="noopener">Kalahari · Bagatelle</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Quiver+Tree+Forest+Keetmanshoop" target="_blank" rel="noopener">Quiver Tree Forest</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Giant%27s+Playground+Keetmanshoop" target="_blank" rel="noopener">Giant's Playground</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Fish+River+Canyon+Main+Viewpoint" target="_blank" rel="noopener">Fish River · Main Viewpoint</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Hobas+Campsite" target="_blank" rel="noopener">Hobas Camp</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Canyon+Roadhouse+Namibia" target="_blank" rel="noopener">Canyon Roadhouse</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Garub+wild+horses+viewpoint" target="_blank" rel="noopener">Garub · cavalos</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Kolmanskop+Ghost+Town" target="_blank" rel="noopener">Kolmanskop</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Diaz+Point+Luderitz" target="_blank" rel="noopener">Diaz Point</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=D707+road+Namibia" target="_blank" rel="noopener">D707</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Sesriem+Campsite" target="_blank" rel="noopener">Sesriem Camp</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Dune+45+Sossusvlei" target="_blank" rel="noopener">Dune 45</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Deadvlei" target="_blank" rel="noopener">Deadvlei</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Sesriem+Canyon" target="_blank" rel="noopener">Sesriem Canyon</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Solitaire+Namibia" target="_blank" rel="noopener">Solitaire</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Tropic+of+Capricorn+sign+C14+Namibia" target="_blank" rel="noopener">Trópico de Capricórnio</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Walvis+Bay+Lagoon+flamingos" target="_blank" rel="noopener">Lagoa Walvis Bay</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Zeila+Shipwreck" target="_blank" rel="noopener">Zeila (navio)</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Cape+Cross+Seal+Reserve" target="_blank" rel="noopener">Cape Cross</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Spitzkoppe+Campsite" target="_blank" rel="noopener">Spitzkoppe</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Twyfelfontein" target="_blank" rel="noopener">Twyfelfontein</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Okaukuejo+Camp+Etosha" target="_blank" rel="noopener">Okaukuejo</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Etosha+Pan+viewpoint" target="_blank" rel="noopener">Etosha Pan</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Namutoni+Fort+Etosha" target="_blank" rel="noopener">Namutoni</a>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Joe%27s+Beerhouse+Windhoek" target="_blank" rel="noopener">Joe's Beerhouse</a>
+      </div>
+    </section>
+
+    <!-- 5 TRAIL GUIDE -->
+    <section id="s5">
+      <div class="sec-head"><span class="num">05</span><div><h2>Trail guide — as caminhadas principais</h2>
+        <div class="sub">A Namíbia em dezembro não é país de grandes treks (calor + trilho do Fish River fechado). É país de caminhadas curtas e brutalmente cénicas, sempre de madrugada ou fim de tarde.</div></div></div>
+      <div class="grid g2">
+        <div class="card"><div class="meta"><b>SOSSUSVLEI</b><span>~4 km · 2–3h · exigente</span></div><h4>Big Daddy → Deadvlei</h4><p>Sobe a crista da duna de ~325 m com o nascer do sol nas costas e desce a face de areia direto a Deadvlei. Areia mole = cada passo vale dois. Leva 2 L de água mesmo às 7h. A descida em passos largos é pura alegria.</p><div class="stars">★★★★★</div></div>
+        <div class="card"><div class="meta"><b>SOSSUSVLEI</b><span>~1,5 km · 45 min · fácil</span></div><h4>Dune 45</h4><p>A duna-icone. Sobe só até meio se o tempo apertar — o postal é a crista em S, não o topo. Ao nascer do sol a face leste arde em laranja; volta a descer antes das 9h.</p><div class="stars">★★★★<span class="off">★</span></div></div>
+        <div class="card"><div class="meta"><b>FISH RIVER</b><span>~5 km · 1h30 · fácil</span></div><h4>Bordo do canyon: Main Viewpoint → Hell's Bend</h4><p>Caminho plano ao longo da borda, com o abismo de 550 m à esquerda. O trilho de descida está fechado em dezembro; este passeio ao pôr do sol dá 90% do espetáculo com 5% do esforço.</p><div class="stars">★★★★<span class="off">★</span></div></div>
+        <div class="card"><div class="meta"><b>SPITZKOPPE</b><span>1–3h · à escolha · scramble</span></div><h4>Arco + Bushman's Paradise</h4><p>Domos de granito com aderência perfeita: sobe descalço ou de aproximação. O arco ao pôr do sol, o anfiteatro de pinturas rupestres de manhã. Cuidado com o granito quente à tarde.</p><div class="stars">★★★★★</div></div>
+        <div class="card"><div class="meta"><b>SESRIEM</b><span>~1 km · 30 min · fácil</span></div><h4>Sesriem Canyon</h4><p>Desce ao leito do Tsauchab entre paredes de conglomerado de 30 m. Fresco ao meio-dia — é o único sítio do parque onde o calor perdoa. Depois de chuva pode ter água: verifica antes de entrar.</p><div class="stars">★★★<span class="off">★★</span></div></div>
+        <div class="card"><div class="meta"><b>WATERBERG (ext.)</b><span>2–3h · moderado</span></div><h4>Trilhos do planalto</h4><p>Se fizeres a extensão: trilhos marcados no topo da montanha-ilha, vegetação exuberante pós-chuva e a hipótese rara de cruzar rinocerontes a pé (com as regras do parque).</p><div class="stars">★★★<span class="off">★★</span></div></div>
+      </div>
+    </section>
+
+    <!-- 6 SUNRISE/SUNSET -->
+    <section id="s6">
+      <div class="sec-head"><span class="num">06</span><div><h2>Melhores locais de nascer e pôr do sol</h2>
+        <div class="sub">Dezembro: nascer ~06:10, pôr ~19:30 — dias de 13h20. A luz boa dura pouco com o sol alto de verão: as janelas douradas são 06:10–08:00 e 18:00–19:30.</div></div></div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Momento</th><th>Local</th><th>Porquê</th></tr></thead>
+          <tbody>
+            <tr><td>Nascer</td><td><b>Deadvlei</b></td><td>As acácias acendem antes de o sol tocar o chão do vlei — chega ANTES da luz directa</td></tr>
+            <tr><td>Nascer</td><td><b>Kolmanskop</b></td><td>Luz rasante pelas janelas partidas, sombras longas nos quartos de areia (só c/ photo permit)</td></tr>
+            <tr><td>Nascer</td><td>Dune 45</td><td>A crista em S com metade em fogo, metade em sombra</td></tr>
+            <tr><td>Nascer</td><td>Waterhole de Okaukuejo</td><td>Animais ainda na água, luz baixa e rosa sobre a poeira</td></tr>
+            <tr><td>Pôr</td><td><b>Fish River · Hell's Bend</b></td><td>O sol entra alinhado com o meandro; o canyon inteiro em camadas</td></tr>
+            <tr><td>Pôr</td><td><b>Arco de Spitzkoppe</b></td><td>O granito passa de laranja a vermelho-sangue; o clássico absoluto</td></tr>
+            <tr><td>Pôr</td><td>Quiver Tree Forest</td><td>Silhuetas de kokerboom contra céu de trovoada — dezembro dá céus dramáticos</td></tr>
+            <tr><td>Pôr</td><td>Elim Dune · Sesriem</td><td>A única duna que podes subir ao fim do dia sem sair do perímetro do camp</td></tr>
+            <tr><td>Pôr</td><td>Lagoa de Walvis Bay</td><td>Flamingos cor-de-rosa sobre água cor-de-rosa</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 7 FAUNA -->
+    <section id="s7">
+      <div class="sec-head"><span class="num">07</span><div><h2>Locais de observação de fauna</h2>
+        <div class="sub">Dezembro é época verde: rebanhos dispersos em Etosha mas crias, predadores activos cedo, e aves migratórias em força. Madrugada e crepúsculo mandam.</div></div></div>
+      <ul class="clean">
+        <li><b>Okaukuejo waterhole (noite)</b> — rinoceronte-negro quase garantido entre as 21h e a 01h; elefantes, leões ocasionais. O melhor "sofá de fauna" de África. <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Okaukuejo+waterhole" target="_blank" rel="noopener">mapa</a></li>
+        <li><b>Etosha em época verde</b> — pergunta no gate quais os waterholes activos; Okondeka (leões), Homob e Chudop (elefantes) são apostas clássicas. Crias de zebra/springbok por todo o lado em dezembro.</li>
+        <li><b>Cape Cross</b> — 100 000+ focas; em nov–dez nascem as crias (e os chacais rondam a colónia — cenas de documentário, estômago avisado).</li>
+        <li><b>Lagoa de Walvis Bay + Sandwich Harbour</b> — flamingos-maiores e -pequenos aos milhares, pelicanos; maré baixa é melhor.</li>
+        <li><b>Cavalos selvagens de Garub (Aus)</b> — o waterhole tem abrigo de observação; fim de tarde é quando descem a beber.</li>
+        <li><b>Elefantes do deserto · rios Huab/Aba-Huab</b> — seguem os leitos secos; em dezembro com as primeiras chuvas movem-se mais. Guia local recomendado.</li>
+        <li><b>Oryx, springbok, avestruz</b> — em todo o lado, sempre; o oryx contra uma duna vermelha é O postal namibiano.</li>
+        <li><b>Kalahari ao entardecer</b> — suricatas, bat-eared foxes e órixes nas cristas das dunas da primeira noite.</li>
+      </ul>
+      <div class="note warn"><span class="lbl">Regra de parque</span>Em Etosha <b>nunca sais do carro</b> fora dos camps vedados e miradouros autorizados. E nos camps de Damaraland, comida fechada no carro — os elefantes conhecem as arcas térmicas.</div>
+    </section>
+
+    <!-- 8 TOP 20 -->
+    <section id="s8">
+      <div class="sec-head"><span class="num">08</span><div><h2>Top 20 locais imperdíveis</h2>
+        <div class="sub">Por ordem de aparição na rota. Estrelas = prioridade se o tempo apertar.</div></div></div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th class="num">#</th><th>Local</th><th>O quê</th><th class="num">Prioridade</th></tr></thead>
+          <tbody>
+            <tr><td class="num">1</td><td>Dunas do Kalahari</td><td>Savana de dunas vermelhas, primeira noite</td><td class="num">★★★</td></tr>
+            <tr><td class="num">2</td><td>Quiver Tree Forest + Giant's Playground</td><td>Aloés-árvore + dolerito empilhado</td><td class="num">★★★★</td></tr>
+            <tr><td class="num">3</td><td>Fish River Canyon</td><td>550 m de profundidade, 160 km de meandros</td><td class="num">★★★★★</td></tr>
+            <tr><td class="num">4</td><td>Canyon Roadhouse</td><td>Café-museu de ferrugem com humor</td><td class="num">★★</td></tr>
+            <tr><td class="num">5</td><td>Cavalos de Garub</td><td>Cavalos ferais do deserto</td><td class="num">★★★</td></tr>
+            <tr><td class="num">6</td><td>Kolmanskop</td><td>Cidade fantasma dos diamantes</td><td class="num">★★★★★</td></tr>
+            <tr><td class="num">7</td><td>Lüderitz + Diaz Point</td><td>Art déco alemão no fim do mundo</td><td class="num">★★★</td></tr>
+            <tr><td class="num">8</td><td>D707</td><td>A estrada mais bonita da África Austral</td><td class="num">★★★★★</td></tr>
+            <tr><td class="num">9</td><td>Deadvlei</td><td>Acácias de 900 anos em argila branca</td><td class="num">★★★★★</td></tr>
+            <tr><td class="num">10</td><td>Big Daddy + Dune 45</td><td>As dunas gigantes que se sobem</td><td class="num">★★★★★</td></tr>
+            <tr><td class="num">11</td><td>Sesriem Canyon</td><td>Garganta fresca no meio do forno</td><td class="num">★★★</td></tr>
+            <tr><td class="num">12</td><td>Solitaire</td><td>Apple pie + carros abandonados</td><td class="num">★★</td></tr>
+            <tr><td class="num">13</td><td>Passo do Kuiseb</td><td>Canyon lunar na C14</td><td class="num">★★★</td></tr>
+            <tr><td class="num">14</td><td>Lagoa de Walvis Bay</td><td>Flamingos aos milhares</td><td class="num">★★★</td></tr>
+            <tr><td class="num">15</td><td>Swakopmund</td><td>Alemanha colonial entre dunas e mar frio</td><td class="num">★★★</td></tr>
+            <tr><td class="num">16</td><td>Zeila + costa C34</td><td>Naufrágio na névoa da Benguela</td><td class="num">★★★</td></tr>
+            <tr><td class="num">17</td><td>Cape Cross</td><td>A maior colónia de focas do hemisfério</td><td class="num">★★★★</td></tr>
+            <tr><td class="num">18</td><td>Spitzkoppe</td><td>Granito de 700 M de anos + arco + dark sky</td><td class="num">★★★★★</td></tr>
+            <tr><td class="num">19</td><td>Twyfelfontein + Organ Pipes</td><td>2 500 gravuras UNESCO</td><td class="num">★★★★</td></tr>
+            <tr><td class="num">20</td><td>Etosha (Okaukuejo → Namutoni)</td><td>Safari self-drive + waterhole nocturno</td><td class="num">★★★★★</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 9 SOBREVALORIZADOS -->
+    <section id="s9">
+      <div class="sec-head"><span class="num">09</span><div><h2>Sobrevalorizados — ignorar ou minimizar</h2>
+        <div class="sub">Para proteger o tempo do que interessa. Opiniões assumidas, calibradas ao teu perfil.</div></div></div>
+      <ul class="clean">
+        <li><b>Windhoek em si</b> — meio dia chega e sobra. Christuskirche, compras, e estrada. É logística, não destino.</li>
+        <li><b>Passeios de quad/sandboard em Swakopmund</b> — a cidade vende adrenalina de catálogo; tu tens as dunas verdadeiras grátis a 3h dali.</li>
+        <li><b>Cruzeiros de catamarã em Walvis Bay</b> — simpáticos, mas 4h e ~N$1 000 para ver focas que verás grátis em Cape Cross aos milhares.</li>
+        <li><b>Okahandja / mercados de madeira</b> — souvenirs industriais; se quiseres artesanato, compra às mulheres herero em Spitzkoppe/Uis.</li>
+        <li><b>Vogelfederberg e miradouros pagos "de quinta"</b> — há paisagem igual grátis na estrada seguinte.</li>
+        <li><b>Etosha ao meio-dia</b> — das 11h às 15h30 a pan é um espelho vazio e trémulo. Usa essas horas para piscina/sesta no camp e poupa o combustível dos drives para o crepúsculo.</li>
+      </ul>
+    </section>
+
+    <!-- 10 ESTRADAS -->
+    <section id="s10">
+      <div class="sec-head"><span class="num">10</span><div><h2>Estradas panorâmicas obrigatórias</h2>
+        <div class="sub">Aqui a estrada É o destino — planeia margem para parar sem culpa.</div></div></div>
+      <div class="grid g2">
+        <div class="card"><div class="meta"><b>D707</b><span>~125 km · gravel</span></div><h4>A rainha</h4><p>Entre as dunas do Namib e as montanhas Tiras. Melhor ao início da manhã, para sul→norte com o sol de lado. Zero serviços: parte de Aus com depósito cheio.</p></div>
+        <div class="card"><div class="meta"><b>C13 · B4</b><span>Aus → Lüderitz</span></div><h4>A estrada da areia</h4><p>O deserto tenta engolir o asfalto — máquinas limpam dunas da estrada como quem limpa neve. Vento lateral forte; cuidado ao fotografar na berma.</p></div>
+        <div class="card"><div class="meta"><b>C14</b><span>Sesriem → Walvis Bay</span></div><h4>Passos de Gaub & Kuiseb</h4><p>Paisagem lunar do canyon do Kuiseb, onde dois geólogos alemães se esconderam na II Guerra (lê "The Sheltering Desert" antes). Curvas de gravel com piso duro.</p></div>
+        <div class="card"><div class="meta"><b>C34</b><span>Swakopmund → Cape Cross</span></div><h4>Salt road dos esqueletos</h4><p>Estrada de sal comprimido entre névoa e rebentação, com naufrágios e bancas de sal com caixa de honestidade. Escorrega quando molhada pela névoa da manhã.</p></div>
+        <div class="card"><div class="meta"><b>C39</b><span>Damaraland</span></div><h4>Vales vermelhos</h4><p>Mesas de basalto, leitos de rios secos com elefantes possíveis e o vazio absoluto. Depois de trovoada verifica se os leitos levam água antes de atravessar.</p></div>
+        <div class="card"><div class="meta"><b>ETOSHA</b><span>rede interna</span></div><h4>Okaukuejo → Namutoni</h4><p>Contornar a pan branca com miradouros para o "grande nada" — o Etosha Pan lookout mete-te literalmente dentro do espelho de sal.</p></div>
+      </div>
+    </section>
+
+    <!-- 11 FOTOGRAFIA -->
+    <section id="s11">
+      <div class="sec-head"><span class="num">11</span><div><h2>Melhores locais de fotografia</h2>
+        <div class="sub">O plano fotográfico da viagem, por género. Dezembro dá bónus: nuvens de trovoada como fundo dramático, coisa que a época seca não tem.</div></div></div>
+      <div class="grid g2">
+        <div class="card"><div class="meta"><b>ARQUITECTURA/URBEX</b></div><h4>Kolmanskop</h4><p>Grande-angular + tripé; janelas como molduras, areia como protagonista. HDR ou bracketing para os interiores contra janelas queimadas. O photo permit paga-se a si próprio na primeira hora.</p></div>
+        <div class="card"><div class="meta"><b>PAISAGEM</b></div><h4>Deadvlei</h4><p>70–200 mm comprime as acácias contra a duna laranja; a foto clássica é telefoto, não grande-angular. Chega antes da luz directa e trabalha o contraste sombra/fogo.</p></div>
+        <div class="card"><div class="meta"><b>ASTRO</b></div><h4>Spitzkoppe + Quiver Trees</h4><p>Arco de granito ou silhueta de kokerboom como primeiro plano da Via Láctea. Lua nova ~9 dez — os dias 6–11 da viagem são a janela de ouro. PhotoPills para alinhar o núcleo galáctico.</p></div>
+        <div class="card"><div class="meta"><b>FAUNA</b></div><h4>Okaukuejo de noite</h4><p>O waterhole é iluminado: ISO alto, apoio no muro, sem flash. De dia em Etosha dispara do carro com saco de feijão na janela.</p></div>
+        <div class="card"><div class="meta"><b>ABSTRACTO</b></div><h4>Dunas + pan</h4><p>Texturas de areia ao nascer do sol na D707 e Elim Dune; o Etosha Pan como minimalismo branco total ao meio-dia — o único uso decente da luz má.</p></div>
+        <div class="card"><div class="meta"><b>DOCUMENTAL</b></div><h4>Estrada</h4><p>As placas ("Elephants crossing", Trópico), as bombas de gasolina perdidas, o Canyon Roadhouse, a caixa de honestidade do sal. A Namíbia rural é um ensaio fotográfico contínuo.</p></div>
+      </div>
+    </section>
+
+    <!-- 12 LOCAIS DE LOCAIS -->
+    <section id="s12">
+      <div class="sec-head"><span class="num">12</span><div><h2>Locais menos conhecidos, frequentados por namibianos</h2>
+        <div class="sub">Fora do circuito de brochura.</div></div></div>
+      <ul class="clean">
+        <li><b>Elim Dune ao pôr do sol</b> — os turistas vão todos a Sossusvlei de manhã e desaparecem; ao fim do dia tens uma duna inteira para ti dentro do perímetro de Sesriem.</li>
+        <li><b>Península de Lüderitz até Grosse Bucht</b> — lagoas com flamingos, praias de vento e pinguins-africanos ao large; os alemães-namibianos fazem lá churrascos de domingo.</li>
+        <li><b>Bancas de sal da C34</b> — cristais de sal com caixa de honestidade: deixa as moedas, leva o sal. Miniatura perfeita da confiança rural namibiana.</li>
+        <li><b>Uis</b> — vila mineira semi-adormecida aos pés do Brandberg; paragem de gasosa entre Spitzkoppe e Damaraland, com vendedoras de cristais na berma.</li>
+        <li><b>Okondeka</b> — waterhole no limite da pan a norte de Okaukuejo, famoso entre locais pelo orgulho de leões residente e ignorado pelos tours com pressa.</li>
+        <li><b>Braai à namibiana</b> — compra boerewors e chops no Spar, lenha de camel thorn nos camps, e faz como toda a gente à volta: o braai é a religião nacional e o teu jantar de campsite todas as noites.</li>
+      </ul>
+    </section>
+
+    <!-- 13 URBEX -->
+    <section id="s13">
+      <div class="sec-head"><span class="num">13</span><div><h2>Cidades fantasma & urbex do deserto</h2>
+        <div class="sub">O equivalente namibiano do teu urbex soviético: ruínas da corrida aos diamantes alemã (1908–1930) a ser digeridas pelo Namib.</div></div></div>
+      <div class="grid g2">
+        <div class="card"><div class="meta"><b>KOLMANSKOP</b><span>legal · permit</span></div><h4>A capital do género</h4><p>Hospital, salão de baile, casa do contabilista — tudo com dunas dentro. Photo permit = acesso ao amanhecer, sozinho. Não precisas de mais nada: é possivelmente o melhor urbex "assistido" do mundo.</p></div>
+        <div class="card"><div class="meta"><b>ELIZABETH BAY</b><span>tour especial</span></div><h4>A irmã esquecida</h4><p>Mais arruinada e mais crua que Kolmanskop, dentro da zona restrita; só com tour/permit especial de Lüderitz — se conseguires vaga, é urbex sem cordas nem multidões.</p></div>
+        <div class="card"><div class="meta"><b>SPERRGEBIET</b><span>tour full-day</span></div><h4>Pomona & Bogenfels</h4><p>A "zona proibida" dos diamantes: Pomona (vila fantasma varrida pelo vento) e o arco de Bogenfels (55 m sobre o mar). Tour de dia inteiro a partir de Lüderitz (~N$2 000) — só se esticares para 14 dias.</p></div>
+        <div class="card"><div class="meta"><b>COSTA</b><span>grátis</span></div><h4>Naufrágios</h4><p>Zeila (acessível, fotogénico) e restos menores ao longo da C34. O deserto e o sal fazem ao aço o que fazem às casas: escultura lenta.</p></div>
+      </div>
+      <div class="note warn"><span class="lbl">Regras duras</span>O Sperrgebiet é <b>zona de acesso proibido a sério</b> (diamantes = crime federal): nada de "exploração criativa" fora dos permits. Ao contrário da Arménia, aqui o urbex selvagem não é tolerado — mas o legal é tão bom que não perdes nada.</div>
+    </section>
+
+    <!-- 14 DUNAS -->
+    <section id="s14">
+      <div class="sec-head"><span class="num">14</span><div><h2>Dunas & desertos — o essencial</h2></div></div>
+      <ul class="clean">
+        <li><b>Kalahari (dia 1)</b> — dunas vermelhas vegetadas, lineares; não é o Namib, é savana em ondas. Boa entrada em matéria.</li>
+        <li><b>Namib em Sossusvlei (dias 6–7)</b> — as estrelas: Dune 45, Big Daddy (~325 m), Big Mama. As mais altas do mundo em contexto de vlei.</li>
+        <li><b>Elim Dune</b> — a acessível, a 5 km de Sesriem; sunset sem logística.</li>
+        <li><b>Dunas da B4 (dia 5)</b> — o mar de areia a atravessar a estrada antes de Lüderitz; movimento real de dunas visível.</li>
+        <li><b>Dune 7 (Walvis Bay)</b> — alta e junto à estrada, mas ambiente de parque de merendas; só se sobrar tempo.</li>
+        <li><b>Regra de ouro térmica</b> — areia a 60 °C à tarde: dunas só até às 10h ou depois das 17h30, sempre com calçado.</li>
+      </ul>
+    </section>
+
+    <!-- 15 COSTA -->
+    <section id="s15">
+      <div class="sec-head"><span class="num">15</span><div><h2>Costa atlântica — a Benguela</h2>
+        <div class="sub">Uma corrente polar encosta um deserto ao mar: névoa de manhã, 20 °C em pleno verão, e a maior densidade de naufrágios e focas do continente.</div></div></div>
+      <ul class="clean">
+        <li><b>Lagoa de Walvis Bay</b> — flamingos, pelicanos, maré-baixa espelhada. Grátis, ao fim da tarde.</li>
+        <li><b>Swakopmund</b> — molhe de 1905, arquitectura guilhermina, gelado alemão. A "capital de férias" namibiana — em dezembro os locais chegam depois do Natal; antes do dia 15 está calma.</li>
+        <li><b>C34 para norte</b> — Zeila, bancas de sal, Cape Cross. A névoa matinal (cassimbo) é fotogénica e gélida: casaco à mão.</li>
+        <li><b>Sandwich Harbour (opcional, meio-dia)</b> — dunas a cair no mar; só com tour 4x4 de maré (~N$1 700) — espectacular mas caro; decide na hora conforme orçamento.</li>
+        <li><b>Água</b> — a 14–16 °C: os namibianos entram; tu decides o quão português és nesse dia.</li>
+      </ul>
+    </section>
+
+    <!-- 16 CANYONS -->
+    <section id="s16">
+      <div class="sec-head"><span class="num">16</span><div><h2>Canyons</h2></div></div>
+      <ul class="clean">
+        <li><b>Fish River Canyon</b> — 160 km de comprimento, 27 de largura, 550 m de fundo: segundo maior do mundo. Miradouros de Hobas ao pôr do sol/nascer.</li>
+        <li><b>Sesriem Canyon</b> — 1 km, 30 m: pequeno mas entra-se dentro; fresco e estratificado.</li>
+        <li><b>Kuiseb Canyon (C14)</b> — badlands lunares na estrada para a costa; miradouro na berma, 15 min bem gastos.</li>
+        <li><b>Gaub Pass</b> — o irmão menor do Kuiseb, logo antes; curvas cénicas.</li>
+      </ul>
+    </section>
+
+    <!-- 17 CONTEMPLAR -->
+    <section id="s17">
+      <div class="sec-head"><span class="num">17</span><div><h2>Locais para ficar horas só a contemplar</h2></div></div>
+      <ul class="clean">
+        <li><b>Waterhole de Okaukuejo, 22h</b> — teatro de fauna em silêncio absoluto; a noite inteira se deixares.</li>
+        <li><b>Bordo do Fish River ao pôr do sol</b> — geologia de 500 milhões de anos a mudar de cor.</li>
+        <li><b>Deadvlei às 7h</b> — quando os autocarros ainda não chegaram, é uma catedral.</li>
+        <li><b>Granito de Spitzkoppe à noite</b> — deitado na rocha ainda morna, Via Láctea de horizonte a horizonte.</li>
+        <li><b>Etosha Pan lookout</b> — o nada branco absoluto; o cérebro precisa de minutos para aceitar a escala.</li>
+        <li><b>D707, qualquer berma</b> — desliga o motor. O silêncio do Namib é físico, ouve-se o sangue.</li>
+      </ul>
+    </section>
+
+    <!-- 18 DARK SKY -->
+    <section id="s18">
+      <div class="sec-head"><span class="num">18</span><div><h2>Dark sky · observação de estrelas</h2>
+        <div class="sub">A Namíbia tem dos céus mais escuros e secos do planeta — o NamibRand é reserva Dark Sky Gold. E dezembro de 2026 colabora: lua nova ~9 dez, mesmo no meio da viagem.</div></div></div>
+      <ul class="clean">
+        <li><b>Spitzkoppe (dia 9)</b> — Bortle 1–2, primeiro plano de granito: a melhor sessão de astro da viagem.</li>
+        <li><b>Quiver Tree Forest (dia 2)</b> — kokerbooms em silhueta; composição única no mundo.</li>
+        <li><b>Sesriem/NamibRand (dias 6–7)</b> — reserva Gold Tier a sul; do camp já é excelente.</li>
+        <li><b>Kalahari (dia 1)</b> — aquecimento; se houver trovoada à distância, relâmpagos + estrelas.</li>
+        <li><b>Verão austral</b> — o núcleo da Via Láctea está baixo/ausente à noite em dezembro; em compensação tens <b>Magalhães</b> (as duas nuvens), Orion ao zénite "de cabeça para baixo" e o Cruzeiro do Sul. Planeia com PhotoPills/Stellarium.</li>
+        <li><b>Trovoadas</b> — em dezembro no norte, timelapse de relâmpagos sobre a pan de Etosha é um género próprio.</li>
+      </ul>
+    </section>
+
+    <!-- 19 CUSTOS -->
+    <section id="s19">
+      <div class="sec-head"><span class="num">19</span><div><h2>Custos estimados</h2>
+        <div class="sub">Referência início dez 2026, €1 ≈ N$19–20 (dólar namibiano = rand, aceites indistintamente). Voo verificado a 19 jul 2026: €870–1 000 (Lufthansa via FRA; TAAG via Luanda mais rápida ~€1 000).</div></div></div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Rubrica</th><th class="num">EUR</th><th>Notas</th></tr></thead>
+          <tbody>
+            <tr><td>Voo LIS–WDH (i/v)</td><td class="num">870–1 000</td><td>Reservar até set/out; TAAG via NBJ = só 11h30</td></tr>
+            <tr><td>4x4 tenda tejadilho, 12 dias</td><td class="num">750–950</td><td>Hilux/equiv. equipado, seguro reduzido-excess, 2.º pneu</td></tr>
+            <tr><td>Combustível ~2 700 km</td><td class="num">~380</td><td>~12 L/100 em gravel × ~N$21/L</td></tr>
+            <tr><td>Campsites (10 noites)</td><td class="num">~160</td><td>N$250–600/noite</td></tr>
+            <tr><td>Camas (2 noites)</td><td class="num">~70</td><td>Swakopmund + Windhoek</td></tr>
+            <tr><td>Parques & permits</td><td class="num">~110</td><td>Etosha, Namib-Naukluft, Fish River, Kolmanskop photo permit, Twyfelfontein, Cape Cross</td></tr>
+            <tr><td>Comida & braai</td><td class="num">~200</td><td>Supermercado + 3–4 restaurantes</td></tr>
+            <tr><td>Extras/imprevistos (10%)</td><td class="num">~150</td><td>Pneu, guia de elefantes, lembranças</td></tr>
+          </tbody>
+          <tfoot><tr><td>Total</td><td class="num">≈ 2 400–2 700</td><td>vs. €1 100 da Arménia: o voo e o 4x4 explicam tudo</td></tr></tfoot>
+        </table>
+      </div>
+    </section>
+
+    <!-- 20 EQUIPAMENTO -->
+    <section id="s20">
+      <div class="sec-head"><span class="num">20</span><div><h2>Equipamento recomendado (dezembro + campsites)</h2></div></div>
+      <div class="grid g2">
+        <div class="card"><div class="meta"><b>VEM COM O CARRO</b></div><h4>Confirma no briefing</h4><p>Tenda de tejadilho + colchão, arca térmica/frigorífico 12 V, fogão a gás + garrafa cheia, mesa/cadeira, kit cozinha, 2 rodas suplentes, macaco + placa, compressor, pá. <b>Testa a tenda e o fogão antes de sair do rental.</b></p></div>
+        <div class="card"><div class="meta"><b>ÁGUA & CALOR</b></div><h4>O não-negociável</h4><p>Contentor 25 L + 3 L pessoais no banco. Electrólitos (rehidratante), chapéu de abas, lenço/buff, protector 50+. A regra: chegar a qualquer camp com ≥10 L de reserva.</p></div>
+        <div class="card"><div class="meta"><b>FOTOGRAFIA</b></div><h4>Contra areia e luz dura</h4><p>Tripé, ND/polarizador, sacos zip para os corpos, pêra de ar (areia em TUDO), power bank grande + inversor 12 V, cartões a dobrar. Telefoto para Deadvlei/fauna, grande-angular para astro/Kolmanskop.</p></div>
+        <div class="card"><div class="meta"><b>NOITE</b></div><h4>Camp & astro</h4><p>Frontal + luz vermelha, saco lençol (noites do interior a 18–22 °C; Aus mais fresco), lanterna de campsite, chinelos anti-escorpião para a noite.</p></div>
+      </div>
+    </section>
+
+    <!-- 21 METEO -->
+    <section id="s21">
+      <div class="sec-head"><span class="num">21</span><div><h2>Meteorologia de dezembro & roupa</h2>
+        <div class="sub">Três climas numa viagem: forno no sul, primavera fresca na costa, trovoadas teatrais no norte.</div></div></div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Zona</th><th class="num">Dia</th><th class="num">Noite</th><th>Notas</th></tr></thead>
+          <tbody>
+            <tr><td>Sul (Fish River, Aus, Kolmanskop)</td><td class="num">33–40 °C</td><td class="num">17–22 °C</td><td>Seco extremo; Aus mais fresco pela altitude</td></tr>
+            <tr><td>Sossusvlei / Sesriem</td><td class="num">35–40 °C</td><td class="num">18–23 °C</td><td>Areia escaldante à tarde; madrugadas perfeitas</td></tr>
+            <tr><td>Costa (Swakopmund, Cape Cross)</td><td class="num">18–25 °C</td><td class="num">13–16 °C</td><td>Névoa matinal, vento; casaco necessário!</td></tr>
+            <tr><td>Centro-norte (Spitzkoppe, Damaraland)</td><td class="num">30–36 °C</td><td class="num">18–22 °C</td><td>Possíveis trovoadas fim de tarde</td></tr>
+            <tr><td>Etosha</td><td class="num">30–35 °C</td><td class="num">19–23 °C</td><td>Época húmida a começar: aguaceiros, tudo verde</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="prose" style="margin-top:12px"><p><strong>Roupa:</strong> 90 % verão técnico (calções, camisas leves de manga comprida — o sol pica mais do que o calor), <strong>um polar e um corta-vento para a costa e madrugadas</strong>, calçado de aproximação, chinelos. Nada de algodão pesado. Um conjunto "decente" para Swakopmund chega.</p></div>
+    </section>
+
+    <!-- 22 SEGURANÇA -->
+    <section id="s22">
+      <div class="sec-head"><span class="num">22</span><div><h2>Segurança & condução em gravel</h2>
+        <div class="sub">A Namíbia é dos países mais seguros de África para viajar solo — o teu risco real chama-se estrada, calor e distância, não crime.</div></div></div>
+      <ul class="clean">
+        <li><b>Gravel: 80 km/h máximo, sério</b> — a causa nº 1 de acidentes de turistas é capotar em gravel por excesso de velocidade. Deixa 3 s para o carro da frente (poeira cega) e trava ANTES das curvas, nunca dentro.</li>
+        <li><b>Nunca conduzir de noite</b> — órixes, kudus e gado dormem no asfalto morno. Um kudu pelo pára-brisas é fatal. Planeado: sempre parado às 19h.</li>
+        <li><b>Pneus</b> — baixa pressão em gravel conforme briefing do rental (~1,8 bar); verifica todas as manhãs. Furos são normais: um pneu furado não é emergência, dois sem reserva é.</li>
+        <li><b>Leitos de rio em dezembro</b> — flash floods são reais no norte: nunca atravesses um leito com água em movimento; espera (baixa em 1–2h).</li>
+        <li><b>Windhoek cidade</b> — precauções urbanas normais: nada à vista no carro, centro a pé só de dia. Fora de Windhoek o tema praticamente desaparece.</li>
+        <li><b>Malária</b> — dezembro abre a época no norte (Etosha/Damaraland): <b>consulta do viajante</b> para profilaxia + repelente DEET ao entardecer.</li>
+        <li><b>Comunicações</b> — grandes troços sem rede. Diz a alguém o plano do dia; considera o telefone satélite/Garmin inReach do rental (~€3/dia).</li>
+        <li><b>Fauna nos camps</b> — chacais e hienas rondam camps de Etosha: nada de comida na tenda. Em Damaraland, respeito total por elefantes na estrada: motor ligado, 50 m, nunca entre mãe e cria.</li>
+      </ul>
+    </section>
+
+    <!-- 23 APPS -->
+    <section id="s23">
+      <div class="sec-head"><span class="num">23</span><div><h2>Apps úteis</h2></div></div>
+      <div class="grid g3">
+        <div class="card"><h4>Tracks4Africa</h4><p>O GPS da África Austral: estados de estrada, tempos realistas de gravel, todos os camps. <b>Compra antes de ir</b> (~€25) — vale mais que o Google Maps inteiro aqui.</p></div>
+        <div class="card"><h4>Maps.me / OsmAnd</h4><p>Backup offline gratuito com trilhos que o Google não tem.</p></div>
+        <div class="card"><h4>iOverlander</h4><p>Reviews de campsites por overlanders, com "wild spots" e água potável.</p></div>
+        <div class="card"><h4>PhotoPills / Stellarium</h4><p>Planeamento de astro e alinhamentos de sol/lua para Deadvlei e Spitzkoppe.</p></div>
+        <div class="card"><h4>Windy</h4><p>Vento na costa (areia a voar em Lüderitz) e células de trovoada no norte.</p></div>
+        <div class="card"><h4>MTC (SIM local)</h4><p>SIM pré-paga MTC no aeroporto (~N$100 com dados "Aweh"): cobre vilas e estradas principais; o resto é silêncio — que também vieste buscar.</p></div>
+      </div>
+    </section>
+
+    <!-- 24 COMIDA -->
+    <section id="s24">
+      <div class="sec-head"><span class="num">24</span><div><h2>Onde comprar comida barata</h2></div></div>
+      <ul class="clean">
+        <li><b>Windhoek (dia 1)</b> — Superspar/Checkers: o grande abastecimento. Carne para braai embalada a vácuo aguenta 3–4 dias na arca com gelo.</li>
+        <li><b>Keetmanshoop, Lüderitz, Swakopmund, Outjo</b> — Spar/OK Foods para reabastecer; gelo em TODAS as bombas de gasolina.</li>
+        <li><b>Padarias alemãs</b> — brötchen e apfelstrudel em Swakopmund/Lüderitz: pequeno-almoço de estrada perfeito.</li>
+        <li><b>Biltong & droëwors</b> — a merenda de condução nacional; compra ao balcão do talho do Spar, não embalado.</li>
+        <li><b>Água</b> — da torneira é potável nas cidades; enche os contentores em cada camp em vez de comprar garrafas.</li>
+      </ul>
+    </section>
+
+    <!-- 25 COMBUSTÍVEL -->
+    <section id="s25">
+      <div class="sec-head"><span class="num">25</span><div><h2>Estratégia de combustível</h2>
+        <div class="sub">Postos são oásis com 150–300 km entre si. A regra namibiana: nunca passes por uma bomba com menos de ¾ sem encher.</div></div></div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Troço</th><th>Encher em</th><th>Notas</th></tr></thead>
+          <tbody>
+            <tr><td>Windhoek → Kalahari → Keetmanshoop</td><td>Windhoek, Mariental, Keetmanshoop</td><td>B1 tem postos regulares; sem stress</td></tr>
+            <tr><td>Keetmanshoop → Fish River → Aus</td><td><b>Keetmanshoop</b>, Canyon Roadhouse (caro)</td><td>Hobas não tem bomba fiável</td></tr>
+            <tr><td>Aus → D707 → Sesriem</td><td><b>Aus (cheio total!)</b></td><td>380 km sem NADA; Betta tem bomba mas não contes com ela</td></tr>
+            <tr><td>Sesriem → Swakopmund</td><td>Sesriem (bomba no camp), Solitaire</td><td>Solitaire é paragem obrigatória de qualquer forma</td></tr>
+            <tr><td>Swakopmund → Spitzkoppe → Twyfelfontein</td><td><b>Swakopmund/Henties Bay</b>, Uis</td><td>Spitzkoppe não tem; Uis é a salvação de Damaraland</td></tr>
+            <tr><td>Twyfelfontein → Etosha → Windhoek</td><td>Khorixas ou Kamanjab; <b>Okaukuejo</b> (no parque)</td><td>Okaukuejo e Namutoni têm bombas; B1 de volta é fácil</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note"><span class="lbl">Pagamento</span>Bombas aceitam cada vez mais cartão, mas <b>leva sempre N$1 500–2 000 em notas</b>: bombas rurais, camps comunitários e gorjetas do frentista (N$5–10, é etiqueta) são mundo de dinheiro vivo.</div>
+    </section>
+
+    <!-- 26 PARAGENS RÁPIDAS -->
+    <section id="s26">
+      <div class="sec-head"><span class="num">26</span><div><h2>Paragens rápidas de 5–15 min</h2></div></div>
+      <ul class="clean">
+        <li><b>Placa do Trópico de Capricórnio (C14)</b> — a selfie geodésica obrigatória.</li>
+        <li><b>Brückenteich/estação fantasma de Garub</b> — ruína ferroviária na planície dos cavalos.</li>
+        <li><b>Miradouro do Kuiseb Pass</b> — 10 min sobre o caos lunar.</li>
+        <li><b>Bancas de sal da C34</b> — moedas na caixa, cristal no bolso.</li>
+        <li><b>Placas "Beware Elephants" de Damaraland</b> — documenta a estrada mais honesta do mundo.</li>
+        <li><b>Christuskirche + Independence Museum (Windhoek, dia 12)</b> — 15 min de arquitectura e vista antes de devolver o carro.</li>
+        <li><b>Welwitschia mirabilis (desvio C28 se sobrar tempo)</b> — planta de 1 000+ anos, duas folhas eternas.</li>
+      </ul>
+    </section>
+
+    <!-- 27 RESTAURANTES -->
+    <section id="s27">
+      <div class="sec-head"><span class="num">27</span><div><h2>Restaurantes locais baratos (as 3–4 refeições fora)</h2></div></div>
+      <ul class="clean">
+        <li><b>Diaz Coffee Shop · Lüderitz</b> — ostras da baía (das melhores/mais baratas do mundo, ~N$15/unid.) e peixe do dia.</li>
+        <li><b>Jetty 1905 ou The Tug · Swakopmund</b> — jantar sobre o mar; peça o catch of the day. A recompensa do dia 8.</li>
+        <li><b>Canyon Roadhouse</b> — hambúrguer honesto entre carcaças de Ford anos 30.</li>
+        <li><b>Solitaire Bakery</b> — a apple pie de Moose McGregor: instituição nacional, ponto.</li>
+        <li><b>Joe's Beerhouse · Windhoek</b> — o jantar de despedida: espetada de oryx/kudu debaixo de tralha colonial acumulada. Turístico? Sim. Vale? Também.</li>
+        <li><b>Restaurantes NWR dos camps</b> — caros e medianos: usa o braai; o teu jantar de campsite é melhor que o deles.</li>
+      </ul>
+    </section>
+
+    <!-- 28 PADARIAS -->
+    <section id="s28">
+      <div class="sec-head"><span class="num">28</span><div><h2>Padarias & cafés de estrada</h2></div></div>
+      <ul class="clean">
+        <li><b>Solitaire</b> — a paragem-café mais famosa do país; strudel + coca gelada às 10h do dia 8.</li>
+        <li><b>Café Anton · Swakopmund</b> — Schwarzwälder e vista para o farol; pequeno-almoço do dia 9.</li>
+        <li><b>Padaria de Lüderitz (Bäckerei)</b> — brötchen quentes desde a era colonial.</li>
+        <li><b>Canyon Roadhouse</b> — café decente no meio do nada absoluto do sul.</li>
+        <li><b>Farm stalls da B1</b> — tartes de carne (meat pies) e biltong entre Windhoek e Mariental.</li>
+      </ul>
+    </section>
+
+    <!-- 29 CRONOGRAMA -->
+    <section id="s29">
+      <div class="sec-head"><span class="num">29</span><div><h2>Cronograma diário sugerido</h2>
+        <div class="sub">O ritmo do deserto em dezembro: viver de madrugada e de fim de tarde, hibernar ao meio-dia.</div></div></div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th class="num">Hora</th><th>O quê</th></tr></thead>
+          <tbody>
+            <tr><td class="num">05:15</td><td>Acordar antes da luz; café rápido no fogão</td></tr>
+            <tr><td class="num">05:45–08:30</td><td><b>Bloco de ouro</b>: fotografia, caminhada ou game drive</td></tr>
+            <tr><td class="num">08:30–09:30</td><td>Pequeno-almoço a sério, desmontar camp, encher água</td></tr>
+            <tr><td class="num">09:30–13:00</td><td>Condução do dia (com A/C e biltong)</td></tr>
+            <tr><td class="num">13:00–16:30</td><td><b>Hibernação</b>: chegada ao camp, sombra, piscina, sesta, backup de fotos</td></tr>
+            <tr><td class="num">16:30–19:30</td><td>Segundo bloco de ouro: miradouro, dunas, waterhole</td></tr>
+            <tr><td class="num">19:30–21:00</td><td>Braai + cerveja Windhoek Lager ao lusco-fusco</td></tr>
+            <tr><td class="num">21:00–23:00</td><td>Astro (dias 2, 6–9) ou waterhole nocturno (dia 11) ou dormir cedo</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 30 CALOR & TROVOADAS -->
+    <section id="s30">
+      <div class="sec-head"><span class="num">30</span><div><h2>Plano para calor extremo & trovoadas</h2>
+        <div class="sub">Os dois "maus tempos" de dezembro e como convertê-los.</div></div></div>
+      <ul class="clean">
+        <li><b>Dia de 42 °C no sul</b> — corta o programa da tarde sem culpa: piscina de Hobas/Sesriem, sesta, e dobra o bloco do pôr do sol. O roteiro tem folga para isto.</li>
+        <li><b>Trovoada no norte</b> — não é derrota, é upgrade fotográfico: células isoladas sobre a pan = os céus mais dramáticos que verás. Mantém distância, fotografa do carro.</li>
+        <li><b>Gravel após chuva</b> — lama traiçoeira e leitos com água: reduz 20 km/h, testa a pé qualquer atravessamento duvidoso, e aceita chegar mais tarde (mas nunca de noite).</li>
+        <li><b>Vento em Lüderitz/Sossusvlei</b> — areia a voar mata fotos e paciência: se o dia 5 amanhecer ventoso, troca Diaz Point por mais tempo dentro das casas de Kolmanskop (abrigadas).</li>
+        <li><b>Plano B de Etosha</b> — se chover forte e os animais sumirem, o waterhole nocturno de Okaukuejo continua a funcionar; e o dia 12 tem margem para insistir de manhã.</li>
+      </ul>
+    </section>
+
+    <!-- AX1 ORÇAMENTO -->
+    <section id="ax1">
+      <div class="sec-head"><span class="num">A</span><div><h2>Orçamento completo — EUR & NAD</h2>
+        <div class="sub">Cenário realista (nem monge, nem lodge). €1 ≈ N$19,5.</div></div></div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Rubrica</th><th class="num">NAD</th><th class="num">EUR</th><th class="num">% do total</th></tr></thead>
+          <tbody>
+            <tr><td>Voo LIS–WDH</td><td class="num">—</td><td class="num">930</td><td class="num">37%</td></tr>
+            <tr><td>4x4 equipado 12 dias + seguro</td><td class="num">16 500</td><td class="num">850</td><td class="num">34%</td></tr>
+            <tr><td>Combustível</td><td class="num">7 400</td><td class="num">380</td><td class="num">15%</td></tr>
+            <tr><td>Alojamento (10 camps + 2 camas)</td><td class="num">4 500</td><td class="num">230</td><td class="num">9%</td></tr>
+            <tr><td>Parques & permits</td><td class="num">2 100</td><td class="num">110</td><td class="num">4%</td></tr>
+            <tr><td>Comida & restaurantes</td><td class="num">3 900</td><td class="num">200</td><td class="num">8%</td></tr>
+            <tr><td>SIM, gorjetas, extras</td><td class="num">1 500</td><td class="num">75</td><td class="num">3%</td></tr>
+          </tbody>
+          <tfoot><tr><td>Total (com margem 10%)</td><td class="num">—</td><td class="num">≈ 2 500</td><td class="num">100%</td></tr></tfoot>
+        </table>
+      </div>
+      <div class="note"><span class="lbl">Onde cortar</span><b>−€250:</b> voo nas datas 29 nov–11 dez (o pico dos €580 visto p/ CPT tem paralelo em WDH — vigia). <b>−€150:</b> 4x4 sem seguro zero-excess (mais risco). <b>−€100:</b> zero restaurantes. Piso realista: <b>~€2 000</b>.</div>
+    </section>
+
+    <!-- AX2 CHECKLIST PREP -->
+    <section id="ax2">
+      <div class="sec-head"><span class="num">B</span><div><h2>Checklist de preparação</h2></div></div>
+      <div class="check">
+        <div class="h">Já (julho–agosto)</div>
+        <label><input type="checkbox"> Vigiar voo LIS–WDH (alerta Google Flights; comprar ≤ set)</label>
+        <label><input type="checkbox"> Reservar 4x4 equipado (Asco, Savanna, Bushlore — comparar zero-excess)</label>
+        <label><input type="checkbox"> Reservar NWR: Sesriem ×2 + Okaukuejo ×1 + Hobas ×1</label>
+        <div class="h">Setembro–outubro</div>
+        <label><input type="checkbox"> Photo permit Kolmanskop (email Kolmanskop tour office)</label>
+        <label><input type="checkbox"> Consulta do viajante: profilaxia malária + vacinas em dia</label>
+        <label><input type="checkbox"> Seguro de viagem com cobertura de condução em gravel + evacuação</label>
+        <label><input type="checkbox"> Carta de condução internacional (IDP) — obrigatória com a PT</label>
+        <div class="h">Novembro</div>
+        <label><input type="checkbox"> Comprar mapa Tracks4Africa + descarregar offline</label>
+        <label><input type="checkbox"> Confirmar reservas todas por email (NWR responde devagar)</label>
+        <label><input type="checkbox"> Avisar banco; levantar plano de €/N$ dinheiro</label>
+        <label><input type="checkbox"> Lista de contactos: rental 24h, seguro, embaixada PT (Pretória)</label>
+        <div class="h">Última semana</div>
+        <label><input type="checkbox"> Check-in voo; cópias offline de tudo (passaporte, IDP, reservas)</label>
+        <label><input type="checkbox"> Descarregar mapas offline + Stellarium + playlists/podcasts p/ 45h de estrada</label>
+        <label><input type="checkbox"> Partilhar itinerário + tracking com alguém em casa</label>
+      </div>
+    </section>
+
+    <!-- AX3 CHECKLIST MALA -->
+    <section id="ax3">
+      <div class="sec-head"><span class="num">C</span><div><h2>Checklist de mala</h2>
+        <div class="sub">Mala mole (o 4x4 tem espaço mas odeia malas rígidas). Peso alvo: &lt;15 kg + mochila de foto.</div></div></div>
+      <div class="check">
+        <div class="h">Documentos</div>
+        <label><input type="checkbox"> Passaporte (validade 6+ meses, 2 págs. livres)</label>
+        <label><input type="checkbox"> Carta PT + IDP</label>
+        <label><input type="checkbox"> Cartões (2, redes diferentes) + N$ / € numerário</label>
+        <label><input type="checkbox"> Seguro + contactos de emergência impressos</label>
+        <div class="h">Roupa</div>
+        <label><input type="checkbox"> 4–5 t-shirts/camisas leves manga comprida</label>
+        <label><input type="checkbox"> 2 calções + 1 calças leves + 1 calças resistentes</label>
+        <label><input type="checkbox"> Polar + corta-vento (costa!)</label>
+        <label><input type="checkbox"> Chapéu abas largas + buff (poeira/cheiro de Cape Cross)</label>
+        <label><input type="checkbox"> Botas de aproximação + chinelos</label>
+        <label><input type="checkbox"> Fato de banho (piscinas de camp salvam vidas)</label>
+        <div class="h">Saúde & higiene</div>
+        <label><input type="checkbox"> Profilaxia malária + repelente DEET 50%</label>
+        <label><input type="checkbox"> Protector solar 50+ (2 tubos) + aftersun</label>
+        <label><input type="checkbox"> Kit 1.os socorros + rehidratação oral + anti-diarreico</label>
+        <label><input type="checkbox"> Toalha microfibra, gel banho biodegradável</label>
+        <div class="h">Foto & tech</div>
+        <label><input type="checkbox"> Corpo + 16–35 + 70–200 (ou equiv.) + tripé</label>
+        <label><input type="checkbox"> Filtros ND/CPL, pêra de ar, panos, sacos zip</label>
+        <label><input type="checkbox"> Power bank 20 000+, inversor 12 V, fichas tipo D/M (adaptador ZA)</label>
+        <label><input type="checkbox"> Frontal c/ luz vermelha + pilhas</label>
+        <label><input type="checkbox"> Disco externo p/ backup diário</label>
+        <div class="h">Camp</div>
+        <label><input type="checkbox"> Saco lençol + almofada compressível</label>
+        <label><input type="checkbox"> Faca multiusos, isqueiro, mola p/ braai</label>
+        <label><input type="checkbox"> Garrafa térmica (café da madrugada)</label>
+      </div>
+    </section>
+
+    <!-- AX4 EMERGÊNCIA -->
+    <section id="ax4">
+      <div class="sec-head"><span class="num">D</span><div><h2>Plano de emergência / alteração de itinerário</h2></div></div>
+      <ul class="clean">
+        <li><b>Avaria no gravel</b> — fica COM o carro (sombra + água + visibilidade); liga ao rental 24h; qualquer pick-up que passe pára para ajudar — é o código do deserto.</li>
+        <li><b>Dois furos</b> — Canyon Roadhouse, Aus, Solitaire, Uis e Kamanjab têm reparação de pneus; recoloca a rota pelo ponto mais próximo.</li>
+        <li><b>Sem rede + atraso grande</b> — o plano partilhado em casa tem os camps de cada noite: se falhares 24h ao contacto combinado, sabem onde procurar-te.</li>
+        <li><b>Corte por cheia (norte)</b> — alternativa asfaltada: C39→C38 via Khorixas–Outjo mete-te em Etosha por Anderson Gate sem leitos críticos.</li>
+        <li><b>Calor incapacitante no sul</b> — versão sombra: salta Fish River, vai directo Keetmanshoop→Aus (a 1 400 m) e recupera; o canyon tem miradouro decente perto do Canyon Roadhouse (parte oeste) noutra visita.</li>
+        <li><b>Números</b> — Polícia 10111 · emergência médica privada (International SOS/E-Med) no cartão do seguro · rental 24h no vidro do carro. Guarda tudo offline.</li>
+      </ul>
+    </section>
+
+    <!-- AX5 TOP 15 -->
+    <section id="ax5">
+      <div class="sec-head"><span class="num">E</span><div><h2>Top 15 experiências imperdíveis</h2>
+        <div class="sub">Se tudo o resto falhar, faz estas.</div></div></div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th class="num">#</th><th>Experiência</th></tr></thead>
+          <tbody>
+            <tr><td class="num">1</td><td>Entrar sozinho em Kolmanskop ao nascer do sol com o photo permit</td></tr>
+            <tr><td class="num">2</td><td>Descer a correr a face do Big Daddy até Deadvlei</td></tr>
+            <tr><td class="num">3</td><td>Ver um rinoceronte-negro beber às 23h no waterhole de Okaukuejo</td></tr>
+            <tr><td class="num">4</td><td>Conduzir a D707 inteira sem cruzar um único carro</td></tr>
+            <tr><td class="num">5</td><td>Pôr do sol em Hell's Bend com o Fish River 550 m abaixo</td></tr>
+            <tr><td class="num">6</td><td>Via Láctea + Nuvens de Magalhães deitado no granito de Spitzkoppe</td></tr>
+            <tr><td class="num">7</td><td>Os cavalos selvagens a chegar ao waterhole de Garub ao entardecer</td></tr>
+            <tr><td class="num">8</td><td>Astrofotografia entre kokerbooms na Quiver Tree Forest</td></tr>
+            <tr><td class="num">9</td><td>O choque térmico de 15 °C ao chegar à Benguela no dia 8</td></tr>
+            <tr><td class="num">10</td><td>Flamingos cor-de-rosa aos milhares na lagoa de Walvis Bay</td></tr>
+            <tr><td class="num">11</td><td>O rugido (e o cheiro) de 100 000 focas em Cape Cross</td></tr>
+            <tr><td class="num">12</td><td>Tocar em gravuras de 6 000 anos em Twyfelfontein</td></tr>
+            <tr><td class="num">13</td><td>Braai solitário + Windhoek Lager com órixes a passar ao fundo</td></tr>
+            <tr><td class="num">14</td><td>Apple pie em Solitaire depois de cruzar o Trópico de Capricórnio</td></tr>
+            <tr><td class="num">15</td><td>Trovoada eléctrica sobre a pan de Etosha ao crepúsculo</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <div class="credits">
+    <div class="h">Fotografias · Wikimedia Commons (reutilização com atribuição)</div>
+    <ul id="photo-credits"></ul>
+  </div>
+  <div style="margin-top:14px">Guia de campo · Namíbia road trip solo · início de dezembro 2026 · preços de ref. julho 2026 (€1 ≈ N$19,5)</div>
+  <div class="updated">Verifica sempre condições de estrada, cheias e horários próximo da data · Polícia 10111 · nwr.com.na para reservas de parques</div>
+</footer>
+
+<script>
+(function(){
+  var c=document.getElementById('topo');if(!c)return;
+  var ctx=c.getContext('2d'),W,H,DPR=Math.min(window.devicePixelRatio||1,2);
+  var reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function resize(){
+    W=c.clientWidth;H=c.clientHeight;c.width=W*DPR;c.height=H*DPR;ctx.setTransform(DPR,0,0,DPR,0,0);
+  }
+  function line(y,amp,freq,phase,alpha){
+    ctx.beginPath();
+    for(var x=0;x<=W;x+=6){
+      var yy=y+Math.sin(x*freq+phase)*amp+Math.sin(x*freq*0.5+phase*1.7)*amp*0.5;
+      x===0?ctx.moveTo(x,yy):ctx.lineTo(x,yy);
+    }
+    var dark=matchMedia('(prefers-color-scheme:dark)').matches||document.documentElement.getAttribute('data-theme')==='dark';
+    if(document.documentElement.getAttribute('data-theme')==='light')dark=false;
+    ctx.strokeStyle=dark?'rgba(220,138,74,'+alpha+')':'rgba(122,90,50,'+alpha+')';
+    ctx.lineWidth=1;ctx.stroke();
+  }
+  var t=0;
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    var n=Math.max(8,Math.floor(H/26));
+    for(var i=0;i<n;i++){
+      var y=(i/(n-1))*H;
+      var amp=6+ (i%3)*5 + Math.sin(i)*4;
+      line(y,amp,0.006+ (i%2)*0.002, t*0.2 + i*0.6, 0.10+ (i%4)*0.03);
+    }
+    if(!reduce){t+=0.01;requestAnimationFrame(draw);}
+  }
+  resize();draw();
+  window.addEventListener('resize',function(){resize();if(reduce)draw();});
+})();
+
+// inject a themed marker icon into each section header
+(function(){
+  var map={s1:'ic-compass',s31:'ic-route',s2:'ic-road',s3:'ic-tent',s4:'ic-road',smap:'ic-compass',sgal:'ic-camera',
+    s5:'ic-mountain',s6:'ic-sun',s7:'ic-mountain',s8:'ic-star',s9:'ic-star',s10:'ic-road',
+    s11:'ic-camera',s12:'ic-camera',s13:'ic-ruin',s14:'ic-mountain',s15:'ic-lake',s16:'ic-mountain',
+    s17:'ic-sun',s18:'ic-star',s19:'ic-coin',s20:'ic-tent',s21:'ic-sun',s22:'ic-shield',
+    s23:'ic-phone',s24:'ic-food',s25:'ic-road',s26:'ic-sun',s27:'ic-food',s28:'ic-food',
+    s29:'ic-sun',s30:'ic-sun',ax1:'ic-coin',ax2:'ic-tent',ax3:'ic-tent',ax4:'ic-shield',ax5:'ic-star'};
+  var NS='http://www.w3.org/2000/svg';
+  Object.keys(map).forEach(function(id){
+    var sec=document.getElementById(id);if(!sec)return;
+    var head=sec.querySelector('.sec-head');if(!head)return;
+    var num=head.querySelector('.num');
+    var svg=document.createElementNS(NS,'svg');
+    svg.setAttribute('class','sec-ic');svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('aria-hidden','true');
+    var use=document.createElementNS(NS,'use');use.setAttribute('href','#'+map[id]);svg.appendChild(use);
+    var wrap=document.createElement('div');wrap.className='sec-mark';
+    head.insertBefore(wrap,head.firstChild);
+    wrap.appendChild(svg);
+    if(num)wrap.appendChild(num);
+  });
+})();
+
+// render photo credits from credits.json
+(function(){
+  fetch('img/credits.json').then(function(r){return r.json()}).then(function(list){
+    var ul=document.getElementById('photo-credits');if(!ul)return;
+    list.forEach(function(c){
+      var li=document.createElement('li');
+      var a=document.createElement('a');a.href=c.source;a.target='_blank';a.rel='noopener';
+      a.textContent=c.artist;
+      li.appendChild(a);
+      li.appendChild(document.createTextNode(' — '+c.license+' · '+c.slug));
+      ul.appendChild(li);
+    });
+  }).catch(function(){});
+})();
+</script>
