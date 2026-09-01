@@ -90,7 +90,7 @@ As **estimativas** estão marcadas como tal e não devem ser apresentadas como f
 | 14 | 27 dez | Halali → Namutoni → Von Lindequist → **Waterberg** | 350 | **Waterberg (NWR)** |
 | 15 | 28 dez | Planalto do Waterberg · → Windhoek · devolver carro · voo 20:00 | 280 | voo |
 
-**Total ≈ 3 820 km de etapas + game drives ≈ 4 000 km.**
+**Total ≈ 3 750 km · ~51h ao volante · ~17h por condutor.**
 
 ### Justificação dos três dias extra face ao roteiro de 12 dias
 
@@ -117,13 +117,13 @@ As **estimativas** estão marcadas como tal e não devem ser apresentadas como f
 | 16 dez | Hobas | **NWR** | €74 |
 | 17–18 dez | Klein-Aus Vista | privado | €90 |
 | 19–21 dez | Sesriem | **NWR** ×3 | €321 |
-| 22 dez | Swakopmund | privado | €40 |
+| 22 dez | Swakopmund | **guesthouse** | €72 |
 | 23 dez | Spitzkoppe | comunitário | €35 |
 | 24 dez | Damaraland | privado | €40 |
 | 25 dez | Okaukuejo | **NWR** | €74 |
 | 26 dez | Halali | **NWR** | €74 |
 | 27 dez | Waterberg | **NWR** | €64 |
-| | | **Total** | **≈ €890** |
+| | | **Total** | **≈ €935** |
 
 ### Noites NWR não substituíveis, e porquê
 
@@ -144,20 +144,20 @@ em Sesriem.
 
 ## 6. Orçamento
 
-15 dias · 14 noites · 3 adultos · ~4 000 km · €1 = N$18,73
+15 dias · 14 noites · 3 adultos · ~3 750 km · €1 = N$18,73
 
 | Rubrica | Grupo | Por pessoa | Confiança |
 |---|---:|---:|---|
 | 4x4 Budget + 2 tendas, 15 dias @ €87 | €1 305 | €435 | tarifário publicado |
-| Combustível (~460 L @ N$28,50) | €720 | €240 | preço de bomba verificado |
-| Campismo, 14 noites | €890 | €297 | NWR publicado + privados estimados |
+| Combustível (~460 L @ N$28,50) | €700 | €233 | preço de bomba verificado |
+| Alojamento, 14 noites (13 camps + 1 cama) | €935 | €312 | NWR publicado + privados estimados |
 | Taxas de parque (11 dias-parque) | €550 | €183 | tarifa oficial + veículo estimado |
 | Comida | €673 | €224 | estimativa |
 | Extras (SIM, Kolmanskop, gorjetas) | €250 | €83 | estimativa |
-| **Em terra** | **€4 388** | **€1 463** | |
+| **Em terra** | **€4 413** | **€1 471** | |
 | Voos | €2 805 | €935 | cotação real |
-| **Total** | **€7 193** | **€2 398** | |
-| **Com margem de 10%** | **€7 912** | **≈ €2 640** | |
+| **Total** | **€7 218** | **€2 406** | |
+| **Com margem de 10%** | **€7 940** | **≈ €2 650** | |
 
 **Não orçamentado:** seguro zero-excess do aluguer (não publicado pela Asco),
 seguro de viagem, vacinas e profilaxia, IDPs. A obter antes de fechar o número.
@@ -228,5 +228,6 @@ O guia reescrito está pronto quando:
 4. A secção de sazonalidade diz a verdade sobre meados de dezembro.
 5. A checklist de preparação parte de setembro de 2026, não de julho.
 6. As 14 noites estão nomeadas, com o estado de reserva de cada uma.
-7. **Zero referências à Arménia** — `grep -i arménia index.html` não devolve nada.
-8. A página continua a abrir offline, sem dependências externas.
+7. **Meta charset presente** — o ficheiro nunca teve `<meta charset>`; servido por HTTP a acentuação partia.
+8. **Zero referências à Arménia** — `grep -i arménia index.html` não devolve nada.
+9. A página continua a abrir offline, sem dependências externas.
