@@ -295,6 +295,10 @@
   .credits ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:3px 16px}
   .credits li{font-family:var(--mono);font-size:10.5px;color:var(--ink-faint)}
   .credits a{color:var(--ink-soft)}
+
+  td.map { white-space: nowrap; font-size: .85em; }
+  td.map a { color: #8ab4f8; text-decoration: none; border-bottom: 1px dotted #8ab4f8; }
+  td.map a:hover { color: #fff; }
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -539,17 +543,17 @@
           <p>Não é um dia de deserto, é um dia de logística — e o único em que um erro custa a viagem toda, porque são <b>três bilhetes separados</b>. A linha do dia: <b>07:20</b> Porto → <b>10:55</b> Frankfurt-Hahn; <b>12:15</b> de autocarro para o aeroporto de Frankfurt, no <b>P36 às 14:05</b>; tarde na cidade; check-in às <b>18:00</b>; <b>22:00</b> para Windhoek.</p>
           <div class="tablewrap" style="margin:12px 0 0">
             <table>
-              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th></tr></thead>
+              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th><th>Mapa</th></tr></thead>
               <tbody>
-                <tr><td class="num">07:20</td><td>Voo OPO → HHN <span style="opacity:.6">FR4393</span></td><td>Aterragem 10:55. Só o Henrique tem mala de porão na Ryanair (20 kg) — é ele que a levanta</td></tr>
-                <tr><td class="num">11:15</td><td>Paragem 14, em frente ao Terminal B do Hahn</td><td>O autocarro sai às 12:15 em ponto; estar lá 10 minutos antes</td></tr>
-                <tr><td class="num">12:15</td><td><b>Autocarro HHN → FRA</b></td><td>Bilhete 37694876 · chega ao P36, junto ao Terminal 1, às 14:05</td></tr>
-                <tr><td class="num">14:05</td><td>Consignação de bagagem, T1 Área B Nível 1</td><td>Aberta 24h, sem reserva, paga por peça. Ficam com passaportes e material de valor</td></tr>
-                <tr><td class="num">14:30</td><td>S-Bahn S8/S9 → Hauptwache</td><td>~15 min. Bilhete próprio: o aeroporto tem zona tarifária separada</td></tr>
-                <tr><td class="num">15:00</td><td>Mercado de Natal: Römerberg, Paulsplatz, Mainkai</td><td>Está a decorrer de 23/11 a 22/12. A melhor hora é a última — o sol põe-se às 16:25</td></tr>
-                <tr><td class="num">17:15</td><td>S-Bahn de volta ao FRA</td><td>Levantar as malas e seguir para o check-in</td></tr>
-                <tr><td class="num">18:00</td><td>Check-in Lufthansa / Discover</td><td>Abre ~4h antes. Para um intercontinental, três horas de antecedência é o mínimo</td></tr>
-                <tr><td class="num">22:00</td><td>Voo FRA → WDH <span style="opacity:.6">4Y132</span></td><td>10h25 a bordo; aterragem a 14 de dezembro às 09:25</td></tr>
+                <tr><td class="num">07:20</td><td>Voo OPO → HHN <span style="opacity:.6">FR4393</span></td><td>Aterragem 10:55. Só o Henrique tem mala de porão na Ryanair (20 kg) — é ele que a levanta</td><td class="map">—</td></tr>
+                <tr><td class="num">11:15</td><td>Paragem 14, em frente ao Terminal B do Hahn</td><td>O autocarro sai às 12:15 em ponto; estar lá 10 minutos antes</td><td class="map">—</td></tr>
+                <tr><td class="num">12:15</td><td><b>Autocarro HHN → FRA</b></td><td>Bilhete 37694876 · chega ao P36, junto ao Terminal 1, às 14:05</td><td class="map">—</td></tr>
+                <tr><td class="num">14:05</td><td>Consignação de bagagem, T1 Área B Nível 1</td><td>Aberta 24h, sem reserva, paga por peça. Ficam com passaportes e material de valor</td><td class="map">—</td></tr>
+                <tr><td class="num">14:30</td><td>S-Bahn S8/S9 → Hauptwache</td><td>~15 min. Bilhete próprio: o aeroporto tem zona tarifária separada</td><td class="map">—</td></tr>
+                <tr><td class="num">15:00</td><td>Mercado de Natal: Römerberg, Paulsplatz, Mainkai</td><td>Está a decorrer de 23/11 a 22/12. A melhor hora é a última — o sol põe-se às 16:25</td><td class="map">—</td></tr>
+                <tr><td class="num">17:15</td><td>S-Bahn de volta ao FRA</td><td>Levantar as malas e seguir para o check-in</td><td class="map">—</td></tr>
+                <tr><td class="num">18:00</td><td>Check-in Lufthansa / Discover</td><td>Abre ~4h antes. Para um intercontinental, três horas de antecedência é o mínimo</td><td class="map">—</td></tr>
+                <tr><td class="num">22:00</td><td>Voo FRA → WDH <span style="opacity:.6">4Y132</span></td><td>10h25 a bordo; aterragem a 14 de dezembro às 09:25</td><td class="map">—</td></tr>
               </tbody>
             </table>
           </div>
@@ -564,17 +568,17 @@
           <p>O dia da papelada: imigração com o e-visa impresso, shuttle da Asco até à cidade, contrato, briefing e o primeiro supermercado a sério. <b>É o dia mais apertado da viagem em tempo</b> — não pelo volante, mas porque tudo depende de o voo aterrar à hora.</p>
           <div class="tablewrap" style="margin:12px 0 0">
             <table>
-              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th></tr></thead>
+              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th><th>Mapa</th></tr></thead>
               <tbody>
-                <tr><td class="num">09:25</td><td>Aterragem em Hosea Kutako</td><td>E-visas impressos à mão. Imigração + bagagem: contem 30–40 min</td></tr>
-                <tr><td class="num">10:15</td><td>Shuttle da Asco (8h–15h)</td><td>O motorista sai no máximo 90 min após a aterragem; ~45 min até ao depot na Mandume Ndemufayo</td></tr>
-                <tr><td class="num">11:45</td><td>Depot Asco: contrato e inspecção</td><td><b>Dois</b> condutores: o Henrique e a Cláudia ficam nomeados no contrato (a franquia inclui dois sem custo). Os três assistem ao briefing. Fotografar todos os danos</td></tr>
-                <tr><td class="num">12:45</td><td>Montar e desmontar as <b>duas</b> tendas</td><td>No parque da rental, com os três a aprender. Verificar: 2 suplentes, macaco, compressor, jerricã, roupa de cama para 3</td></tr>
-                <tr><td class="num">13:30</td><td>Supermercado em Windhoek</td><td>Comida para 4–5 dias, 40–50 L de capacidade de água, gelo, lenha. Depósito cheio antes de sair</td></tr>
-                <tr><td class="num">14:15</td><td>Saída para sul pela B1</td><td>~260 km até ao Hardap; sai-se da B1 em Mariental. Combustível em Rehoboth se necessário</td></tr>
-                <tr><td class="num">16:45</td><td>Trópico de Capricórnio</td><td>Marco na berma da B1, coordenadas -23.500 / 17.128, 40 km antes de Mariental. Cinco minutos e uma foto</td></tr>
-                <tr><td class="num">17:45</td><td>Chegada ao Hardap</td><td>Campismo na albufeira: montar com luz, a última hora dourada é para isso</td></tr>
-                <tr><td class="num">19:30</td><td>Pôr do sol, braai e céu</td><td>Lua a 22%, põe-se às ~22:30. Pelicanos e o espelho de água em vez de dunas</td></tr>
+                <tr><td class="num">09:25</td><td>Aterragem em Hosea Kutako</td><td>E-visas impressos à mão. Imigração + bagagem: contem 30–40 min</td><td class="map">—</td></tr>
+                <tr><td class="num">10:15</td><td>Shuttle da Asco (8h–15h)</td><td>O motorista sai no máximo 90 min após a aterragem; ~45 min até ao depot na Mandume Ndemufayo</td><td class="map">—</td></tr>
+                <tr><td class="num">11:45</td><td>Depot Asco: contrato e inspecção</td><td><b>Dois</b> condutores: o Henrique e a Cláudia ficam nomeados no contrato (a franquia inclui dois sem custo). Os três assistem ao briefing. Fotografar todos os danos</td><td class="map">—</td></tr>
+                <tr><td class="num">12:45</td><td>Montar e desmontar as <b>duas</b> tendas</td><td>No parque da rental, com os três a aprender. Verificar: 2 suplentes, macaco, compressor, jerricã, roupa de cama para 3</td><td class="map">—</td></tr>
+                <tr><td class="num">13:30</td><td>Supermercado em Windhoek</td><td>Comida para 4–5 dias, 40–50 L de capacidade de água, gelo, lenha. Depósito cheio antes de sair</td><td class="map">—</td></tr>
+                <tr><td class="num">14:15</td><td>Saída para sul pela B1</td><td>~260 km até ao Hardap; sai-se da B1 em Mariental. Combustível em Rehoboth se necessário</td><td class="map">—</td></tr>
+                <tr><td class="num">16:45</td><td>Trópico de Capricórnio</td><td>Marco na berma da B1, coordenadas -23.500 / 17.128, 40 km antes de Mariental. Cinco minutos e uma foto</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-23.50000,17.12800" target="_blank" rel="noopener" title="Trópico de Capricórnio">ver</a></td></tr>
+                <tr><td class="num">17:45</td><td>Chegada ao Hardap</td><td>Campismo na albufeira: montar com luz, a última hora dourada é para isso</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-24.49650,17.85876" target="_blank" rel="noopener" title="Saída do Hardap">ver</a></td></tr>
+                <tr><td class="num">19:30</td><td>Pôr do sol, braai e céu</td><td>Lua a 22%, põe-se às ~22:30. Pelicanos e o espelho de água em vez de dunas</td><td class="map">—</td></tr>
               </tbody>
             </table>
           </div>
@@ -590,19 +594,19 @@
           <p>Etapa curta de propósito: o sul a 38 °C pede ritmo lento. Em vez de chegar e hibernar, a manhã ocupa-se com os fósseis de Mesosaurus, e o calor guarda-se para a sesta. O prémio continua a ser o fim do dia: <b>os kokerbooms à luz dourada</b> e a melhor noite de estrelas da viagem.</p>
           <div class="tablewrap" style="margin:12px 0 0">
             <table>
-              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th></tr></thead>
+              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th><th>Mapa</th></tr></thead>
               <tbody>
-                <tr><td class="num">05:30</td><td>Café e nascer do sol nas dunas</td><td>Oryx nas cristas, luz rasante sobre a albufeira</td></tr>
-                <tr><td class="num">06:00</td><td>Volta pelo parque de caça do Hardap</td><td>Meia hora pelas pistas ao amanhecer: <b>rinoceronte-branco</b>, oryx, springbok. A melhor probabilidade de fauna do bloco sul</td></tr>
-                <tr><td class="num">07:00</td><td>Saída pela B1 para sul</td><td>~250 km, asfalto por Mariental</td></tr>
-                <tr><td class="num">10:15</td><td>Keetmanshoop: combustível, água e gelo</td><td>Última vila decente antes do canyon. Igreja missionária de 1895 a duas ruas, 15 minutos</td></tr>
-                <tr><td class="num">10:45</td><td>C17 para leste</td><td>Gravel bom, 40 km até à farm Spitzkoppe-Ost</td></tr>
-                <tr><td class="num">11:20</td><td>Mesosaurus Fossil Camp</td><td>Visita guiada de 1h30 aos fósseis do réptil de 280 milhões de anos, com os Steenkamp. Paga-se no local</td></tr>
-                <tr><td class="num">13:15</td><td>Quiver Tree Forest Rest Camp</td><td>Campo montado à sombra. Sem reserva; paga-se em dinheiro</td></tr>
-                <tr><td class="num">14:00</td><td>Sesta até às 16h</td><td>38 °C é para ficar quieto; é aqui que se paga a factura de não descansar</td></tr>
-                <tr><td class="num">16:30</td><td>Giant's Playground</td><td>10 min do camp: caos de dolerito empilhado, óptimo à luz baixa</td></tr>
-                <tr><td class="num">17:15</td><td>Floresta de kokerbooms</td><td>Luz dourada nos aloés-árvore de 200–300 anos; pôr do sol às 19:30</td></tr>
-                <tr><td class="num">23:15</td><td>A lua põe-se</td><td>A partir daqui, céu escuro: Nuvens de Magalhães, Oríon ao zénite, 47 Tucanae. Ficar até à 01:00</td></tr>
+                <tr><td class="num">05:30</td><td>Café e nascer do sol nas dunas</td><td>Oryx nas cristas, luz rasante sobre a albufeira</td><td class="map">—</td></tr>
+                <tr><td class="num">06:00</td><td>Volta pelo parque de caça do Hardap</td><td>Meia hora pelas pistas ao amanhecer: <b>rinoceronte-branco</b>, oryx, springbok. A melhor probabilidade de fauna do bloco sul</td><td class="map">—</td></tr>
+                <tr><td class="num">07:00</td><td>Saída pela B1 para sul</td><td>~250 km, asfalto por Mariental</td><td class="map">—</td></tr>
+                <tr><td class="num">10:15</td><td>Keetmanshoop: combustível, água e gelo</td><td>Última vila decente antes do canyon. Igreja missionária de 1895 a duas ruas, 15 minutos</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-26.57909,18.13419" target="_blank" rel="noopener" title="Keetmanshoop">ver</a></td></tr>
+                <tr><td class="num">10:45</td><td>C17 para leste</td><td>Gravel bom, 40 km até à farm Spitzkoppe-Ost</td><td class="map">—</td></tr>
+                <tr><td class="num">11:20</td><td>Mesosaurus Fossil Camp</td><td>Visita guiada de 1h30 aos fósseis do réptil de 280 milhões de anos, com os Steenkamp. Paga-se no local</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-26.40600,18.47640" target="_blank" rel="noopener" title="Mesosaurus Fossil Camp">ver</a></td></tr>
+                <tr><td class="num">13:15</td><td>Quiver Tree Forest Rest Camp</td><td>Campo montado à sombra. Sem reserva; paga-se em dinheiro</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-26.55332,18.15842" target="_blank" rel="noopener" title="Quiver Tree Forest Rest Camp">ver</a></td></tr>
+                <tr><td class="num">14:00</td><td>Sesta até às 16h</td><td>38 °C é para ficar quieto; é aqui que se paga a factura de não descansar</td><td class="map">—</td></tr>
+                <tr><td class="num">16:30</td><td>Giant's Playground</td><td>10 min do camp: caos de dolerito empilhado, óptimo à luz baixa</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-26.46580,18.27180" target="_blank" rel="noopener" title="Giant's Playground">ver</a></td></tr>
+                <tr><td class="num">17:15</td><td>Floresta de kokerbooms</td><td>Luz dourada nos aloés-árvore de 200–300 anos; pôr do sol às 19:30</td><td class="map">—</td></tr>
+                <tr><td class="num">23:15</td><td>A lua põe-se</td><td>A partir daqui, céu escuro: Nuvens de Magalhães, Oríon ao zénite, 47 Tucanae. Ficar até à 01:00</td><td class="map">—</td></tr>
               </tbody>
             </table>
           </div>
@@ -617,19 +621,19 @@
           <p>Manhã de estrada curta para chegar ao canyon antes do forno. O programa a sério é só ao fim da tarde: o trilho dentro do canyon está <b>fechado</b> (só abre mai–set), portanto o jogo é caminhar pela borda entre o Main Viewpoint e o <b>Hell's Bend</b> com o sol baixo.</p>
           <div class="tablewrap" style="margin:12px 0 0">
             <table>
-              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th></tr></thead>
+              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th><th>Mapa</th></tr></thead>
               <tbody>
-                <tr><td class="num">05:30</td><td>Nascer do sol na floresta</td><td>Dormes dentro dela e a entrada já está paga até ao pôr do sol. Luz completamente diferente da das 17:15 — vale os cinquenta minutos a menos de sono</td></tr>
-                <tr><td class="num">06:30</td><td>Café e desmontar o campo</td><td>Sair cedo: o gravel aquece e não há sombra</td></tr>
-                <tr><td class="num">07:15</td><td>Saída B4 → C12 para Hobas</td><td>160 km, ~2h</td></tr>
-                <tr><td class="num">09:30</td><td>Portão de Hobas</td><td><b>Taxas em dinheiro</b>: N$280 por adulto + N$60 pela viatura, por dia. Não aceitam cartão</td></tr>
-                <tr><td class="num">10:00</td><td>Camp instalado, piscina</td><td>A NWR só garante o camp a partir das 14h, mas as parcelas ficam livres cedo</td></tr>
-                <tr><td class="num">11:00</td><td>Sesta obrigatória</td><td>35–42 °C. Nada de esforço entre as 11h e as 16h30, para nenhum dos três</td></tr>
-                <tr><td class="num">16:45</td><td>Main Viewpoint</td><td>10,5 km do camp, 20 min em gravel. 550 m de profundidade a mudar de cor</td></tr>
-                <tr><td class="num">18:00</td><td>Hiker's Viewpoint e Sunset Viewpoint</td><td>A 1,5 km do Main: caminhar ao longo da borda, sem pressa</td></tr>
-                <tr><td class="num">19:30</td><td>Pôr do sol no Main Viewpoint</td><td>O momento do dia. Ficar até o sol tocar a linha do horizonte</td></tr>
-                <tr><td class="num">19:40</td><td>Regresso imediato ao camp</td><td>10,5 km, 20 min, faróis ligados no crepúsculo. Não há alternativa: não se dorme na borda</td></tr>
-                <tr><td class="num">20:15</td><td>Braai</td><td>Campo já montado: é só acender o fogo</td></tr>
+                <tr><td class="num">05:30</td><td>Nascer do sol na floresta</td><td>Dormes dentro dela e a entrada já está paga até ao pôr do sol. Luz completamente diferente da das 17:15 — vale os cinquenta minutos a menos de sono</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-21.84883,15.20436" target="_blank" rel="noopener" title="Nascer do sol nos domos">ver</a></td></tr>
+                <tr><td class="num">06:30</td><td>Café e desmontar o campo</td><td>Sair cedo: o gravel aquece e não há sombra</td><td class="map">—</td></tr>
+                <tr><td class="num">07:15</td><td>Saída B4 → C12 para Hobas</td><td>160 km, ~2h</td><td class="map">—</td></tr>
+                <tr><td class="num">09:30</td><td>Portão de Hobas</td><td><b>Taxas em dinheiro</b>: N$280 por adulto + N$60 pela viatura, por dia. Não aceitam cartão</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-27.62010,17.71540" target="_blank" rel="noopener" title="Saída de Hobas">ver</a></td></tr>
+                <tr><td class="num">10:00</td><td>Camp instalado, piscina</td><td>A NWR só garante o camp a partir das 14h, mas as parcelas ficam livres cedo</td><td class="map">—</td></tr>
+                <tr><td class="num">11:00</td><td>Sesta obrigatória</td><td>35–42 °C. Nada de esforço entre as 11h e as 16h30, para nenhum dos três</td><td class="map">—</td></tr>
+                <tr><td class="num">16:45</td><td>Main Viewpoint</td><td>10,5 km do camp, 20 min em gravel. 550 m de profundidade a mudar de cor</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-27.58910,17.61440" target="_blank" rel="noopener" title="Main Viewpoint">ver</a></td></tr>
+                <tr><td class="num">18:00</td><td>Hiker's Viewpoint e Sunset Viewpoint</td><td>A 1,5 km do Main: caminhar ao longo da borda, sem pressa</td><td class="map">—</td></tr>
+                <tr><td class="num">19:30</td><td>Pôr do sol no Main Viewpoint</td><td>O momento do dia. Ficar até o sol tocar a linha do horizonte</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-27.58910,17.61440" target="_blank" rel="noopener" title="Main Viewpoint">ver</a></td></tr>
+                <tr><td class="num">19:40</td><td>Regresso imediato ao camp</td><td>10,5 km, 20 min, faróis ligados no crepúsculo. Não há alternativa: não se dorme na borda</td><td class="map">—</td></tr>
+                <tr><td class="num">20:15</td><td>Braai</td><td>Campo já montado: é só acender o fogo</td><td class="map">—</td></tr>
               </tbody>
             </table>
           </div>
@@ -644,18 +648,18 @@
           <p>Repetição deliberada do miradouro ao nascer do sol, porque a luz do dia anterior raramente é a melhor. Depois estrada para oeste, café num museu de ferrugem, os cavalos de Garub, e a descida até ao Atlântico. A base dos dois dias seguintes é Lüderitz, não Aus.</p>
           <div class="tablewrap" style="margin:12px 0 0">
             <table>
-              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th></tr></thead>
+              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th><th>Mapa</th></tr></thead>
               <tbody>
-                <tr><td class="num">05:40</td><td>Saída para o Hell's Bend</td><td>11,6 km, 20 min. O sol nasce às 05:55, chegas com ele ainda baixo</td></tr>
-                <tr><td class="num">06:00</td><td>Hell's Bend ao amanhecer</td><td>O meandro com 550 m de parede, sem uma alma. Uma hora de tripé</td></tr>
-                <tr><td class="num">07:20</td><td>Regresso ao camp</td><td>Pequeno-almoço, duche rápido e desmontar</td></tr>
-                <tr><td class="num">08:30</td><td>Saída C12/C13</td><td>345 km até Lüderitz, gravel e depois asfalto</td></tr>
-                <tr><td class="num">10:30</td><td>Canyon Roadhouse</td><td>Café e o museu vivo de carros enferrujados; combustível caro mas é o único</td></tr>
-                <tr><td class="num">13:15</td><td>Aus</td><td>Encher o depósito e comprar gelo. É a última vila antes da costa</td></tr>
-                <tr><td class="num">15:45</td><td>Lüderitz: compras no Spar</td><td>500 m do centro. Comprar antes de fechar: amanhã saem às 05:30 e só voltam ao fim da tarde</td></tr>
-                <tr><td class="num">16:45</td><td>Check-in no Shalom</td><td>Apartamento com cozinha, a norte do centro. Deixar as malas e arejar</td></tr>
-                <tr><td class="num">17:30</td><td>Diaz Point até ao pôr do sol</td><td>10 km. A ponte de madeira, a cruz e o Atlântico — é o sítio certo para esta hora, e liberta o dia 5</td></tr>
-                <tr><td class="num">19:40</td><td>Jantar em casa</td><td>Primeira noite com cozinha desde Windhoek: jantar sem depender de restaurante</td></tr>
+                <tr><td class="num">05:40</td><td>Saída para o Hell's Bend</td><td>11,6 km, 20 min. O sol nasce às 05:55, chegas com ele ainda baixo</td><td class="map">—</td></tr>
+                <tr><td class="num">06:00</td><td>Hell's Bend ao amanhecer</td><td>O meandro com 550 m de parede, sem uma alma. Uma hora de tripé</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-27.57710,17.60860" target="_blank" rel="noopener" title="Hell's Bend ao amanhecer">ver</a></td></tr>
+                <tr><td class="num">07:20</td><td>Regresso ao camp</td><td>Pequeno-almoço, duche rápido e desmontar</td><td class="map">—</td></tr>
+                <tr><td class="num">08:30</td><td>Saída C12/C13</td><td>345 km até Lüderitz, gravel e depois asfalto</td><td class="map">—</td></tr>
+                <tr><td class="num">10:30</td><td>Canyon Roadhouse</td><td>Café e o museu vivo de carros enferrujados; combustível caro mas é o único</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-27.52420,17.81480" target="_blank" rel="noopener" title="Canyon Roadhouse">ver</a></td></tr>
+                <tr><td class="num">13:15</td><td>Aus</td><td>Encher o depósito e comprar gelo. É a última vila antes da costa</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-26.66434,16.25943" target="_blank" rel="noopener" title="Aus">ver</a></td></tr>
+                <tr><td class="num">15:45</td><td>Lüderitz: compras no Spar</td><td>500 m do centro. Comprar antes de fechar: amanhã saem às 05:30 e só voltam ao fim da tarde</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-26.65001,15.15727" target="_blank" rel="noopener" title="Lüderitz: compras no Spar">ver</a></td></tr>
+                <tr><td class="num">16:45</td><td>Check-in no Shalom</td><td>Apartamento com cozinha, a norte do centro. Deixar as malas e arejar</td><td class="map">—</td></tr>
+                <tr><td class="num">17:30</td><td>Diaz Point até ao pôr do sol</td><td>10 km. A ponte de madeira, a cruz e o Atlântico — é o sítio certo para esta hora, e liberta o dia 5</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-26.63650,15.09290" target="_blank" rel="noopener" title="Diaz Point ao pôr do sol">ver</a></td></tr>
+                <tr><td class="num">19:40</td><td>Jantar em casa</td><td>Primeira noite com cozinha desde Windhoek: jantar sem depender de restaurante</td><td class="map">—</td></tr>
               </tbody>
             </table>
           </div>
@@ -670,19 +674,19 @@
           <p>O dia urbex, e o único em que o despertador é a sério. Com o photo permit entra-se em Kolmanskop antes de o sol tocar as casas, sem ninguém. Ao meio-dia, Lüderitz: a cidade a pé, ostras, e à tarde a Grosse Bucht. O Diaz Point ficou no dia 4, ao pôr do sol, com a luz certa.</p>
           <div class="tablewrap" style="margin:12px 0 0">
             <table>
-              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th></tr></thead>
+              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th><th>Mapa</th></tr></thead>
               <tbody>
-                <tr><td class="num">05:00</td><td>Café rápido, sem barulho</td><td>Saída cedo mas sem montar cozinha a sério</td></tr>
-                <tr><td class="num">05:30</td><td>Saída para Kolmanskop</td><td>10 km, 15 min. Neblina possível ao amanhecer</td></tr>
-                <tr><td class="num">05:50</td><td>Portão lateral de Kolmanskop</td><td><b>Day Pass já comprado</b> (bilhetes 1503719053–55). Usar o <b>código de acesso ao portão</b> que vem no email de confirmação, não o QR: o portão só tem pessoal às 8h</td></tr>
-                <tr><td class="num">06:05</td><td>Nascer do sol nas casas de areia</td><td>Grande-angular + tripé; HDR nos interiores contra as janelas</td></tr>
-                <tr><td class="num">09:30</td><td>Tour guiada (incluída no permit)</td><td>Opcional: a esta hora já se fotografou o que interessava</td></tr>
-                <tr><td class="num">10:00</td><td>Padaria alemã e centro a pé</td><td>Goerke Haus, Felsenkirche, Bismarckstrasse. Uma hora e meia chega</td></tr>
-                <tr><td class="num">12:30</td><td>Ostras no Diaz Coffee Shop</td><td>~N$15 a unidade, peixe do dia. A melhor refeição barata do país</td></tr>
-                <tr><td class="num">14:00</td><td>Sesta em casa</td><td>O dia 4 já levou o Diaz Point ao pôr do sol. Aqui descansa-se: são 12 horas em pé desde as 05:00</td></tr>
-                <tr><td class="num">16:00</td><td>Grosse Bucht</td><td>Baía aberta a sul: flamingos, naufrágios e vento</td></tr>
-                <tr><td class="num">18:30</td><td>Shark Island ao pôr do sol</td><td>Pôr do sol às 19:30, com a cidade às costas</td></tr>
-                <tr><td class="num">19:45</td><td>Jantar no apartamento</td><td>Preparar a saída das 06:00 e encher a água para a D707</td></tr>
+                <tr><td class="num">05:00</td><td>Café rápido, sem barulho</td><td>Saída cedo mas sem montar cozinha a sério</td><td class="map">—</td></tr>
+                <tr><td class="num">05:30</td><td>Saída para Kolmanskop</td><td>10 km, 15 min. Neblina possível ao amanhecer</td><td class="map">—</td></tr>
+                <tr><td class="num">05:50</td><td>Portão lateral de Kolmanskop</td><td><b>Day Pass já comprado</b> (bilhetes 1503719053–55). Usar o <b>código de acesso ao portão</b> que vem no email de confirmação, não o QR: o portão só tem pessoal às 8h</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-24.48713,15.79849" target="_blank" rel="noopener" title="Portão interior de Sesriem">ver</a></td></tr>
+                <tr><td class="num">06:05</td><td>Nascer do sol nas casas de areia</td><td>Grande-angular + tripé; HDR nos interiores contra as janelas</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-21.84883,15.20436" target="_blank" rel="noopener" title="Nascer do sol nos domos">ver</a></td></tr>
+                <tr><td class="num">09:30</td><td>Tour guiada (incluída no permit)</td><td>Opcional: a esta hora já se fotografou o que interessava</td><td class="map">—</td></tr>
+                <tr><td class="num">10:00</td><td>Padaria alemã e centro a pé</td><td>Goerke Haus, Felsenkirche, Bismarckstrasse. Uma hora e meia chega</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-26.65001,15.15727" target="_blank" rel="noopener" title="Lüderitz, centro a pé">ver</a></td></tr>
+                <tr><td class="num">12:30</td><td>Ostras no Diaz Coffee Shop</td><td>~N$15 a unidade, peixe do dia. A melhor refeição barata do país</td><td class="map">—</td></tr>
+                <tr><td class="num">14:00</td><td>Sesta em casa</td><td>O dia 4 já levou o Diaz Point ao pôr do sol. Aqui descansa-se: são 12 horas em pé desde as 05:00</td><td class="map">—</td></tr>
+                <tr><td class="num">16:00</td><td>Grosse Bucht</td><td>Baía aberta a sul: flamingos, naufrágios e vento</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-26.73850,15.10230" target="_blank" rel="noopener" title="Grosse Bucht">ver</a></td></tr>
+                <tr><td class="num">18:30</td><td>Shark Island ao pôr do sol</td><td>Pôr do sol às 19:30, com a cidade às costas</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-26.63690,15.15260" target="_blank" rel="noopener" title="Shark Island">ver</a></td></tr>
+                <tr><td class="num">19:45</td><td>Jantar no apartamento</td><td>Preparar a saída das 06:00 e encher a água para a D707</td><td class="map">—</td></tr>
               </tbody>
             </table>
           </div>
@@ -697,22 +701,22 @@
           <p>O dia mais pesado da viagem: 125 km de asfalto até Aus para atestar, e depois os 380 km de gravel que fazem a fama da D707. Sai-se às 06:00 para chegar a Sesriem ao início da tarde e ainda haver luz para montar.</p>
           <div class="tablewrap" style="margin:12px 0 0">
             <table>
-              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th></tr></thead>
+              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th><th>Mapa</th></tr></thead>
               <tbody>
-                <tr><td class="num">05:30</td><td>Café e sair do apartamento</td><td>Check-out cedo, com a chave devolvida conforme combinado</td></tr>
-                <tr><td class="num">06:00</td><td>Saída de Lüderitz</td><td>125 km de asfalto até Aus; a 20 km de Aus, paragem em Garub</td></tr>
-                <tr><td class="num">07:10</td><td>Garub — cavalos selvagens</td><td>A hora certa: ao amanhecer descem a beber. 15 minutos, na B4</td></tr>
-                <tr><td class="num">07:35</td><td>Aus: depósito cheio, gelo e água</td><td>Última bomba antes de 380 km de nada. Betta tem, mas não contar com ela</td></tr>
-                <tr><td class="num">07:55</td><td>Campo de prisioneiros de 1915</td><td>1,5 km de Aus: os alemães internados depois da campanha construíram estas estradas. Muros e sepulturas da Commonwealth ao lado</td></tr>
-                <tr><td class="num">08:20</td><td>C13 para norte</td><td>Gravel bom; rotação de condutor a cada 2h</td></tr>
-                <tr><td class="num">09:20</td><td>Miradouro sobre o vale</td><td>61 km de Aus, na própria estrada: 10 minutos e a vista abre-se para as Tiras</td></tr>
-                <tr><td class="num">10:00</td><td>Entrada na D707</td><td>O troço que justifica a viagem: parar quantas vezes apetecer</td></tr>
-                <tr><td class="num">12:15</td><td>Almoço à sombra de um camel thorn</td><td>Levar tudo; não há sombra artificial em 200 km</td></tr>
-                <tr><td class="num">13:15</td><td>Betta — combustível de reserva</td><td>87 m da estrada; a bomba é inconstante, mas é a única entre Aus e Sesriem</td></tr>
-                <tr><td class="num">14:00</td><td>C27 para norte, em direcção a Sesriem</td><td>Piso duro, corredores de areia na berma</td></tr>
-                <tr><td class="num">15:10</td><td>Sesriem: check-in NWR</td><td>Bomba de combustível no camp; abastecer para as manhãs em Sossusvlei</td></tr>
-                <tr><td class="num">17:00</td><td>Elim Dune</td><td>5 km do camp, a única duna que se sobe ao fim do dia sem logística</td></tr>
-                <tr><td class="num">19:30</td><td>Braai</td><td>Lua a 72%: noite clara, boa para arrumar material</td></tr>
+                <tr><td class="num">05:30</td><td>Café e sair do apartamento</td><td>Check-out cedo, com a chave devolvida conforme combinado</td><td class="map">—</td></tr>
+                <tr><td class="num">06:00</td><td>Saída de Lüderitz</td><td>125 km de asfalto até Aus; a 20 km de Aus, paragem em Garub</td><td class="map">—</td></tr>
+                <tr><td class="num">07:10</td><td>Garub — cavalos selvagens</td><td>A hora certa: ao amanhecer descem a beber. 15 minutos, na B4</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-26.59490,15.94870" target="_blank" rel="noopener" title="Garub — cavalos selvagens">ver</a></td></tr>
+                <tr><td class="num">07:35</td><td>Aus: depósito cheio, gelo e água</td><td>Última bomba antes de 380 km de nada. Betta tem, mas não contar com ela</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-26.66500,16.26700" target="_blank" rel="noopener" title="Aus — depósito cheio">ver</a></td></tr>
+                <tr><td class="num">07:55</td><td>Campo de prisioneiros de 1915</td><td>1,5 km de Aus: os alemães internados depois da campanha construíram estas estradas. Muros e sepulturas da Commonwealth ao lado</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-26.67520,16.28770" target="_blank" rel="noopener" title="Campo de prisioneiros de 1915">ver</a></td></tr>
+                <tr><td class="num">08:20</td><td>C13 para norte</td><td>Gravel bom; rotação de condutor a cada 2h</td><td class="map">—</td></tr>
+                <tr><td class="num">09:20</td><td>Miradouro sobre o vale</td><td>61 km de Aus, na própria estrada: 10 minutos e a vista abre-se para as Tiras</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-26.23480,16.59620" target="_blank" rel="noopener" title="Miradouro sobre o vale">ver</a></td></tr>
+                <tr><td class="num">10:00</td><td>Entrada na D707</td><td>O troço que justifica a viagem: parar quantas vezes apetecer</td><td class="map">—</td></tr>
+                <tr><td class="num">12:15</td><td>Almoço à sombra de um camel thorn</td><td>Levar tudo; não há sombra artificial em 200 km</td><td class="map">—</td></tr>
+                <tr><td class="num">13:15</td><td>Betta — combustível de reserva</td><td>87 m da estrada; a bomba é inconstante, mas é a única entre Aus e Sesriem</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-25.38320,16.42350" target="_blank" rel="noopener" title="Betta">ver</a></td></tr>
+                <tr><td class="num">14:00</td><td>C27 para norte, em direcção a Sesriem</td><td>Piso duro, corredores de areia na berma</td><td class="map">—</td></tr>
+                <tr><td class="num">15:10</td><td>Sesriem: check-in NWR</td><td>Bomba de combustível no camp; abastecer para as manhãs em Sossusvlei</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-24.48713,15.79849" target="_blank" rel="noopener" title="Sesriem Camp">ver</a></td></tr>
+                <tr><td class="num">17:00</td><td>Elim Dune</td><td>5 km do camp, a única duna que se sobe ao fim do dia sem logística</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-24.45830,15.77730" target="_blank" rel="noopener" title="Elim Dune">ver</a></td></tr>
+                <tr><td class="num">19:30</td><td>Braai</td><td>Lua a 72%: noite clara, boa para arrumar material</td><td class="map">—</td></tr>
               </tbody>
             </table>
           </div>
@@ -727,19 +731,19 @@
           <p>O dia que justifica Sossusvlei: entrar com o portão a abrir, subir o Big Daddy enquanto está fresco e descer a face de areia directo a Deadvlei. Depois, ao meio-dia, o único sítio do parque onde o calor perdoa — o canyon.</p>
           <div class="tablewrap" style="margin:12px 0 0">
             <table>
-              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th></tr></thead>
+              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th><th>Mapa</th></tr></thead>
               <tbody>
-                <tr><td class="num">04:30</td><td>Café, sem montar cozinha</td><td>Come-se a sério depois do vlei</td></tr>
-                <tr><td class="num">04:55</td><td>Portão interior</td><td><b>Uma hora antes do sol</b>, privilégio de quem dorme dentro da vedação. O portão de Sesriem só abre às 05:55</td></tr>
-                <tr><td class="num">06:10</td><td>Fim do alcatrão: 5 km de areia</td><td>Pneus a 1,5 bar. Desde maio de 2026 o 4x4 próprio faz este troço — o shuttle de N$250/pessoa deixou de ser preciso</td></tr>
-                <tr><td class="num">06:15</td><td>Subida ao Big Daddy</td><td>325 m pela crista, 45–60 min, ainda fresco. Areia mole: cada passo vale dois</td></tr>
-                <tr><td class="num">07:30</td><td>Descida a correr para o Deadvlei</td><td>Vinte minutos de areia até à argila branca</td></tr>
-                <tr><td class="num">07:45</td><td>Deadvlei</td><td>Acácias mortas de 900 anos, 1 km a pé desde o parque, sem sombra nenhuma. Chegaste antes dos autocarros</td></tr>
-                <tr><td class="num">09:30</td><td>Saída do vlei</td><td>A luz já está dura e as multidões chegam agora</td></tr>
-                <tr><td class="num">10:00</td><td>Duna 45 na volta (opcional)</td><td>Se ainda houver pernas. A subida ao nascer do sol fica para o dia 8</td></tr>
-                <tr><td class="num">11:00</td><td>Camp: piscina e sesta</td><td>Até às 16h30 não se faz nada que exija esforço</td></tr>
-                <tr><td class="num">16:30</td><td>Sesriem Canyon</td><td>30 m de paredes de conglomerado, fresco lá em baixo</td></tr>
-                <tr><td class="num">18:30</td><td>Elim Dune, se a luz merecer</td><td>Senão, braai e preparar o dia de folga</td></tr>
+                <tr><td class="num">04:30</td><td>Café, sem montar cozinha</td><td>Come-se a sério depois do vlei</td><td class="map">—</td></tr>
+                <tr><td class="num">04:55</td><td>Portão interior</td><td><b>Uma hora antes do sol</b>, privilégio de quem dorme dentro da vedação. O portão de Sesriem só abre às 05:55</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-24.48713,15.79849" target="_blank" rel="noopener" title="Portão interior de Sesriem">ver</a></td></tr>
+                <tr><td class="num">06:10</td><td>Fim do alcatrão: 5 km de areia</td><td>Pneus a 1,5 bar. Desde maio de 2026 o 4x4 próprio faz este troço — o shuttle de N$250/pessoa deixou de ser preciso</td><td class="map">—</td></tr>
+                <tr><td class="num">06:15</td><td>Subida ao Big Daddy</td><td>325 m pela crista, 45–60 min, ainda fresco. Areia mole: cada passo vale dois</td><td class="map">—</td></tr>
+                <tr><td class="num">07:30</td><td>Descida a correr para o Deadvlei</td><td>Vinte minutos de areia até à argila branca</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-24.76299,15.29440" target="_blank" rel="noopener" title="Deadvlei">ver</a></td></tr>
+                <tr><td class="num">07:45</td><td>Deadvlei</td><td>Acácias mortas de 900 anos, 1 km a pé desde o parque, sem sombra nenhuma. Chegaste antes dos autocarros</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-24.76299,15.29440" target="_blank" rel="noopener" title="Deadvlei">ver</a></td></tr>
+                <tr><td class="num">09:30</td><td>Saída do vlei</td><td>A luz já está dura e as multidões chegam agora</td><td class="map">—</td></tr>
+                <tr><td class="num">10:00</td><td>Duna 45 na volta (opcional)</td><td>Se ainda houver pernas. A subida ao nascer do sol fica para o dia 8</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-24.71670,15.46670" target="_blank" rel="noopener" title="Duna 45">ver</a></td></tr>
+                <tr><td class="num">11:00</td><td>Camp: piscina e sesta</td><td>Até às 16h30 não se faz nada que exija esforço</td><td class="map">—</td></tr>
+                <tr><td class="num">16:30</td><td>Sesriem Canyon</td><td>30 m de paredes de conglomerado, fresco lá em baixo</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-24.51926,15.79278" target="_blank" rel="noopener" title="Sesriem Canyon">ver</a></td></tr>
+                <tr><td class="num">18:30</td><td>Elim Dune, se a luz merecer</td><td>Senão, braai e preparar o dia de folga</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-24.45830,15.77730" target="_blank" rel="noopener" title="Elim Dune">ver</a></td></tr>
               </tbody>
             </table>
           </div>
@@ -754,16 +758,16 @@
           <p>O dia extra, e provavelmente o melhor investimento do roteiro: segunda madrugada em Deadvlei para quem quiser, manutenção para todos. Também é o dia em que se acerta o bloco norte — combustível, comida, contas e roupa.</p>
           <div class="tablewrap" style="margin:12px 0 0">
             <table>
-              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th></tr></thead>
+              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th><th>Mapa</th></tr></thead>
               <tbody>
-                <tr><td class="num">04:55</td><td>Segunda madrugada: Duna 45</td><td>Outra vez o portão interior. Sobe-se em 20 minutos e é-se 45 km de tudo</td></tr>
-                <tr><td class="num">05:55</td><td>Nascer do sol no cimo da Duna 45</td><td>A duna vermelha com a sombra a descer para o vale: o postal que o dia 7 não deu</td></tr>
-                <tr><td class="num">07:45</td><td>Regresso ao camp</td><td>Pequeno-almoço a sério. Quem não subiu dormiu até tarde — e também ganhou</td></tr>
-                <tr><td class="num">10:00</td><td>Manutenção do campo</td><td>Lavar roupa, arrumar o carro, backup do cartão de memória para o disco</td></tr>
-                <tr><td class="num">12:00</td><td>Sesta</td><td>O Namib às 13h não é sítio para ninguém</td></tr>
-                <tr><td class="num">16:30</td><td>Elim Dune a pé desde o camp</td><td>A duna mais acessível do parque, sem logística nenhuma</td></tr>
-                <tr><td class="num">18:00</td><td>Contas do bloco norte</td><td>Combustível até Etosha, água, dinheiro em notas, lista de compras de Swakopmund</td></tr>
-                <tr><td class="num">19:30</td><td>Braai</td><td>Última noite de deserto antes da costa</td></tr>
+                <tr><td class="num">04:55</td><td>Segunda madrugada: Duna 45</td><td>Outra vez o portão interior. Sobe-se em 20 minutos e é-se 45 km de tudo</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-24.71670,15.46670" target="_blank" rel="noopener" title="Duna 45">ver</a></td></tr>
+                <tr><td class="num">05:55</td><td>Nascer do sol no cimo da Duna 45</td><td>A duna vermelha com a sombra a descer para o vale: o postal que o dia 7 não deu</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-24.71670,15.46670" target="_blank" rel="noopener" title="Duna 45">ver</a></td></tr>
+                <tr><td class="num">07:45</td><td>Regresso ao camp</td><td>Pequeno-almoço a sério. Quem não subiu dormiu até tarde — e também ganhou</td><td class="map">—</td></tr>
+                <tr><td class="num">10:00</td><td>Manutenção do campo</td><td>Lavar roupa, arrumar o carro, backup do cartão de memória para o disco</td><td class="map">—</td></tr>
+                <tr><td class="num">12:00</td><td>Sesta</td><td>O Namib às 13h não é sítio para ninguém</td><td class="map">—</td></tr>
+                <tr><td class="num">16:30</td><td>Elim Dune a pé desde o camp</td><td>A duna mais acessível do parque, sem logística nenhuma</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-24.45830,15.77730" target="_blank" rel="noopener" title="Elim Dune">ver</a></td></tr>
+                <tr><td class="num">18:00</td><td>Contas do bloco norte</td><td>Combustível até Etosha, água, dinheiro em notas, lista de compras de Swakopmund</td><td class="map">—</td></tr>
+                <tr><td class="num">19:30</td><td>Braai</td><td>Última noite de deserto antes da costa</td><td class="map">—</td></tr>
               </tbody>
             </table>
           </div>
@@ -778,17 +782,17 @@
           <p>Do forno para a neve da Benguela: em cinco horas passa-se de 38 °C para 20 °C. Pelo meio, a apple pie de Solitaire, a placa do Trópico e os passos do Kuiseb. À chegada, a compra mais importante da viagem — a de Natal.</p>
           <div class="tablewrap" style="margin:12px 0 0">
             <table>
-              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th></tr></thead>
+              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th><th>Mapa</th></tr></thead>
               <tbody>
-                <tr><td class="num">06:00</td><td>Café e desmontar</td><td>Última manhã de deserto a sério</td></tr>
-                <tr><td class="num">06:30</td><td>Saída de Sesriem</td><td>Combustível no camp antes de arrancar</td></tr>
-                <tr><td class="num">08:30</td><td>Solitaire</td><td>Apple pie e café entre carcaças dos anos 50. Combustível</td></tr>
-                <tr><td class="num">09:30</td><td>Placa do Trópico de Capricórnio</td><td>Selfie geodésica obrigatória</td></tr>
-                <tr><td class="num">10:30</td><td>Passo do Kuiseb</td><td>Miradouro na berma: badlands lunares, 15 min bem gastos</td></tr>
-                <tr><td class="num">12:30</td><td>Lagoa de Walvis Bay</td><td>Flamingos e pelicanos; maré baixa é melhor. Grátis</td></tr>
-                <tr><td class="num">14:00</td><td><b>Compras para 4 dias</b> no Spar/OK Foods</td><td>23 a 26 dez, incluindo a carne do braai de Natal. A 25 está tudo fechado</td></tr>
-                <tr><td class="num">15:00</td><td>Check-in no Alternative Space</td><td>167 Anton Lubowski Street, dois quartos. O alojamento só recebe a partir das 15:00</td></tr>
-                <tr><td class="num">19:00</td><td>Jantar no Jetty 1905 ou The Tug</td><td>Marisco sobre o mar; o reset a meio da viagem</td></tr>
+                <tr><td class="num">06:00</td><td>Café e desmontar</td><td>Última manhã de deserto a sério</td><td class="map">—</td></tr>
+                <tr><td class="num">06:30</td><td>Saída de Sesriem</td><td>Combustível no camp antes de arrancar</td><td class="map">—</td></tr>
+                <tr><td class="num">08:30</td><td>Solitaire</td><td>Apple pie e café entre carcaças dos anos 50. Combustível</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-23.89365,16.00632" target="_blank" rel="noopener" title="Solitaire">ver</a></td></tr>
+                <tr><td class="num">09:30</td><td>Placa do Trópico de Capricórnio</td><td>Selfie geodésica obrigatória</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-23.49920,15.77150" target="_blank" rel="noopener" title="Trópico de Capricórnio (C14)">ver</a></td></tr>
+                <tr><td class="num">10:30</td><td>Passo do Kuiseb</td><td>Miradouro na berma: badlands lunares, 15 min bem gastos</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-23.30143,15.78818" target="_blank" rel="noopener" title="Passo do Kuiseb">ver</a></td></tr>
+                <tr><td class="num">12:30</td><td>Lagoa de Walvis Bay</td><td>Flamingos e pelicanos; maré baixa é melhor. Grátis</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-22.96300,14.48950" target="_blank" rel="noopener" title="Walvis Bay — lagoa">ver</a></td></tr>
+                <tr><td class="num">14:00</td><td><b>Compras para 4 dias</b> no Spar/OK Foods</td><td>23 a 26 dez, incluindo a carne do braai de Natal. A 25 está tudo fechado</td><td class="map">—</td></tr>
+                <tr><td class="num">15:00</td><td>Check-in no Alternative Space</td><td>167 Anton Lubowski Street, dois quartos. O alojamento só recebe a partir das 15:00</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-22.67684,14.52897" target="_blank" rel="noopener" title="Alternative Space B&B">ver</a></td></tr>
+                <tr><td class="num">19:00</td><td>Jantar no Jetty 1905 ou The Tug</td><td>Marisco sobre o mar; o reset a meio da viagem</td><td class="map">—</td></tr>
               </tbody>
             </table>
           </div>
@@ -803,17 +807,17 @@
           <p>Costa dos esqueletos em versão curta: névoa, sal, um navio encalhado e 100 mil focas com crias. Ao fim do dia corta-se para o interior e troca-se o Atlântico pelo granito — e pela véspera de lua cheia.</p>
           <div class="tablewrap" style="margin:12px 0 0">
             <table>
-              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th></tr></thead>
+              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th><th>Mapa</th></tr></thead>
               <tbody>
-                <tr><td class="num">07:00</td><td>Pequeno-almoço na cidade</td><td>Padaria alemã; encher o depósito antes de sair</td></tr>
-                <tr><td class="num">07:45</td><td>C34 para norte</td><td>Estrada de sal: escorrega com a névoa da manhã</td></tr>
-                <tr><td class="num">09:00</td><td>Zeila</td><td>Naufrágio na rebentação, fotogénico no meio da névoa</td></tr>
-                <tr><td class="num">10:15</td><td>Cape Cross</td><td>N$280 + viatura; 100 000 focas, crias em dezembro, e o cheiro respectivo — buff na cara</td></tr>
-                <tr><td class="num">12:00</td><td>Henties Bay</td><td>Combustível e almoço rápido</td></tr>
-                <tr><td class="num">13:30</td><td>Interior: D1918/D3716</td><td>Troca de paisagem; piso pior depois de chuva</td></tr>
-                <tr><td class="num">15:30</td><td>Spitzkoppe</td><td>Campo entre os domos, sem electricidade e sem vedações</td></tr>
-                <tr><td class="num">17:30</td><td>O arco de granito</td><td>Pôr do sol às 19:30 com lua de 98% a nascer: granito laranja a passar a vermelho-sangue</td></tr>
-                <tr><td class="num">21:00</td><td>Paisagem nocturna</td><td>Não é noite de astro profundo — é noite de granito iluminado pela lua. Exposições curtas, sem frontal</td></tr>
+                <tr><td class="num">07:00</td><td>Pequeno-almoço na cidade</td><td>Padaria alemã; encher o depósito antes de sair</td><td class="map">—</td></tr>
+                <tr><td class="num">07:45</td><td>C34 para norte</td><td>Estrada de sal: escorrega com a névoa da manhã</td><td class="map">—</td></tr>
+                <tr><td class="num">09:00</td><td>Zeila</td><td>Naufrágio na rebentação, fotogénico no meio da névoa</td><td class="map">—</td></tr>
+                <tr><td class="num">10:15</td><td>Cape Cross</td><td>N$280 + viatura; 100 000 focas, crias em dezembro, e o cheiro respectivo — buff na cara</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-21.77145,13.95196" target="_blank" rel="noopener" title="Cape Cross">ver</a></td></tr>
+                <tr><td class="num">12:00</td><td>Henties Bay</td><td>Combustível e almoço rápido</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-22.11597,14.28266" target="_blank" rel="noopener" title="Henties Bay">ver</a></td></tr>
+                <tr><td class="num">13:30</td><td>Interior: D1918/D3716</td><td>Troca de paisagem; piso pior depois de chuva</td><td class="map">—</td></tr>
+                <tr><td class="num">15:30</td><td>Spitzkoppe</td><td>Campo entre os domos, sem electricidade e sem vedações</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-21.84883,15.20436" target="_blank" rel="noopener" title="Spitzkoppe">ver</a></td></tr>
+                <tr><td class="num">17:30</td><td>O arco de granito</td><td>Pôr do sol às 19:30 com lua de 98% a nascer: granito laranja a passar a vermelho-sangue</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-23.50000,17.12800" target="_blank" rel="noopener" title="Trópico de Capricórnio">ver</a></td></tr>
+                <tr><td class="num">21:00</td><td>Paisagem nocturna</td><td>Não é noite de astro profundo — é noite de granito iluminado pela lua. Exposições curtas, sem frontal</td><td class="map">—</td></tr>
               </tbody>
             </table>
           </div>
@@ -828,17 +832,17 @@
           <p>Manhã nas pinturas e nos domos, tarde nas gravuras de 6 000 anos, noite num vale de rio seco onde os elefantes também passam o Natal. É o dia sem rede — e é isso que se procura.</p>
           <div class="tablewrap" style="margin:12px 0 0">
             <table>
-              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th></tr></thead>
+              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th><th>Mapa</th></tr></thead>
               <tbody>
-                <tr><td class="num">05:45</td><td>Nascer do sol nos domos</td><td>Subida leve para Bushman's Paradise: pinturas rupestres com o granito ainda fresco</td></tr>
-                <tr><td class="num">08:00</td><td>Pequeno-almoço e desmontar</td><td>Sem pressa; a estrada de hoje é curta</td></tr>
-                <tr><td class="num">09:00</td><td>C35/C39 para norte</td><td>Atenção aos leitos de rio: em dezembro podem levar água</td></tr>
-                <tr><td class="num">11:00</td><td>Uis</td><td>Combustível e vendedoras de cristais na berma — o melhor artesanato da viagem</td></tr>
-                <tr><td class="num">12:00</td><td>Twyfelfontein</td><td>UNESCO: mais de 2 500 gravuras, incluindo o &quot;Lion Man&quot;. Visita guiada obrigatória, ~1h30</td></tr>
-                <tr><td class="num">14:00</td><td>Organ Pipes e Burnt Mountain</td><td>Ao lado, 20 min cada</td></tr>
-                <tr><td class="num">15:45</td><td>Madisa Camp: campo</td><td>D2612, 18 km depois da C35. Regras de elefante: comida sempre fechada no carro</td></tr>
-                <tr><td class="num">17:00</td><td>Piscina e bar</td><td>O primeiro banho de piscina desde Swakopmund</td></tr>
-                <tr><td class="num">19:30</td><td>Jantar de véspera de Natal no camp</td><td><b>Confirmado e já na reserva</b>, paga-se no camp. Sem Wi-Fi; água quente por donkey; electricidade só das 18h às 22h</td></tr>
+                <tr><td class="num">05:45</td><td>Nascer do sol nos domos</td><td>Subida leve para Bushman's Paradise: pinturas rupestres com o granito ainda fresco</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-21.84883,15.20436" target="_blank" rel="noopener" title="Nascer do sol nos domos">ver</a></td></tr>
+                <tr><td class="num">08:00</td><td>Pequeno-almoço e desmontar</td><td>Sem pressa; a estrada de hoje é curta</td><td class="map">—</td></tr>
+                <tr><td class="num">09:00</td><td>C35/C39 para norte</td><td>Atenção aos leitos de rio: em dezembro podem levar água</td><td class="map">—</td></tr>
+                <tr><td class="num">11:00</td><td>Uis</td><td>Combustível e vendedoras de cristais na berma — o melhor artesanato da viagem</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-21.22077,14.87092" target="_blank" rel="noopener" title="Uis">ver</a></td></tr>
+                <tr><td class="num">12:00</td><td>Twyfelfontein</td><td>UNESCO: mais de 2 500 gravuras, incluindo o &quot;Lion Man&quot;. Visita guiada obrigatória, ~1h30</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-20.54842,14.41099" target="_blank" rel="noopener" title="Twyfelfontein">ver</a></td></tr>
+                <tr><td class="num">14:00</td><td>Organ Pipes e Burnt Mountain</td><td>Ao lado, 20 min cada</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-20.61330,14.41580" target="_blank" rel="noopener" title="Organ Pipes e Burnt Mountain">ver</a></td></tr>
+                <tr><td class="num">15:45</td><td>Madisa Camp: campo</td><td>D2612, 18 km depois da C35. Regras de elefante: comida sempre fechada no carro</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-20.72769,14.68505" target="_blank" rel="noopener" title="Madisa Camp">ver</a></td></tr>
+                <tr><td class="num">17:00</td><td>Piscina e bar</td><td>O primeiro banho de piscina desde Swakopmund</td><td class="map">—</td></tr>
+                <tr><td class="num">19:30</td><td>Jantar de véspera de Natal no camp</td><td><b>Confirmado e já na reserva</b>, paga-se no camp. Sem Wi-Fi; água quente por donkey; electricidade só das 18h às 22h</td><td class="map">—</td></tr>
               </tbody>
             </table>
           </div>
@@ -853,16 +857,16 @@
           <p>Dia de Natal na estrada, com as lojas fechadas e as estradas vazias — a melhor troca possível. Entrada em Etosha ao início da tarde e primeiro game drive. A noite é o espectáculo: o waterhole iluminado de Okaukuejo.</p>
           <div class="tablewrap" style="margin:12px 0 0">
             <table>
-              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th></tr></thead>
+              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th><th>Mapa</th></tr></thead>
               <tbody>
-                <tr><td class="num">06:15</td><td>Saída do Madisa</td><td>Tudo fechado em Damaraland; levar pequeno-almoço do camp</td></tr>
-                <tr><td class="num">08:00</td><td>Khorixas</td><td>Combustível. Lojas fechadas a 25 de dezembro</td></tr>
-                <tr><td class="num">10:00</td><td>Outjo</td><td>Último combustível antes do parque. Encher sem discussão</td></tr>
-                <tr><td class="num">12:00</td><td>Anderson Gate</td><td>Taxas em dinheiro. <b>Perguntar quais os waterholes activos</b> — em época verde é a informação mais valiosa do dia</td></tr>
-                <tr><td class="num">13:30</td><td>Okaukuejo: check-in</td><td>Piscina e sombra: das 11h às 15h30 a pan é um espelho vazio</td></tr>
-                <tr><td class="num">16:30</td><td>Game drive</td><td>Nebrownii e Okondeka; crias de zebra e springbok por todo o lado</td></tr>
-                <tr><td class="num">19:34</td><td>Portão fecha</td><td>Dentro do camp, sem excepções</td></tr>
-                <tr><td class="num">21:00</td><td>Waterhole iluminado</td><td>Rinoceronte-negro entre as 21h e a 01h. Com três pessoas, façam turnos</td></tr>
+                <tr><td class="num">06:15</td><td>Saída do Madisa</td><td>Tudo fechado em Damaraland; levar pequeno-almoço do camp</td><td class="map">—</td></tr>
+                <tr><td class="num">08:00</td><td>Khorixas</td><td>Combustível. Lojas fechadas a 25 de dezembro</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-20.37384,14.96042" target="_blank" rel="noopener" title="Khorixas">ver</a></td></tr>
+                <tr><td class="num">10:00</td><td>Outjo</td><td>Último combustível antes do parque. Encher sem discussão</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-20.11186,16.15669" target="_blank" rel="noopener" title="Outjo">ver</a></td></tr>
+                <tr><td class="num">12:00</td><td>Anderson Gate</td><td>Taxas em dinheiro. <b>Perguntar quais os waterholes activos</b> — em época verde é a informação mais valiosa do dia</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-19.35550,15.90370" target="_blank" rel="noopener" title="Anderson Gate">ver</a></td></tr>
+                <tr><td class="num">13:30</td><td>Okaukuejo: check-in</td><td>Piscina e sombra: das 11h às 15h30 a pan é um espelho vazio</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-19.18330,15.93330" target="_blank" rel="noopener" title="Okaukuejo Camp">ver</a></td></tr>
+                <tr><td class="num">16:30</td><td>Game drive</td><td>Nebrownii e Okondeka; crias de zebra e springbok por todo o lado</td><td class="map">—</td></tr>
+                <tr><td class="num">19:34</td><td>Portão fecha</td><td>Dentro do camp, sem excepções</td><td class="map">—</td></tr>
+                <tr><td class="num">21:00</td><td>Waterhole iluminado</td><td>Rinoceronte-negro entre as 21h e a 01h. Com três pessoas, façam turnos</td><td class="map">—</td></tr>
               </tbody>
             </table>
           </div>
@@ -877,16 +881,16 @@
           <p>Madrugada no waterhole — a primeira luz é quando os felinos ainda estão fora — e depois a travessia clássica para leste, ao ritmo dos waterholes que o guarda indicou. À noite, um segundo espectáculo diferente do primeiro.</p>
           <div class="tablewrap" style="margin:12px 0 0">
             <table>
-              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th></tr></thead>
+              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th><th>Mapa</th></tr></thead>
               <tbody>
-                <tr><td class="num">05:45</td><td>Café e portão</td><td>Abre às 06:17. Os primeiros 40 min de luz valem o dia inteiro</td></tr>
-                <tr><td class="num">06:20</td><td>Game drive matinal</td><td>Okaukuejo → Nebrownii → Gemsbokvlakte, conforme o que o gate indicou</td></tr>
-                <tr><td class="num">09:00</td><td>Pequeno-almoço no camp</td><td>A sério, com cozinha montada</td></tr>
-                <tr><td class="num">10:30</td><td>Estrada para Halali</td><td>130 km de gravel de parque, 60 km/h máximo</td></tr>
-                <tr><td class="num">13:00</td><td>Halali: check-in</td><td>Camp no centro do parque; piscina e sesta</td></tr>
-                <tr><td class="num">16:00</td><td>Waterholes do centro</td><td>Moringa e Rietfontein ao fim da tarde</td></tr>
-                <tr><td class="num">19:34</td><td>Fecho do portão</td><td>De volta ao camp; braai com o que sobrou do Natal</td></tr>
-                <tr><td class="num">21:00</td><td>Waterhole de Moringa</td><td>Mais íntimo que Okaukuejo; o melhor do parque para leopardo e rinoceronte-negro à noite</td></tr>
+                <tr><td class="num">05:45</td><td>Café e portão</td><td>Abre às 06:17. Os primeiros 40 min de luz valem o dia inteiro</td><td class="map">—</td></tr>
+                <tr><td class="num">06:20</td><td>Game drive matinal</td><td>Okaukuejo → Nebrownii → Gemsbokvlakte, conforme o que o gate indicou</td><td class="map">—</td></tr>
+                <tr><td class="num">09:00</td><td>Pequeno-almoço no camp</td><td>A sério, com cozinha montada</td><td class="map">—</td></tr>
+                <tr><td class="num">10:30</td><td>Estrada para Halali</td><td>130 km de gravel de parque, 60 km/h máximo</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-19.03610,16.46960" target="_blank" rel="noopener" title="Halali">ver</a></td></tr>
+                <tr><td class="num">13:00</td><td>Halali: check-in</td><td>Camp no centro do parque; piscina e sesta</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-19.03610,16.46960" target="_blank" rel="noopener" title="Halali Camp">ver</a></td></tr>
+                <tr><td class="num">16:00</td><td>Waterholes do centro</td><td>Moringa e Rietfontein ao fim da tarde</td><td class="map">—</td></tr>
+                <tr><td class="num">19:34</td><td>Fecho do portão</td><td>De volta ao camp; braai com o que sobrou do Natal</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-26.70190,15.23185" target="_blank" rel="noopener" title="Kolmanskop — portão">ver</a></td></tr>
+                <tr><td class="num">21:00</td><td>Waterhole de Moringa</td><td>Mais íntimo que Okaukuejo; o melhor do parque para leopardo e rinoceronte-negro à noite</td><td class="map">—</td></tr>
               </tbody>
             </table>
           </div>
@@ -901,15 +905,15 @@
           <p>Última manhã de fauna, almoço num forte alemão e a subida ao Waterberg — uma montanha-ilha de arenito vermelho, verde e visivelmente mais fresca do que tudo o que ficou para trás.</p>
           <div class="tablewrap" style="margin:12px 0 0">
             <table>
-              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th></tr></thead>
+              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th><th>Mapa</th></tr></thead>
               <tbody>
-                <tr><td class="num">05:45</td><td>Saída de Halali</td><td>Chudop e Klein Namutoni ao nascer do sol</td></tr>
-                <tr><td class="num">09:00</td><td>Forte de Namutoni</td><td>Brunch no forte; última oportunidade de água potável fácil no parque</td></tr>
-                <tr><td class="num">10:30</td><td>Portão Von Lindequist</td><td>Saída do parque; cordão veterinário — nada de carne crua para sul</td></tr>
-                <tr><td class="num">12:30</td><td>Tsumeb e Otjiwarongo</td><td>Combustível, almoço de estrada e troca de condutor: são as últimas 3h30 do dia</td></tr>
-                <tr><td class="num">15:30</td><td>Waterberg: check-in NWR</td><td>Campo na base do planalto, o único alojamento do parque</td></tr>
-                <tr><td class="num">17:30</td><td>Miradouro do planalto</td><td>Luz do fim da tarde sobre o bush; rinocerontes avistados à distância</td></tr>
-                <tr><td class="num">19:30</td><td>Braai e arrumar</td><td>Preparar a subida de amanhã: sapatos, água, 06:00</td></tr>
+                <tr><td class="num">05:45</td><td>Saída de Halali</td><td>Chudop e Klein Namutoni ao nascer do sol</td><td class="map">—</td></tr>
+                <tr><td class="num">09:00</td><td>Forte de Namutoni</td><td>Brunch no forte; última oportunidade de água potável fácil no parque</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-18.80000,16.98330" target="_blank" rel="noopener" title="Namutoni">ver</a></td></tr>
+                <tr><td class="num">10:30</td><td>Portão Von Lindequist</td><td>Saída do parque; cordão veterinário — nada de carne crua para sul</td><td class="map">—</td></tr>
+                <tr><td class="num">12:30</td><td>Tsumeb e Otjiwarongo</td><td>Combustível, almoço de estrada e troca de condutor: são as últimas 3h30 do dia</td><td class="map">—</td></tr>
+                <tr><td class="num">15:30</td><td>Waterberg: check-in NWR</td><td>Campo na base do planalto, o único alojamento do parque</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-20.41725,17.28479" target="_blank" rel="noopener" title="Waterberg Camp">ver</a></td></tr>
+                <tr><td class="num">17:30</td><td>Miradouro do planalto</td><td>Luz do fim da tarde sobre o bush; rinocerontes avistados à distância</td><td class="map"><a href="https://www.google.com/maps/search/?api=1&query=-26.23480,16.59620" target="_blank" rel="noopener" title="Miradouro sobre o vale">ver</a></td></tr>
+                <tr><td class="num">19:30</td><td>Braai e arrumar</td><td>Preparar a subida de amanhã: sapatos, água, 06:00</td><td class="map">—</td></tr>
               </tbody>
             </table>
           </div>
@@ -924,16 +928,16 @@
           <p>A única caminhada da viagem em território de fauna grande, feita ao fresco da madrugada. Depois 280 km de asfalto, devolução do carro e um voo às 20:00 — com margem para um furo.</p>
           <div class="tablewrap" style="margin:12px 0 0">
             <table>
-              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th></tr></thead>
+              <thead><tr><th>Hora</th><th>O quê</th><th>Notas</th><th>Mapa</th></tr></thead>
               <tbody>
-                <tr><td class="num">05:45</td><td>Subida ao planalto</td><td>Pela ravina, 1h, íngreme. É o único sítio onde se anda a pé entre rinocerontes-brancos e negros e búfalo</td></tr>
-                <tr><td class="num">07:30</td><td>Descida e pequeno-almoço</td><td>Desmontar o campo com calma</td></tr>
-                <tr><td class="num">09:30</td><td>Saída do Waterberg</td><td><b>Limite absoluto: 13:00.</b> São 280 km de asfalto, ~3h</td></tr>
-                <tr><td class="num">12:30</td><td>Windhoek</td><td>Depósito cheio e lavagem rápida, se der</td></tr>
-                <tr><td class="num">15:30</td><td>Devolução na Asco</td><td>Hora do contrato: inspecção, garrafa de gás e depósito cheio. Meia hora até ao shuttle</td></tr>
-                <tr><td class="num">16:00</td><td>Shuttle da Asco para Hosea Kutako</td><td>É o <b>último do dia</b>, confirmado por email. 45 min até ao aeroporto</td></tr>
-                <tr><td class="num">17:00</td><td>Check-in do voo 4Y133</td><td>Compras de última hora, jantar no terminal</td></tr>
-                <tr><td class="num">20:00</td><td>Voo para Frankfurt</td><td>Chegada a FRA às 05:20 de dia 29; autocarro para o Hahn às 17:20</td></tr>
+                <tr><td class="num">05:45</td><td>Subida ao planalto</td><td>Pela ravina, 1h, íngreme. É o único sítio onde se anda a pé entre rinocerontes-brancos e negros e búfalo</td><td class="map">—</td></tr>
+                <tr><td class="num">07:30</td><td>Descida e pequeno-almoço</td><td>Desmontar o campo com calma</td><td class="map">—</td></tr>
+                <tr><td class="num">09:30</td><td>Saída do Waterberg</td><td><b>Limite absoluto: 13:00.</b> São 280 km de asfalto, ~3h</td><td class="map">—</td></tr>
+                <tr><td class="num">12:30</td><td>Windhoek</td><td>Depósito cheio e lavagem rápida, se der</td><td class="map">—</td></tr>
+                <tr><td class="num">15:30</td><td>Devolução na Asco</td><td>Hora do contrato: inspecção, garrafa de gás e depósito cheio. Meia hora até ao shuttle</td><td class="map">—</td></tr>
+                <tr><td class="num">16:00</td><td>Shuttle da Asco para Hosea Kutako</td><td>É o <b>último do dia</b>, confirmado por email. 45 min até ao aeroporto</td><td class="map">—</td></tr>
+                <tr><td class="num">17:00</td><td>Check-in do voo 4Y133</td><td>Compras de última hora, jantar no terminal</td><td class="map">—</td></tr>
+                <tr><td class="num">20:00</td><td>Voo para Frankfurt</td><td>Chegada a FRA às 05:20 de dia 29; autocarro para o Hahn às 17:20</td><td class="map">—</td></tr>
               </tbody>
             </table>
           </div>
