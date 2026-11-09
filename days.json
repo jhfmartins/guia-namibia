@@ -1,0 +1,1498 @@
+[
+ {
+  "num": "Dia 00 · 13 dez · A caminho",
+  "titulo": "Porto → Frankfurt-Hahn → Frankfurt → a bordo para Windhoek",
+  "leg": [
+   "✈ 2 voos + 1 autocarro",
+   "⏱ 16h de viagem",
+   "Ryanair FR4393 · flibco/BOHR · Discover 4Y132"
+  ],
+  "intro": "Não é um dia de deserto, é um dia de logística — e o único em que um erro custa a viagem toda, porque são três bilhetes separados . A linha do dia: 07:20 Porto → 10:55 Frankfurt-Hahn; 12:15 de autocarro para o aeroporto de Frankfurt, no P36 às 14:05 ; tarde na cidade; check-in às 18:00 ; 22:00 para Windhoek.",
+  "rows": [
+   {
+    "hora": "07:20",
+    "oque": "Voo OPO → HHN FR4393",
+    "nota": "Aterragem 10:55. Só o Henrique tem mala de porão na Ryanair (20 kg) — é ele que a levanta",
+    "mapa": ""
+   },
+   {
+    "hora": "11:15",
+    "oque": "Paragem 14, em frente ao Terminal B do Hahn",
+    "nota": "O autocarro sai às 12:15 em ponto; estar lá 10 minutos antes",
+    "mapa": ""
+   },
+   {
+    "hora": "12:15",
+    "oque": "Autocarro HHN → FRA",
+    "nota": "Bilhete 37694876 · chega ao P36, junto ao Terminal 1, às 14:05",
+    "mapa": ""
+   },
+   {
+    "hora": "14:05",
+    "oque": "Consignação de bagagem, T1 Área B Nível 1",
+    "nota": "Aberta 24h, sem reserva, paga por peça. Ficam com passaportes e material de valor",
+    "mapa": ""
+   },
+   {
+    "hora": "14:30",
+    "oque": "S-Bahn S8/S9 → Hauptwache",
+    "nota": "~15 min. Bilhete próprio: o aeroporto tem zona tarifária separada",
+    "mapa": ""
+   },
+   {
+    "hora": "15:00",
+    "oque": "Mercado de Natal: Römerberg, Paulsplatz, Mainkai",
+    "nota": "Está a decorrer de 23/11 a 22/12. A melhor hora é a última — o sol põe-se às 16:25",
+    "mapa": ""
+   },
+   {
+    "hora": "17:15",
+    "oque": "S-Bahn de volta ao FRA",
+    "nota": "Levantar as malas e seguir para o check-in",
+    "mapa": ""
+   },
+   {
+    "hora": "18:00",
+    "oque": "Check-in Lufthansa / Discover",
+    "nota": "Abre ~4h antes. Para um intercontinental, três horas de antecedência é o mínimo",
+    "mapa": ""
+   },
+   {
+    "hora": "22:00",
+    "oque": "Voo FRA → WDH 4Y132",
+    "nota": "10h25 a bordo; aterragem a 14 de dezembro às 09:25",
+    "mapa": ""
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "A reserva mais frágil do dia",
+    "texto": "Ryanair e Lufthansa são bilhetes separados : se o voo do Porto falhar, a Lufthansa não deve nada. A exposição real é uma só — chegar a Frankfurt no dia 13 . Há alternativas no mesmo dia (TAP e Lufthansa voam OPO–FRA), mas em semana de Natal saem caras: é exactamente aqui que o seguro tem de cobrir ligação perdida entre reservas distintas ."
+   }
+  ],
+  "dormir": "Dormir · a bordo Sem cama na noite de 13 para 14. Porquê: o voo nocturno é o que permite acordar em Windhoek às 09:25 e ainda fazer 320 km até ao Kalahari com luz — a primeira noite de tenda é a de 14, no Kalahari.",
+  "dormir_lbl": "Dormir · a bordo",
+  "dormir_nome": "Sem cama na noite de 13 para 14.",
+  "dormir_desc": "Porquê: o voo nocturno é o que permite acordar em Windhoek às 09:25 e ainda fazer 320 km até ao Kalahari com luz — a primeira noite de tenda é a de 14, no Kalahari."
+ },
+ {
+  "num": "Dia 01 · 14 dez · Chegada & Hardap",
+  "titulo": "Hosea Kutako → Windhoek → Hardap (Mariental)",
+  "leg": [
+   "🚗 ~305 km",
+   "⏱ 3h30–4h",
+   "B6 + B1, tudo asfalto"
+  ],
+  "intro": "O dia da papelada: imigração com o e-visa impresso, shuttle da Asco até à cidade, contrato, briefing e o primeiro supermercado a sério. É o dia mais apertado da viagem em tempo — não pelo volante, mas porque tudo depende de o voo aterrar à hora.",
+  "rows": [
+   {
+    "hora": "09:25",
+    "oque": "Aterragem em Hosea Kutako",
+    "nota": "E-visas impressos à mão. Imigração + bagagem: contem 30–40 min",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-22.48220,17.47205",
+     "name": "Hosea Kutako — aterragem"
+    }
+   },
+   {
+    "hora": "10:15",
+    "oque": "Shuttle da Asco (8h–15h)",
+    "nota": "O motorista sai no máximo 90 min após a aterragem; ~45 min até ao depot na Mandume Ndemufayo",
+    "mapa": ""
+   },
+   {
+    "hora": "11:45",
+    "oque": "Depot Asco: contrato e inspecção",
+    "nota": "Dois condutores: o Henrique e a Cláudia ficam nomeados no contrato (a franquia inclui dois sem custo). Os três assistem ao briefing. Fotografar todos os danos",
+    "mapa": ""
+   },
+   {
+    "hora": "12:45",
+    "oque": "Montar e desmontar as duas tendas",
+    "nota": "No parque da rental, com os três a aprender. Verificar: 2 suplentes, macaco, compressor, jerricã, roupa de cama para 3",
+    "mapa": ""
+   },
+   {
+    "hora": "13:30",
+    "oque": "Supermercado em Windhoek",
+    "nota": "Comida para 4–5 dias, 40–50 L de capacidade de água, gelo, lenha. Depósito cheio antes de sair",
+    "mapa": ""
+   },
+   {
+    "hora": "14:15",
+    "oque": "Saída para sul pela B1",
+    "nota": "~260 km até ao Hardap; sai-se da B1 em Mariental. Combustível em Rehoboth se necessário",
+    "mapa": ""
+   },
+   {
+    "hora": "16:45",
+    "oque": "Trópico de Capricórnio",
+    "nota": "Marco na berma da B1, coordenadas -23.500 / 17.128, 40 km antes de Mariental. Cinco minutos e uma foto",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-23.50000,17.12800",
+     "name": "Trópico de Capricórnio"
+    }
+   },
+   {
+    "hora": "17:45",
+    "oque": "Chegada ao Hardap",
+    "nota": "Campismo na albufeira: montar com luz, a última hora dourada é para isso",
+    "mapa": ""
+   },
+   {
+    "hora": "19:30",
+    "oque": "Pôr do sol, braai e céu",
+    "nota": "Lua a 22%, põe-se às ~22:30. Pelicanos e o espelho de água em vez de dunas",
+    "mapa": ""
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Se o voo atrasar",
+    "texto": "Corta o supermercado em Windhoek e compra o essencial no Spar de Mariental na manhã seguinte (dia 2, a caminho de Keetmanshoop). O que não se corta é a montagem das tendas: sem essa prática, a primeira noite no deserto corre mal."
+   },
+   {
+    "titulo": "Dinheiro",
+    "texto": "Levantar N$ no multibanco de Windhoek antes de sair: as taxas de parque são em notas e o primeiro portão a exigi-las é o de Hobas, no dia 3."
+   }
+  ],
+  "dormir": "Dormir · Hardap (Mariental) Hardap Resort, campsite NWR — N$220/pessoa, N$660 pelos três, reservado (786431 · CW-Rw_EOiaD8F). Porquê: 260 km de asfalto desde Windhoek, 28 parcelas à beira da albufeira e nada para montar além das tendas. Fica a 24 km de Mariental para reabastecer de manhã.",
+  "dormir_lbl": "Dormir · Hardap (Mariental)",
+  "dormir_nome": "Hardap Resort, campsite NWR",
+  "dormir_desc": "— N$220/pessoa, N$660 pelos três, reservado (786431 · CW-Rw_EOiaD8F). Porquê: 260 km de asfalto desde Windhoek, 28 parcelas à beira da albufeira e nada para montar além das tendas. Fica a 24 km de Mariental para reabastecer de manhã."
+ },
+ {
+  "num": "Dia 02 · 15 dez · Kokerbooms",
+  "titulo": "Hardap → Keetmanshoop → Quiver Tree Forest",
+  "leg": [
+   "🚗 ~330 km",
+   "⏱ 4h",
+   "B1 asfalto, C17 em gravel bom"
+  ],
+  "intro": "Etapa curta de propósito: o sul a 38 °C pede ritmo lento. Em vez de chegar e hibernar, a manhã ocupa-se com os fósseis de Mesosaurus, e o calor guarda-se para a sesta. O prémio continua a ser o fim do dia: os kokerbooms à luz dourada e a melhor noite de estrelas da viagem.",
+  "rows": [
+   {
+    "hora": "05:30",
+    "oque": "Café e nascer do sol nas dunas",
+    "nota": "Oryx nas cristas, luz rasante sobre a albufeira",
+    "mapa": ""
+   },
+   {
+    "hora": "06:00",
+    "oque": "Volta pelo parque de caça do Hardap",
+    "nota": "Meia hora pelas pistas ao amanhecer: rinoceronte-branco , oryx, springbok. A melhor probabilidade de fauna do bloco sul",
+    "mapa": ""
+   },
+   {
+    "hora": "07:00",
+    "oque": "Saída pela B1 para sul",
+    "nota": "~250 km, asfalto por Mariental",
+    "mapa": ""
+   },
+   {
+    "hora": "10:15",
+    "oque": "Keetmanshoop: combustível, água e gelo",
+    "nota": "Última vila decente antes do canyon. Igreja missionária de 1895 a duas ruas, 15 minutos",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-26.57909,18.13419",
+     "name": "Keetmanshoop"
+    }
+   },
+   {
+    "hora": "10:45",
+    "oque": "C17 para leste",
+    "nota": "Gravel bom, 40 km até à farm Spitzkoppe-Ost",
+    "mapa": ""
+   },
+   {
+    "hora": "11:20",
+    "oque": "Mesosaurus Fossil Camp",
+    "nota": "Visita guiada de 1h30 aos fósseis do réptil de 280 milhões de anos, com os Steenkamp. Paga-se no local",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-26.40600,18.47640",
+     "name": "Mesosaurus Fossil Camp"
+    }
+   },
+   {
+    "hora": "13:15",
+    "oque": "Quiver Tree Forest Rest Camp",
+    "nota": "Campo montado à sombra. Sem reserva; paga-se em dinheiro",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-26.55332,18.15842",
+     "name": "Quiver Tree Forest Rest Camp"
+    }
+   },
+   {
+    "hora": "14:00",
+    "oque": "Sesta até às 16h",
+    "nota": "38 °C é para ficar quieto; é aqui que se paga a factura de não descansar",
+    "mapa": ""
+   },
+   {
+    "hora": "16:30",
+    "oque": "Giant's Playground",
+    "nota": "10 min do camp: caos de dolerito empilhado, óptimo à luz baixa",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-26.46580,18.27180",
+     "name": "Giant's Playground"
+    }
+   },
+   {
+    "hora": "17:15",
+    "oque": "Floresta de kokerbooms",
+    "nota": "Luz dourada nos aloés-árvore de 200–300 anos; pôr do sol às 19:30",
+    "mapa": ""
+   },
+   {
+    "hora": "23:15",
+    "oque": "A lua põe-se",
+    "nota": "A partir daqui, céu escuro: Nuvens de Magalhães, Oríon ao zénite, 47 Tucanae. Ficar até à 01:00",
+    "mapa": ""
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Astro",
+    "texto": "Esta é a melhor noite de estrelas do roteiro. O núcleo da Via Láctea não se vê em dezembro — os alvos são as Nuvens de Magalhães e Oríon, com os kokerbooms em silhueta."
+   }
+  ],
+  "dormir": "Dormir · Quiver Tree Forest Campsite da quinta dos kokerbooms (~N$220–250/pessoa). Porquê: dorme-se literalmente dentro do cenário de astrofotografia; a 10 min de Keetmanshoop para reabastecer de manhã.",
+  "dormir_lbl": "Dormir · Quiver Tree Forest",
+  "dormir_nome": "Campsite da quinta dos kokerbooms",
+  "dormir_desc": "(~N$220–250/pessoa). Porquê: dorme-se literalmente dentro do cenário de astrofotografia; a 10 min de Keetmanshoop para reabastecer de manhã."
+ },
+ {
+  "num": "Dia 03 · 16 dez · O grande canyon",
+  "titulo": "Keetmanshoop → Fish River Canyon (Hobas)",
+  "leg": [
+   "🚗 ~160 km",
+   "⏱ 2h",
+   "B4 + C12/gravel fácil"
+  ],
+  "intro": "Manhã de estrada curta para chegar ao canyon antes do forno. O programa a sério é só ao fim da tarde: o trilho dentro do canyon está fechado (só abre mai–set), portanto o jogo é caminhar pela borda entre o Main Viewpoint e o Hell's Bend com o sol baixo.",
+  "rows": [
+   {
+    "hora": "05:30",
+    "oque": "Nascer do sol na floresta",
+    "nota": "Dormes dentro dela e a entrada já está paga até ao pôr do sol. Luz completamente diferente da das 17:15 — vale os cinquenta minutos a menos de sono",
+    "mapa": ""
+   },
+   {
+    "hora": "06:30",
+    "oque": "Café e desmontar o campo",
+    "nota": "Sair cedo: o gravel aquece e não há sombra",
+    "mapa": ""
+   },
+   {
+    "hora": "07:15",
+    "oque": "Saída B4 → C12 para Hobas",
+    "nota": "160 km, ~2h",
+    "mapa": ""
+   },
+   {
+    "hora": "09:30",
+    "oque": "Portão de Hobas",
+    "nota": "Taxas em dinheiro : N$280 por adulto + N$60 pela viatura, por dia. Não aceitam cartão",
+    "mapa": ""
+   },
+   {
+    "hora": "10:00",
+    "oque": "Camp instalado, piscina",
+    "nota": "A NWR só garante o camp a partir das 14h, mas as parcelas ficam livres cedo",
+    "mapa": ""
+   },
+   {
+    "hora": "11:00",
+    "oque": "Sesta obrigatória",
+    "nota": "35–42 °C. Nada de esforço entre as 11h e as 16h30, para nenhum dos três",
+    "mapa": ""
+   },
+   {
+    "hora": "16:45",
+    "oque": "Main Viewpoint",
+    "nota": "10,5 km do camp, 20 min em gravel. 550 m de profundidade a mudar de cor",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-27.58910,17.61440",
+     "name": "Main Viewpoint"
+    }
+   },
+   {
+    "hora": "18:00",
+    "oque": "Hiker's Viewpoint e Sunset Viewpoint",
+    "nota": "A 1,5 km do Main: caminhar ao longo da borda, sem pressa",
+    "mapa": ""
+   },
+   {
+    "hora": "19:30",
+    "oque": "Pôr do sol no Main Viewpoint",
+    "nota": "O momento do dia. Ficar até o sol tocar a linha do horizonte",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-27.58910,17.61440",
+     "name": "Main Viewpoint"
+    }
+   },
+   {
+    "hora": "19:40",
+    "oque": "Regresso imediato ao camp",
+    "nota": "10,5 km, 20 min, faróis ligados no crepúsculo. Não há alternativa: não se dorme na borda",
+    "mapa": ""
+   },
+   {
+    "hora": "20:15",
+    "oque": "Braai",
+    "nota": "Campo já montado: é só acender o fogo",
+    "mapa": ""
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Calor",
+    "texto": "Meados de dezembro no sul = 35–42 °C. Chapéu, 3 L de água por pessoa mesmo em passeios curtos, e a tarde é para a piscina — o roteiro tem folga para isso."
+   }
+  ],
+  "dormir": "Dormir · Hobas Hobas Campground (NWR, N$480/pessoa, piscina). Porquê: é o único alojamento à borda do canyon — nascer do sol no miradouro a 10 min, e a piscina às 14h não é luxo, é sobrevivência.",
+  "dormir_lbl": "Dormir · Hobas",
+  "dormir_nome": "Hobas Campground",
+  "dormir_desc": "(NWR, N$480/pessoa, piscina). Porquê: é o único alojamento à borda do canyon — nascer do sol no miradouro a 10 min, e a piscina às 14h não é luxo, é sobrevivência."
+ },
+ {
+  "num": "Dia 04 · 17 dez · Do canyon ao Atlântico",
+  "titulo": "Fish River → Aus → Lüderitz (via Canyon Roadhouse)",
+  "leg": [
+   "🚗 ~345 km",
+   "⏱ 4h30",
+   "C12/C13/B4, gravel + asfalto"
+  ],
+  "intro": "Repetição deliberada do miradouro ao nascer do sol, porque a luz do dia anterior raramente é a melhor. Depois estrada para oeste, café num museu de ferrugem, os cavalos de Garub, e a descida até ao Atlântico. A base dos dois dias seguintes é Lüderitz, não Aus.",
+  "rows": [
+   {
+    "hora": "05:40",
+    "oque": "Saída para o Hell's Bend",
+    "nota": "11,6 km, 20 min. O sol nasce às 05:55, chegas com ele ainda baixo",
+    "mapa": ""
+   },
+   {
+    "hora": "06:00",
+    "oque": "Hell's Bend ao amanhecer",
+    "nota": "O meandro com 550 m de parede, sem uma alma. Uma hora de tripé",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-27.57710,17.60860",
+     "name": "Hell's Bend ao amanhecer"
+    }
+   },
+   {
+    "hora": "07:20",
+    "oque": "Regresso ao camp",
+    "nota": "Pequeno-almoço, duche rápido e desmontar",
+    "mapa": ""
+   },
+   {
+    "hora": "08:30",
+    "oque": "Saída C12/C13",
+    "nota": "345 km até Lüderitz, gravel e depois asfalto",
+    "mapa": ""
+   },
+   {
+    "hora": "10:30",
+    "oque": "Canyon Roadhouse",
+    "nota": "Café e o museu vivo de carros enferrujados; combustível caro mas é o único",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-27.52420,17.81480",
+     "name": "Canyon Roadhouse"
+    }
+   },
+   {
+    "hora": "13:15",
+    "oque": "Aus",
+    "nota": "Encher o depósito e comprar gelo. É a última vila antes da costa",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-26.66434,16.25943",
+     "name": "Aus"
+    }
+   },
+   {
+    "hora": "15:45",
+    "oque": "Lüderitz: compras no Spar",
+    "nota": "500 m do centro. Comprar antes de fechar: amanhã saem às 05:30 e só voltam ao fim da tarde",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-26.65001,15.15727",
+     "name": "Lüderitz: compras no Spar"
+    }
+   },
+   {
+    "hora": "16:45",
+    "oque": "Check-in no Shalom",
+    "nota": "Apartamento com cozinha, a norte do centro. Deixar as malas e arejar",
+    "mapa": ""
+   },
+   {
+    "hora": "17:30",
+    "oque": "Diaz Point até ao pôr do sol",
+    "nota": "10 km. A ponte de madeira, a cruz e o Atlântico — é o sítio certo para esta hora, e liberta o dia 5",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-26.63650,15.09290",
+     "name": "Diaz Point ao pôr do sol"
+    }
+   },
+   {
+    "hora": "19:40",
+    "oque": "Jantar em casa",
+    "nota": "Primeira noite com cozinha desde Windhoek: jantar sem depender de restaurante",
+    "mapa": ""
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Combustível",
+    "texto": "Encher em Keetmanshoop antes de entrar no gravel. Hobas não tem bomba fiável e o Canyon Roadhouse é a única alternativa — cara."
+   }
+  ],
+  "dormir": "Dormir · Lüderitz Shalom Self Catering — apartamento familiar, €103 as duas noites , reserva 6378109969 (PIN 8463), cancelamento gratuito até 16 dez e pagamento à chegada. Porquê: cozinha própria, estacionamento ao ar livre (as tendas no tejadilho passam) e 15 minutos de Kolmanskop.",
+  "dormir_lbl": "Dormir · Lüderitz",
+  "dormir_nome": "Shalom Self Catering",
+  "dormir_desc": "— apartamento familiar, €103 as duas noites , reserva 6378109969 (PIN 8463), cancelamento gratuito até 16 dez e pagamento à chegada. Porquê: cozinha própria, estacionamento ao ar livre (as tendas no tejadilho passam) e 15 minutos de Kolmanskop."
+ },
+ {
+  "num": "Dia 05 · 18 dez · ⭐ A cidade engolida",
+  "titulo": "Kolmanskop · Lüderitz · Grosse Bucht",
+  "leg": [
+   "🚗 ~45 km",
+   "⏱ 1h30 ao volante",
+   "asfalto; areia a invadir a estrada"
+  ],
+  "intro": "O dia urbex, e o único em que o despertador é a sério. Com o photo permit entra-se em Kolmanskop antes de o sol tocar as casas, sem ninguém. Ao meio-dia, Lüderitz: a cidade a pé, ostras, e à tarde a Grosse Bucht. O Diaz Point ficou no dia 4, ao pôr do sol, com a luz certa.",
+  "rows": [
+   {
+    "hora": "05:00",
+    "oque": "Café rápido, sem barulho",
+    "nota": "Saída cedo mas sem montar cozinha a sério",
+    "mapa": ""
+   },
+   {
+    "hora": "05:30",
+    "oque": "Saída para Kolmanskop",
+    "nota": "10 km, 15 min. Neblina possível ao amanhecer",
+    "mapa": ""
+   },
+   {
+    "hora": "05:50",
+    "oque": "Portão lateral de Kolmanskop",
+    "nota": "Day Pass já comprado (bilhetes 1503719053–55). Usar o código de acesso ao portão que vem no email de confirmação, não o QR: o portão só tem pessoal às 8h",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-26.70190,15.23185",
+     "name": "Kolmanskop — portão"
+    }
+   },
+   {
+    "hora": "06:05",
+    "oque": "Nascer do sol nas casas de areia",
+    "nota": "Grande-angular + tripé; HDR nos interiores contra as janelas",
+    "mapa": ""
+   },
+   {
+    "hora": "09:30",
+    "oque": "Tour guiada (incluída no permit)",
+    "nota": "Opcional: a esta hora já se fotografou o que interessava",
+    "mapa": ""
+   },
+   {
+    "hora": "10:00",
+    "oque": "Padaria alemã e centro a pé",
+    "nota": "Goerke Haus, Felsenkirche, Bismarckstrasse. Uma hora e meia chega",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-26.65001,15.15727",
+     "name": "Lüderitz, centro a pé"
+    }
+   },
+   {
+    "hora": "12:30",
+    "oque": "Ostras no Diaz Coffee Shop",
+    "nota": "~N$15 a unidade, peixe do dia. A melhor refeição barata do país",
+    "mapa": ""
+   },
+   {
+    "hora": "14:00",
+    "oque": "Sesta em casa",
+    "nota": "O dia 4 já levou o Diaz Point ao pôr do sol. Aqui descansa-se: são 12 horas em pé desde as 05:00",
+    "mapa": ""
+   },
+   {
+    "hora": "16:00",
+    "oque": "Grosse Bucht",
+    "nota": "Baía aberta a sul: flamingos, naufrágios e vento",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-26.73850,15.10230",
+     "name": "Grosse Bucht"
+    }
+   },
+   {
+    "hora": "18:30",
+    "oque": "Shark Island ao pôr do sol",
+    "nota": "Pôr do sol às 19:30, com a cidade às costas",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-26.63690,15.15260",
+     "name": "Shark Island"
+    }
+   },
+   {
+    "hora": "19:45",
+    "oque": "Jantar no apartamento",
+    "nota": "Preparar a saída das 06:00 e encher a água para a D707",
+    "mapa": ""
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Reservar já",
+    "texto": "Photo permit de Kolmanskop ( N$480/pessoa — tarifa 2026/27): é o Amateur Photographers Permit , dá acesso das 6h às 19h fora dos horários das tours, e é o único que permite entrar antes das 9h30. Comprar no dia anterior , online ou no Desert Deli em Lüderitz, porque o portão só tem pessoal a partir das 8h e o código de acesso chega depois da compra. Sem fotografia nocturna: o Sperrgebiet fecha ao pôr do sol."
+   }
+  ],
+  "dormir": "Dormir · Lüderitz Segunda noite no Shalom . Porquê: não desmontar nada, e sair às 06:00 do dia 19 com a água e o depósito já tratados — em Aus isso obrigaria a 125 km antes do gravel.",
+  "dormir_lbl": "Dormir · Lüderitz",
+  "dormir_nome": "Segunda noite no Shalom",
+  "dormir_desc": ". Porquê: não desmontar nada, e sair às 06:00 do dia 19 com a água e o depósito já tratados — em Aus isso obrigaria a 125 km antes do gravel."
+ },
+ {
+  "num": "Dia 06 · 19 dez · A estrada-rainha e os cavalos",
+  "titulo": "Lüderitz → Aus → D707 → Sesriem",
+  "leg": [
+   "🚗 ~505 km",
+   "⏱ 7h30–8h",
+   "asfalto até Aus, depois C13 + D707 + C27"
+  ],
+  "intro": "O dia mais pesado da viagem: 125 km de asfalto até Aus para atestar, e depois os 380 km de gravel que fazem a fama da D707. Sai-se às 06:00 para chegar a Sesriem ao início da tarde e ainda haver luz para montar.",
+  "rows": [
+   {
+    "hora": "05:30",
+    "oque": "Café e sair do apartamento",
+    "nota": "Check-out cedo, com a chave devolvida conforme combinado",
+    "mapa": ""
+   },
+   {
+    "hora": "06:00",
+    "oque": "Saída de Lüderitz",
+    "nota": "125 km de asfalto até Aus; a 20 km de Aus, paragem em Garub",
+    "mapa": ""
+   },
+   {
+    "hora": "07:10",
+    "oque": "Garub — cavalos selvagens",
+    "nota": "A hora certa: ao amanhecer descem a beber. 15 minutos, na B4",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-26.59490,15.94870",
+     "name": "Garub — cavalos selvagens"
+    }
+   },
+   {
+    "hora": "07:35",
+    "oque": "Aus: depósito cheio, gelo e água",
+    "nota": "Última bomba antes de 380 km de nada. Betta tem, mas não contar com ela",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-26.66500,16.26700",
+     "name": "Aus — depósito cheio"
+    }
+   },
+   {
+    "hora": "07:55",
+    "oque": "Campo de prisioneiros de 1915",
+    "nota": "1,5 km de Aus: os alemães internados depois da campanha construíram estas estradas. Muros e sepulturas da Commonwealth ao lado",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-26.67520,16.28770",
+     "name": "Campo de prisioneiros de 1915"
+    }
+   },
+   {
+    "hora": "08:20",
+    "oque": "C13 para norte",
+    "nota": "Gravel bom; rotação de condutor a cada 2h",
+    "mapa": ""
+   },
+   {
+    "hora": "09:20",
+    "oque": "Miradouro sobre o vale",
+    "nota": "61 km de Aus, na própria estrada: 10 minutos e a vista abre-se para as Tiras",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-26.23480,16.59620",
+     "name": "Miradouro sobre o vale"
+    }
+   },
+   {
+    "hora": "10:00",
+    "oque": "Entrada na D707",
+    "nota": "O troço que justifica a viagem: parar quantas vezes apetecer",
+    "mapa": ""
+   },
+   {
+    "hora": "12:15",
+    "oque": "Almoço à sombra de um camel thorn",
+    "nota": "Levar tudo; não há sombra artificial em 200 km",
+    "mapa": ""
+   },
+   {
+    "hora": "13:15",
+    "oque": "Betta — combustível de reserva",
+    "nota": "87 m da estrada; a bomba é inconstante, mas é a única entre Aus e Sesriem",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-25.38320,16.42350",
+     "name": "Betta"
+    }
+   },
+   {
+    "hora": "14:00",
+    "oque": "C27 para norte, em direcção a Sesriem",
+    "nota": "Piso duro, corredores de areia na berma",
+    "mapa": ""
+   },
+   {
+    "hora": "15:10",
+    "oque": "Sesriem: check-in NWR",
+    "nota": "Bomba de combustível no camp; abastecer para as manhãs em Sossusvlei",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-24.48713,15.79849",
+     "name": "Sesriem Camp"
+    }
+   },
+   {
+    "hora": "17:00",
+    "oque": "Elim Dune",
+    "nota": "5 km do camp, a única duna que se sobe ao fim do dia sem logística",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-24.45830,15.77730",
+     "name": "Elim Dune"
+    }
+   },
+   {
+    "hora": "19:30",
+    "oque": "Braai",
+    "nota": "Lua a 72%: noite clara, boa para arrumar material",
+    "mapa": ""
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "O dia do cansaço",
+    "texto": "Quase oito horas ao volante com dois condutores: troca a cada 2h ou 200 km, o que vier primeiro. Quem não conduz vigia a estrada e a temperatura — o lugar de trás adormece e é aí que se perde a noção do tempo."
+   }
+  ],
+  "dormir": "Dormir · Sesriem (dentro do portão) Sesriem Campsite NWR (N$670/pessoa — o mais caro da viagem, e vale). Porquê: estão já dentro do portão . Ao nascer do sol seguem directos para o portão interior enquanto quem dorme fora ainda faz fila no exterior — e isso são os 45 a 60 minutos que separam Deadvlei com luz rasante ou com luz queimada.",
+  "dormir_lbl": "Dormir · Sesriem (dentro do portão)",
+  "dormir_nome": "Sesriem Campsite NWR",
+  "dormir_desc": "(N$670/pessoa — o mais caro da viagem, e vale). Porquê: estão já dentro do portão . Ao nascer do sol seguem directos para o portão interior enquanto quem dorme fora ainda faz fila no exterior — e isso são os 45 a 60 minutos que separam Deadvlei com luz rasante ou com luz queimada."
+ },
+ {
+  "num": "Dia 07 · 20 dez · ⭐ Deadvlei",
+  "titulo": "Sossusvlei · Deadvlei · Big Daddy · Sesriem Canyon",
+  "leg": [
+   "🚗 ~130 km (i/v no parque)",
+   "⏱ 1h30 + caminhadas",
+   "asfalto até ao 2x4; últimos 5 km areia mole"
+  ],
+  "intro": "O dia que justifica Sossusvlei: entrar com o portão a abrir, subir o Big Daddy enquanto está fresco e descer a face de areia directo a Deadvlei. Depois, ao meio-dia, o único sítio do parque onde o calor perdoa — o canyon.",
+  "rows": [
+   {
+    "hora": "04:30",
+    "oque": "Café, sem montar cozinha",
+    "nota": "Come-se a sério depois do vlei",
+    "mapa": ""
+   },
+   {
+    "hora": "04:55",
+    "oque": "Portão interior",
+    "nota": "Uma hora antes do sol , privilégio de quem dorme dentro da vedação. O portão de Sesriem só abre às 05:55",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-24.48713,15.79849",
+     "name": "Portão interior de Sesriem"
+    }
+   },
+   {
+    "hora": "06:10",
+    "oque": "Fim do alcatrão: 5 km de areia",
+    "nota": "Pneus a 1,5 bar. Desde maio de 2026 o 4x4 próprio faz este troço — o shuttle de N$250/pessoa deixou de ser preciso",
+    "mapa": ""
+   },
+   {
+    "hora": "06:15",
+    "oque": "Subida ao Big Daddy",
+    "nota": "325 m pela crista, 45–60 min, ainda fresco. Areia mole: cada passo vale dois",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-24.76850,15.30300",
+     "name": "Big Daddy — subida"
+    }
+   },
+   {
+    "hora": "07:30",
+    "oque": "Descida a correr para o Deadvlei",
+    "nota": "Vinte minutos de areia até à argila branca",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-24.76299,15.29440",
+     "name": "Deadvlei"
+    }
+   },
+   {
+    "hora": "07:45",
+    "oque": "Deadvlei",
+    "nota": "Acácias mortas de 900 anos, 1 km a pé desde o parque, sem sombra nenhuma. Chegaste antes dos autocarros",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-24.76299,15.29440",
+     "name": "Deadvlei"
+    }
+   },
+   {
+    "hora": "09:30",
+    "oque": "Saída do vlei",
+    "nota": "A luz já está dura e as multidões chegam agora",
+    "mapa": ""
+   },
+   {
+    "hora": "10:00",
+    "oque": "Duna 45 na volta (opcional)",
+    "nota": "Se ainda houver pernas. A subida ao nascer do sol fica para o dia 8",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-24.71670,15.46670",
+     "name": "Duna 45"
+    }
+   },
+   {
+    "hora": "11:00",
+    "oque": "Camp: piscina e sesta",
+    "nota": "Até às 16h30 não se faz nada que exija esforço",
+    "mapa": ""
+   },
+   {
+    "hora": "16:30",
+    "oque": "Sesriem Canyon",
+    "nota": "30 m de paredes de conglomerado, fresco lá em baixo",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-24.51926,15.79278",
+     "name": "Sesriem Canyon"
+    }
+   },
+   {
+    "hora": "18:30",
+    "oque": "Elim Dune, se a luz merecer",
+    "nota": "Senão, braai e preparar o dia de folga",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-24.45830,15.77730",
+     "name": "Elim Dune"
+    }
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Fotografia",
+    "texto": "A foto clássica de Deadvlei é a 70–200 mm , não grande-angular: comprime as acácias contra a duna. Chegar antes da luz directa é o que separa o postal do registo."
+   }
+  ],
+  "dormir": "Dormir · Sesriem Repetir Sesriem Campsite . Porquê: ninguém faz Sossusvlei bem num dia só de passagem — e a segunda madrugada é o seguro contra vento, nuvens ou uma noite mal dormida.",
+  "dormir_lbl": "Dormir · Sesriem",
+  "dormir_nome": "Repetir Sesriem Campsite",
+  "dormir_desc": ". Porquê: ninguém faz Sossusvlei bem num dia só de passagem — e a segunda madrugada é o seguro contra vento, nuvens ou uma noite mal dormida."
+ },
+ {
+  "num": "Dia 08 · 21 dez · Segunda luz",
+  "titulo": "Sesriem — o dia de folga que não é folga",
+  "leg": [
+   "🚗 ~60 km",
+   "⏱ flexível",
+   "dentro do parque; ritmo livre"
+  ],
+  "intro": "O dia extra, e provavelmente o melhor investimento do roteiro: segunda madrugada em Deadvlei para quem quiser, manutenção para todos. Também é o dia em que se acerta o bloco norte — combustível, comida, contas e roupa.",
+  "rows": [
+   {
+    "hora": "04:55",
+    "oque": "Segunda madrugada: Duna 45",
+    "nota": "Outra vez o portão interior. Sobe-se em 20 minutos e é-se 45 km de tudo",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-24.71670,15.46670",
+     "name": "Duna 45"
+    }
+   },
+   {
+    "hora": "05:55",
+    "oque": "Nascer do sol no cimo da Duna 45",
+    "nota": "A duna vermelha com a sombra a descer para o vale: o postal que o dia 7 não deu",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-24.71670,15.46670",
+     "name": "Duna 45"
+    }
+   },
+   {
+    "hora": "07:45",
+    "oque": "Regresso ao camp",
+    "nota": "Pequeno-almoço a sério. Quem não subiu dormiu até tarde — e também ganhou",
+    "mapa": ""
+   },
+   {
+    "hora": "10:00",
+    "oque": "Manutenção do campo",
+    "nota": "Lavar roupa, arrumar o carro, backup do cartão de memória para o disco",
+    "mapa": ""
+   },
+   {
+    "hora": "12:00",
+    "oque": "Sesta",
+    "nota": "O Namib às 13h não é sítio para ninguém",
+    "mapa": ""
+   },
+   {
+    "hora": "16:30",
+    "oque": "Elim Dune a pé desde o camp",
+    "nota": "A duna mais acessível do parque, sem logística nenhuma",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-24.45830,15.77730",
+     "name": "Elim Dune"
+    }
+   },
+   {
+    "hora": "18:00",
+    "oque": "Contas do bloco norte",
+    "nota": "Combustível até Etosha, água, dinheiro em notas, lista de compras de Swakopmund",
+    "mapa": ""
+   },
+   {
+    "hora": "19:30",
+    "oque": "Braai",
+    "nota": "Última noite de deserto antes da costa",
+    "mapa": ""
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Plano B",
+    "texto": "Se a NWR só tivesse dado duas noites em Sesriem, era este o dia a sacrificar — a terceira noite é a que dá a segunda madrugada. Está confirmada, portanto não há nada a decidir."
+   }
+  ],
+  "dormir": "Dormir · Sesriem Terceira noite em Sesriem . Porquê: não desmontar campo, e ter duas madrugadas em Sossusvlei em vez de uma só tentativa.",
+  "dormir_lbl": "Dormir · Sesriem",
+  "dormir_nome": "Terceira noite em Sesriem",
+  "dormir_desc": ". Porquê: não desmontar campo, e ter duas madrugadas em Sossusvlei em vez de uma só tentativa."
+ },
+ {
+  "num": "Dia 09 · 22 dez · Trópico & costa",
+  "titulo": "Sesriem → Solitaire → Walvis Bay → Swakopmund",
+  "leg": [
+   "🚗 ~350 km",
+   "⏱ 4h30–5h",
+   "C19/C14 gravel, passos de Gaub & Kuiseb"
+  ],
+  "intro": "Do forno para a neve da Benguela: em cinco horas passa-se de 38 °C para 20 °C. Pelo meio, a apple pie de Solitaire, a placa do Trópico e os passos do Kuiseb. À chegada, a compra mais importante da viagem — a de Natal.",
+  "rows": [
+   {
+    "hora": "06:00",
+    "oque": "Café e desmontar",
+    "nota": "Última manhã de deserto a sério",
+    "mapa": ""
+   },
+   {
+    "hora": "06:30",
+    "oque": "Saída de Sesriem",
+    "nota": "Combustível no camp antes de arrancar",
+    "mapa": ""
+   },
+   {
+    "hora": "08:30",
+    "oque": "Solitaire",
+    "nota": "Apple pie e café entre carcaças dos anos 50. Combustível",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-23.89365,16.00632",
+     "name": "Solitaire"
+    }
+   },
+   {
+    "hora": "09:30",
+    "oque": "Placa do Trópico de Capricórnio",
+    "nota": "Selfie geodésica obrigatória",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-23.49920,15.77150",
+     "name": "Trópico de Capricórnio (C14)"
+    }
+   },
+   {
+    "hora": "10:30",
+    "oque": "Passo do Kuiseb",
+    "nota": "Miradouro na berma: badlands lunares, 15 min bem gastos",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-23.30143,15.78818",
+     "name": "Passo do Kuiseb"
+    }
+   },
+   {
+    "hora": "11:45",
+    "oque": "Duna 7",
+    "nota": "À entrada de Walvis Bay: 20 minutos a subir areia, e do cimo vê-se a baía inteira e a cidade",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-22.96970,14.59470",
+     "name": "Duna 7"
+    }
+   },
+   {
+    "hora": "12:30",
+    "oque": "Lagoa de Walvis Bay",
+    "nota": "Flamingos e pelicanos; maré baixa é melhor. Grátis",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-22.96300,14.48950",
+     "name": "Walvis Bay — lagoa"
+    }
+   },
+   {
+    "hora": "14:00",
+    "oque": "Compras para 2 dias no Spar/OK Foods",
+    "nota": "Só 23 e 24: o jantar de Natal no Madisa está confirmado, por isso não é preciso comida para quatro dias de Natal. A 25 está tudo fechado",
+    "mapa": ""
+   },
+   {
+    "hora": "15:00",
+    "oque": "Check-in no Alternative Space",
+    "nota": "167 Anton Lubowski Street, dois quartos. O alojamento só recebe a partir das 15:00",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-22.67684,14.52897",
+     "name": "Alternative Space B&B"
+    }
+   },
+   {
+    "hora": "19:00",
+    "oque": "Jantar no Jetty 1905 ou The Tug",
+    "nota": "Marisco sobre o mar; o reset a meio da viagem",
+    "mapa": ""
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "A compra que não se adia",
+    "texto": "Este é o último supermercado grande antes de Etosha . Comprar comida para quatro dias (23 a 26), gelo a dobrar e a carne do Natal: Uis e Khorixas têm lojas pequenas e pouco fiáveis em feriado, e a loja de Okaukuejo é cara e limitada."
+   }
+  ],
+  "dormir": "Dormir · Swakopmund Alternative Space B&B — dois quartos, €136 a noite, reserva 5222195431 (PIN 5815), pago a 5 nov por Revolut. Porquê: cama e pequeno-almoço antes de sair às 07:45, e estacionamento seguro no interior, sem limite de altura — confirmado por escrito pela Sibylle, as tendas de tejadilho cabem.",
+  "dormir_lbl": "Dormir · Swakopmund",
+  "dormir_nome": "Alternative Space B&B",
+  "dormir_desc": "— dois quartos, €136 a noite, reserva 5222195431 (PIN 5815), pago a 5 nov por Revolut. Porquê: cama e pequeno-almoço antes de sair às 07:45, e estacionamento seguro no interior, sem limite de altura — confirmado por escrito pela Sibylle, as tendas de tejadilho cabem."
+ },
+ {
+  "num": "Dia 10 · 23 dez · Esqueletos & granito",
+  "titulo": "Swakopmund → Zeila → Cape Cross → Spitzkoppe",
+  "leg": [
+   "🚗 ~305 km",
+   "⏱ 4h45",
+   "C34 sal/asfalto + D1918/D3716 gravel"
+  ],
+  "intro": "Costa dos esqueletos em versão curta: névoa, sal, um navio encalhado e 100 mil focas com crias. Ao fim do dia corta-se para o interior e troca-se o Atlântico pelo granito — e pela véspera de lua cheia.",
+  "rows": [
+   {
+    "hora": "07:00",
+    "oque": "Pequeno-almoço na cidade",
+    "nota": "Padaria alemã; encher o depósito antes de sair",
+    "mapa": ""
+   },
+   {
+    "hora": "07:45",
+    "oque": "C34 para norte",
+    "nota": "Estrada de sal: escorrega com a névoa da manhã",
+    "mapa": ""
+   },
+   {
+    "hora": "08:30",
+    "oque": "Zeila — naufrágio",
+    "nota": "59 km de Swakopmund, não 15. Encalhado na rebentação, fotogénico no meio da névoa",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-22.23930,14.35600",
+     "name": "Zeila"
+    }
+   },
+   {
+    "hora": "09:00",
+    "oque": "Henties Bay",
+    "nota": "18 km à frente do Zeila: combustível, gelo e café. Pouca coisa depois disto até Uis",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-22.11600,14.28300",
+     "name": "Henties Bay"
+    }
+   },
+   {
+    "hora": "10:00",
+    "oque": "Cape Cross",
+    "nota": "59 km a norte de Henties. N$280 por adulto + viatura, em dinheiro. 100 000 focas, crias em dezembro, e o cheiro respectivo",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-21.77250,13.95080",
+     "name": "Cape Cross"
+    }
+   },
+   {
+    "hora": "11:15",
+    "oque": "Volta para sul e D1918 para leste",
+    "nota": "169 km até ao Spitzkoppe, 2h10. Almoço numa sombra pelo caminho",
+    "mapa": ""
+   },
+   {
+    "hora": "13:30",
+    "oque": "Gabinete do Spitzkoppe",
+    "nota": "Taxa de dia paga aqui, em dinheiro. As parcelas não se reservam: é chegar e escolher",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-21.83873,15.20142",
+     "name": "Spitzkoppe ticket office"
+    }
+   },
+   {
+    "hora": "14:00",
+    "oque": "Instalar no spot fora da vedação",
+    "nota": "-21.80471, 15.19188 — 4 km do gabinete, areia funda na aproximação. Plano B: parcela no camp comunitário, N$190/pessoa, paga à chegada",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-21.80471,15.19188",
+     "name": "Spot fora da vedação"
+    }
+   },
+   {
+    "hora": "16:30",
+    "oque": "Entrada para o arco de granito",
+    "nota": "Para lá da vedação, 20 minutos a pé. Sem guia; o trilho ao topo é que o exige",
+    "mapa": ""
+   },
+   {
+    "hora": "17:30",
+    "oque": "Arco ao pôr do sol",
+    "nota": "Sol a pôr-se às 19:30 no granito laranja. É a imagem do Spitzkoppe",
+    "mapa": ""
+   },
+   {
+    "hora": "19:45",
+    "oque": "Saída pelo portão",
+    "nota": "Antes de fechar. Dez minutos até ao spot, faróis acesos",
+    "mapa": ""
+   },
+   {
+    "hora": "20:15",
+    "oque": "Jantar no spot",
+    "nota": "Grelhador portátil ou o que sobrou de Swakopmund; sem água nem electricidade",
+    "mapa": ""
+   },
+   {
+    "hora": "22:00",
+    "oque": "Céu",
+    "nota": "Lua a 98%: noite clara, não é noite de astro profundo. O silêncio compensa",
+    "mapa": ""
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Combustível",
+    "texto": "Entre Henties Bay e Uis não há praticamente nada — nem bomba, nem vila, nem sombra. Atestar em Henties antes de cortar para o interior, mesmo que o depósito pareça suficiente. É o único troço do dia com essa falha de rede de apoio, e o desvio para trás são 60 km."
+   },
+   {
+    "titulo": "Lua cheia",
+    "texto": "A 24 é lua cheia; esta noite está a 98%. O céu profundo está perdido, mas ganha-se outra coisa: o arco aceso pela lua e caminhar pela rocha sem lanterna."
+   }
+  ],
+  "dormir": "Dormir · Spitzkoppe Wild camping fora da vedação (-21.80471, 15.19188), a 530 m do limite do parque e a 1,6 km do lodge — o sítio é usado por overlanders desde 2021. Plano B sem depender de ninguém: parcela no camp comunitário , N$190/pessoa, paga no gabinete à chegada. Nenhum dos dois exige reserva.",
+  "dormir_lbl": "Dormir · Spitzkoppe",
+  "dormir_nome": "Wild camping fora da vedação",
+  "dormir_desc": "(-21.80471, 15.19188), a 530 m do limite do parque e a 1,6 km do lodge — o sítio é usado por overlanders desde 2021. Plano B sem depender de ninguém: parcela no camp comunitário , N$190/pessoa, paga no gabinete à chegada. Nenhum dos dois exige reserva."
+ },
+ {
+  "num": "Dia 11 · 24 dez · Pré-história · véspera de Natal",
+  "titulo": "Spitzkoppe → Twyfelfontein → Damaraland",
+  "leg": [
+   "🚗 ~280 km",
+   "⏱ 4h",
+   "C35/C39 gravel; piso pior após chuva"
+  ],
+  "intro": "Manhã nas pinturas e nos domos, tarde nas gravuras de 6 000 anos, noite num vale de rio seco onde os elefantes também passam o Natal. É o dia sem rede — e é isso que se procura.",
+  "rows": [
+   {
+    "hora": "05:45",
+    "oque": "Nascer do sol no spot",
+    "nota": "O maciço em silhueta do lado de fora da vedação, e ninguém à volta. Para as pinturas de Bushman's Paradise seria preciso reentrar e pagar a taxa de dia outra vez — não vale a uma hora destas",
+    "mapa": ""
+   },
+   {
+    "hora": "07:30",
+    "oque": "Pequeno-almoço e desmontar",
+    "nota": "Sem pressa, mas sem dormir: são 285 km até ao Madisa",
+    "mapa": ""
+   },
+   {
+    "hora": "08:00",
+    "oque": "C35/C39 para norte",
+    "nota": "Atenção aos leitos de rio: em dezembro podem levar água. 91 km até Uis, 1h10",
+    "mapa": ""
+   },
+   {
+    "hora": "09:30",
+    "oque": "Uis",
+    "nota": "Combustível e vendedoras de cristais na berma — o melhor artesanato da viagem",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-21.22077,14.87092",
+     "name": "Uis"
+    }
+   },
+   {
+    "hora": "11:30",
+    "oque": "Twyfelfontein",
+    "nota": "131 km de Uis, 1h50 . UNESCO: mais de 2 500 gravuras, incluindo o \"Lion Man\". Visita guiada obrigatória, ~1h30",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-20.54842,14.41099",
+     "name": "Twyfelfontein"
+    }
+   },
+   {
+    "hora": "14:00",
+    "oque": "Organ Pipes e Burnt Mountain",
+    "nota": "8,6 km do Twyfelfontein; 20 min cada",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-20.61330,14.41580",
+     "name": "Organ Pipes e Burnt Mountain"
+    }
+   },
+   {
+    "hora": "15:40",
+    "oque": "Madisa Camp: campo",
+    "nota": "D2612, 18 km depois da C35. Regras de elefante: comida sempre fechada no carro",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-20.72769,14.68505",
+     "name": "Madisa Camp"
+    }
+   },
+   {
+    "hora": "17:00",
+    "oque": "Piscina e bar",
+    "nota": "O primeiro banho de piscina desde Swakopmund",
+    "mapa": ""
+   },
+   {
+    "hora": "19:30",
+    "oque": "Jantar de véspera de Natal no camp",
+    "nota": "Confirmado e já na reserva , paga-se no camp. Sem Wi-Fi; água quente por donkey; electricidade só das 18h às 22h",
+    "mapa": ""
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Fauna",
+    "texto": "Dezembro é quando os elefantes do deserto descem os rios Aba-Huab e Huab. Nunca entre a mãe e a cria; motor ligado e 50 m de distância."
+   }
+  ],
+  "dormir": "Dormir · Madisa, Damaraland Madisa Camp — Overland Site, N$865,20 pagos a 6 nov (reserva 20749), jantar de Natal confirmado e a pagar no camp. Porquê: piscina, bar e jantar servido na véspera, com braai como alternativa; e fica virado a sul, o que encurta a etapa para o Etosha.",
+  "dormir_lbl": "Dormir · Madisa, Damaraland",
+  "dormir_nome": "Madisa Camp",
+  "dormir_desc": "— Overland Site, N$865,20 pagos a 6 nov (reserva 20749), jantar de Natal confirmado e a pagar no camp. Porquê: piscina, bar e jantar servido na véspera, com braai como alternativa; e fica virado a sul, o que encurta a etapa para o Etosha."
+ },
+ {
+  "num": "Dia 12 · 25 dez · ⭐ Etosha, lado oeste",
+  "titulo": "Damaraland → Anderson Gate → Okaukuejo",
+  "leg": [
+   "🚗 ~313 km",
+   "⏱ 4h20 até ao gate",
+   "C39/C40 gravel → asfalto no parque"
+  ],
+  "intro": "Dia de Natal na estrada, com as lojas fechadas e as estradas vazias — a melhor troca possível. Entrada em Etosha ao início da tarde e primeiro game drive. A noite é o espectáculo: o waterhole iluminado de Okaukuejo.",
+  "rows": [
+   {
+    "hora": "06:15",
+    "oque": "Saída do Madisa",
+    "nota": "Tudo fechado em Damaraland; levar pequeno-almoço do camp",
+    "mapa": ""
+   },
+   {
+    "hora": "07:15",
+    "oque": "Khorixas",
+    "nota": "65 km do Madisa. Combustível; as lojas estão fechadas a 25 de dezembro",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-20.37384,14.96042",
+     "name": "Khorixas"
+    }
+   },
+   {
+    "hora": "09:15",
+    "oque": "Outjo",
+    "nota": "126 km de Khorixas. Último combustível antes do parque: encher sem discussão",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-20.11186,16.15669",
+     "name": "Outjo"
+    }
+   },
+   {
+    "hora": "11:15",
+    "oque": "Anderson Gate",
+    "nota": "Taxas em dinheiro. Perguntar quais os waterholes activos — em época verde é a informação mais valiosa do dia",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-19.35550,15.90370",
+     "name": "Anderson Gate"
+    }
+   },
+   {
+    "hora": "12:30",
+    "oque": "Okaukuejo: check-in",
+    "nota": "Piscina e sombra: das 11h às 15h30 a pan é um espelho vazio",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-19.18330,15.93330",
+     "name": "Okaukuejo Camp"
+    }
+   },
+   {
+    "hora": "16:30",
+    "oque": "Game drive",
+    "nota": "Nebrownii e Okondeka; crias de zebra e springbok por todo o lado",
+    "mapa": ""
+   },
+   {
+    "hora": "19:34",
+    "oque": "Portão fecha",
+    "nota": "Dentro do camp, sem excepções",
+    "mapa": ""
+   },
+   {
+    "hora": "21:00",
+    "oque": "Waterhole iluminado",
+    "nota": "Rinoceronte-negro entre as 21h e a 01h. Com três pessoas, façam turnos",
+    "mapa": ""
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Portões",
+    "texto": "O Galton Gate (oeste) encurtava a chegada, mas o acesso já esteve condicionado — confirmar por telefone no dia anterior. A alternativa sempre aberta é Anderson Gate por Khorixas–Outjo, ~40 min a mais."
+   },
+   {
+    "titulo": "Taxas do parque",
+    "texto": "No Anderson Gate pagam-se as taxas de todos os dias que vão estar dentro do Etosha, não só o do dia de entrada: N$280 por adulto por dia mais N$60 pela viatura, em dinheiro . Para três adultos e três noites são cerca de N$2.700 — levar notas pequenas e confirmar o número de dias no guichet."
+   }
+  ],
+  "dormir": "Dormir · Okaukuejo Okaukuejo Campsite NWR (N$460/pessoa). Porquê: o waterhole nocturno é a razão de existir deste dia; dormir fora do parque mata-o.",
+  "dormir_lbl": "Dormir · Okaukuejo",
+  "dormir_nome": "Okaukuejo Campsite NWR",
+  "dormir_desc": "(N$460/pessoa). Porquê: o waterhole nocturno é a razão de existir deste dia; dormir fora do parque mata-o."
+ },
+ {
+  "num": "Dia 13 · 26 dez · Travessia da pan",
+  "titulo": "Okaukuejo → Halali",
+  "leg": [
+   "🚗 ~130 km + drives",
+   "⏱ 2h30 e o resto a olhar",
+   "gravel de parque, 60 km/h máx."
+  ],
+  "intro": "Madrugada no waterhole — a primeira luz é quando os felinos ainda estão fora — e depois a travessia clássica para leste, ao ritmo dos waterholes que o guarda indicou. À noite, um segundo espectáculo diferente do primeiro.",
+  "rows": [
+   {
+    "hora": "05:45",
+    "oque": "Café e portão",
+    "nota": "Abre às 06:17. Os primeiros 40 min de luz valem o dia inteiro",
+    "mapa": ""
+   },
+   {
+    "hora": "06:20",
+    "oque": "Game drive matinal até Pan's Edge",
+    "nota": "20 km a nordeste: o miradouro sobre a pan, com a luz ainda baixa e o espelho de sal a branquear. Volta por Ombika e Nebrownii",
+    "mapa": ""
+   },
+   {
+    "hora": "09:00",
+    "oque": "Pequeno-almoço no camp",
+    "nota": "A sério, com cozinha montada",
+    "mapa": ""
+   },
+   {
+    "hora": "10:30",
+    "oque": "Estrada para Halali",
+    "nota": "130 km de gravel de parque, 60 km/h máximo",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-19.03610,16.46960",
+     "name": "Halali"
+    }
+   },
+   {
+    "hora": "13:00",
+    "oque": "Halali: check-in",
+    "nota": "Camp no centro do parque; piscina e sesta",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-19.03610,16.46960",
+     "name": "Halali Camp"
+    }
+   },
+   {
+    "hora": "16:00",
+    "oque": "Waterholes do centro",
+    "nota": "Moringa e Rietfontein ao fim da tarde",
+    "mapa": ""
+   },
+   {
+    "hora": "19:34",
+    "oque": "Fecho do portão",
+    "nota": "De volta ao camp; braai com o que sobrou do Natal",
+    "mapa": ""
+   },
+   {
+    "hora": "21:00",
+    "oque": "Waterhole de Moringa",
+    "nota": "Mais íntimo que Okaukuejo; o melhor do parque para leopardo e rinoceronte-negro à noite",
+    "mapa": ""
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Época verde",
+    "texto": "Com as primeiras chuvas há água por todo o lado e os animais dispersam-se por 22 000 km². Não é que haja menos — é que estão espalhados. Daí perguntar sempre no portão quais os waterholes activos."
+   }
+  ],
+  "dormir": "Dormir · Halali Halali Campsite NWR (N$460/pessoa). Porquê: o único camp no centro do parque; poupa 100 km de repetição e dá um segundo waterhole nocturno, diferente do primeiro.",
+  "dormir_lbl": "Dormir · Halali",
+  "dormir_nome": "Halali Campsite NWR",
+  "dormir_desc": "(N$460/pessoa). Porquê: o único camp no centro do parque; poupa 100 km de repetição e dá um segundo waterhole nocturno, diferente do primeiro."
+ },
+ {
+  "num": "Dia 14 · 27 dez · Namutoni & o planalto",
+  "titulo": "Halali → Namutoni → Von Lindequist → Waterberg",
+  "leg": [
+   "🚗 ~350 km",
+   "⏱ 5h com paragens",
+   "asfalto de parque + B1/C22"
+  ],
+  "intro": "Última manhã de fauna, almoço num forte alemão e a subida ao Waterberg — uma montanha-ilha de arenito vermelho, verde e visivelmente mais fresca do que tudo o que ficou para trás.",
+  "rows": [
+   {
+    "hora": "05:45",
+    "oque": "Saída de Halali",
+    "nota": "Chudop e Klein Namutoni ao nascer do sol",
+    "mapa": ""
+   },
+   {
+    "hora": "09:00",
+    "oque": "Forte de Namutoni",
+    "nota": "Brunch no forte; última oportunidade de água potável fácil no parque",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-18.80000,16.98330",
+     "name": "Namutoni"
+    }
+   },
+   {
+    "hora": "10:30",
+    "oque": "Portão Von Lindequist",
+    "nota": "Saída do parque; cordão veterinário — nada de carne crua para sul",
+    "mapa": ""
+   },
+   {
+    "hora": "11:30",
+    "oque": "Tsumeb",
+    "nota": "Primeira bomba depois do parque: 100 km do portão. Encher e comprar gelo",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-19.24672,17.71622",
+     "name": "Tsumeb"
+    }
+   },
+   {
+    "hora": "13:15",
+    "oque": "Otjiwarongo",
+    "nota": "180 km de Tsumeb. Almoço de estrada e troca de condutor",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-20.46093,16.65121",
+     "name": "Otjiwarongo"
+    }
+   },
+   {
+    "hora": "14:45",
+    "oque": "Waterberg: check-in NWR",
+    "nota": "Campo na base do planalto, o único alojamento do parque",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-20.41725,17.28479",
+     "name": "Waterberg Camp"
+    }
+   },
+   {
+    "hora": "17:30",
+    "oque": "Miradouro do planalto",
+    "nota": "Luz do fim da tarde sobre o bush; rinocerontes avistados à distância",
+    "mapa": ""
+   },
+   {
+    "hora": "19:30",
+    "oque": "Braai e arrumar",
+    "nota": "Preparar a subida de amanhã: sapatos, água, 06:00",
+    "mapa": ""
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "Porquê parar aqui",
+    "texto": "O Waterberg quebra em dois os 530 km que separariam Etosha de Windhoek. Sem esta noite, o dia do voo seria uma corrida de 530 km em vez de 280 km de asfalto."
+   },
+   {
+    "titulo": "O planalto não se sobe a pé",
+    "texto": "O topo do Waterberg é área restrita e só se visita em drive guiado de 3 horas, N$650 por pessoa , reservado no camp. No dia do voo não cabe — e é onde estão os rinocerontes-brancos. Se quiserem vê-los, a única janela é a tarde do dia 27, à chegada."
+   }
+  ],
+  "dormir": "Dormir · Waterberg Waterberg Camping Site NWR — N$1 290 a noite para os três, reservado . Na base do planalto e o único alojamento do parque.",
+  "dormir_lbl": "Dormir · Waterberg",
+  "dormir_nome": "Waterberg Camping Site NWR",
+  "dormir_desc": "— N$1 290 a noite para os três, reservado . Na base do planalto e o único alojamento do parque."
+ },
+ {
+  "num": "Dia 15 · 28 dez · Planalto & regresso",
+  "titulo": "Waterberg → Windhoek → voo",
+  "leg": [
+   "🚗 ~280 km",
+   "⏱ 3h de asfalto",
+   "C22 + B1, tudo asfalto"
+  ],
+  "intro": "A única caminhada da viagem em território de fauna grande, feita ao fresco da madrugada. Depois 280 km de asfalto, devolução do carro e um voo às 20:00 — com margem para um furo.",
+  "rows": [
+   {
+    "hora": "05:45",
+    "oque": "Subida ao miradouro atrás do camp",
+    "nota": "Caminho íngreme de 45 minutos, sem guia, com o bush a abrir-se até ao horizonte. Não é o topo do planalto",
+    "mapa": ""
+   },
+   {
+    "hora": "07:30",
+    "oque": "Descida e pequeno-almoço",
+    "nota": "Desmontar o campo com calma",
+    "mapa": ""
+   },
+   {
+    "hora": "09:30",
+    "oque": "Saída do Waterberg",
+    "nota": "Limite absoluto: 13:00. São 280 km de asfalto, ~3h",
+    "mapa": ""
+   },
+   {
+    "hora": "12:30",
+    "oque": "Windhoek",
+    "nota": "Depósito cheio e lavagem rápida, se der",
+    "mapa": {
+     "url": "https://www.google.com/maps/search/?api=1&query=-22.60824,17.06542",
+     "name": "Windhoek — devolver o 4x4"
+    }
+   },
+   {
+    "hora": "15:30",
+    "oque": "Devolução na Asco",
+    "nota": "Hora do contrato: inspecção, garrafa de gás e depósito cheio. Meia hora até ao shuttle",
+    "mapa": ""
+   },
+   {
+    "hora": "16:00",
+    "oque": "Shuttle da Asco para Hosea Kutako",
+    "nota": "É o último do dia , confirmado por email. 45 min até ao aeroporto",
+    "mapa": ""
+   },
+   {
+    "hora": "17:00",
+    "oque": "Check-in do voo 4Y133",
+    "nota": "Compras de última hora, jantar no terminal",
+    "mapa": ""
+   },
+   {
+    "hora": "20:00",
+    "oque": "Voo para Frankfurt",
+    "nota": "Chegada a FRA às 05:20 de dia 29; autocarro para o Hahn às 17:20",
+    "mapa": ""
+   }
+  ],
+  "notas": [
+   {
+    "titulo": "O último shuttle",
+    "texto": "A Asco confirmou que o último shuttle para o aeroporto sai às 16:00 , e foi essa a razão de manterem o carro até às 15:30. São 30 minutos para a inspecção: chegar ao depot à hora certa e, se a entrega se arrastar, avisar no balcão antes das 16:00. Perdido esse shuttle, o aeroporto fica a 45 km e o voo é às 20:00."
+   }
+  ],
+  "dormir": "Dormir · — Voo nocturno para Frankfurt. Porquê o Waterberg como última noite: a 280 km de Windhoek em asfalto, dá margem real para um furo ou um atraso sem pôr o voo em risco.",
+  "dormir_lbl": "Dormir · —",
+  "dormir_nome": "Voo nocturno para Frankfurt.",
+  "dormir_desc": "Porquê o Waterberg como última noite: a 280 km de Windhoek em asfalto, dá margem real para um furo ou um atraso sem pôr o voo em risco."
+ }
+]
