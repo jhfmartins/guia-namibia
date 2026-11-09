@@ -43,9 +43,11 @@ EXTRA = """
     border:1px solid var(--line);background:var(--surface-2)}
   .rb-shot figcaption{font:500 11px/1.35 var(--sans);color:var(--ink-soft);margin:7px 0 0}
   .rb-shot figcaption b{display:block;color:var(--ink);font-size:12px;margin:0 0 2px}
-  .rb-sleep{display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;background:var(--surface);
+  .rb-sleep{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap;background:var(--surface);
     border:1px solid var(--line);border-radius:11px;padding:14px;margin:18px 0 6px}
-  .rb-sleep img{width:190px;height:124px;object-fit:cover;border-radius:8px;flex:0 0 auto;border:1px solid var(--line)}
+  .rb-sleep figure{margin:0;flex:0 0 auto}
+  .rb-sleep img{width:330px;height:214px;object-fit:cover;border-radius:8px;display:block;border:1px solid var(--line)}
+  .rb-fonte{display:block;font:400 10.5px/1.35 var(--sans);color:var(--ink-soft);margin:6px 0 0;max-width:330px}
   .rb-sleep .rb-txt{flex:1 1 300px;min-width:240px}
   .rb-sleep .lbl{font:600 10.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);display:block;margin:0 0 7px}
   .rb-sleep p{margin:0;font:400 14px/1.6 var(--sans);color:var(--ink-soft)}
@@ -56,7 +58,7 @@ EXTRA = """
   .rb-credits ol{columns:2;column-gap:34px;font:400 11.5px/1.55 var(--sans);color:var(--ink-faint);
     padding-left:18px;margin:14px 0 0}
   @media(max-width:640px){.rb-shot,.rb-shot img{width:240px}.rb-shot img{height:156px}
-    .rb-sleep img{width:100%;height:170px}.rb-credits ol{columns:1}}
+    .rb-sleep img{width:100%;height:190px}.rb-credits ol{columns:1}}
 """
 
 
@@ -73,20 +75,35 @@ por_poi = {k: v['fotos'] for k, v in fotos.items()}
 
 # fotos de dormida: nome do alojamento -> ficheiro
 DORMIR = {
-    'Hardap': 'img/kalahari.jpg',
-    'Quiver Tree': 'img/quiver.jpg',
-    'Hobas': 'img/fishriver.jpg',
-    'Shalom': 'img/luderitz.jpg',
-    'Sesriem': 'img/sesriem.jpg',
-    'Alternative Space': 'img/walvis.jpg',
-    'Spitzkoppe': 'img/spitzkoppe.jpg',
-    'Madisa': 'img/twyfelfontein.jpg',
-    'Okaukuejo': 'img/etosha.jpg',
-    'Halali': 'img/etosha2.jpg',
-    'Waterberg': 'img/spitzkoppe.jpg',
+    'Hardap': 'img/stay/stay-hardap.jpg',
+    'Quiver Tree': 'img/stay/stay-quiver.jpg',
+    'Hobas': 'img/stay/stay-hobas.jpg',
+    'Shalom': 'img/stay/stay-shalom.jpg',
+    'Sesriem': 'img/stay/stay-sesriem.jpg',
+    'Alternative Space': 'img/stay/stay-alternative.jpg',
+    'Spitzkoppe': 'img/stay/stay-spitzkoppe.jpg',
+    'Madisa': 'img/stay/stay-madisa.jpg',
+    'Okaukuejo': 'img/stay/stay-okaukuejo.jpg',
+    'Halali': 'img/stay/stay-halali.jpg',
+    'Waterberg': 'img/stay/stay-waterberg.jpg',
     'Hahn': 'img/hero.jpg',
     'Frankfurt': 'img/hero.jpg',
     'Windhoek': 'img/hero.jpg',
+}
+
+# origens das fotografias dos alojamentos (cedidas pelos estabelecimentos)
+FONTE_ESTADIA = {
+    'img/stay/stay-hardap.jpg': 'NWR · Hardap Resort',
+    'img/stay/stay-quiver.jpg': 'Quivertree Forest Rest Camp',
+    'img/stay/stay-hobas.jpg': 'NWR · Fish River (a região do Hobas)',
+    'img/stay/stay-shalom.jpg': 'Shalom Self Catering',
+    'img/stay/stay-sesriem.jpg': 'NWR · Sesriem Campsite',
+    'img/stay/stay-alternative.jpg': 'The Alternative Space',
+    'img/stay/stay-spitzkoppe.jpg': 'Spitzkoppe (arco) · spitzkoppe.com',
+    'img/stay/stay-madisa.jpg': 'Madisa Camp',
+    'img/stay/stay-okaukuejo.jpg': 'NWR · Okaukuejo Camp',
+    'img/stay/stay-halali.jpg': 'NWR · Halali Camp',
+    'img/stay/stay-waterberg.jpg': 'NWR · Waterberg',
 }
 
 CIDADE = {
@@ -195,7 +212,12 @@ for d in dias:
         texto_d = re.sub(r'^[\s,;.·—-]+', '', texto_d).strip()
         if texto_d and texto_d[0].islower():
             texto_d = texto_d[0].upper() + texto_d[1:]
-        img_d = f'<img src="{attr(foto_d)}" alt="{attr(nome_d)}" loading="lazy">' if foto_d else ''
+        img_d = ''
+        if foto_d:
+            fonte = FONTE_ESTADIA.get(foto_d, '')
+            cap = f'<span class="rb-fonte">Fotografia: {esc(fonte)}</span>' if fonte else ''
+            img_d = (f'<figure class="rb-pic"><img src="{attr(foto_d)}" alt="{attr(nome_d)}" loading="lazy">'
+                     f'{cap}</figure>')
         sp = (f'<div class="rb-sleep">{img_d}<div class="rb-txt"><span class="lbl">Dormir · {esc(nome_d)}</span>'
               f'<p>{esc(texto_d)}</p></div></div>')
 
@@ -226,6 +248,7 @@ html_out = f'''<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
 <title>Namíbia 2026 — Roadbook</title>
 <style>{css}{EXTRA}</style>
 </head>
@@ -251,10 +274,14 @@ html_out = f'''<!doctype html>
 
   <section class="rb-credits" id="creditos">
     <h2>Créditos das fotografias</h2>
-    <p>Todas as imagens vêm do Wikimedia Commons, sob as licenças indicadas. Os nomes dos ficheiros ligam à página
+    <p>As fotografias dos locais vêm do Wikimedia Commons, sob as licenças indicadas. Os nomes dos ficheiros ligam à página
       original, onde estão a licença completa e o histórico. Onde a fotografia é da região e não do alojamento,
       a legenda di-lo — nenhuma imagem foi apresentada como sendo de um sítio que não é.</p>
     <ol>{creditos}</ol>
+    <p style="margin-top:18px">As fotografias dos alojamentos vêm das páginas dos próprios estabelecimentos
+      (NWR, Quivertree Forest, Shalom, The Alternative Space, Madisa, Spitzkoppe) e são usadas aqui com
+      autorização dos mesmos, no âmbito deste roteiro privado. Não estão sob licença livre e não devem ser
+      reutilizadas fora desta página.</p>
   </section>
 
 </div>
